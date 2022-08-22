@@ -4,9 +4,9 @@
         "post0": {
             "title": "Title",
             "content": "print(&quot;&quot;&quot;hello world this is the first python notebook I will be adding to my blog congrats if you find this&quot;&quot;&quot;) # hello world . hello world this is the first python notebook I will be adding to my blog congrats if you find this .",
-            "url": "https://nvarap.github.io/blog/2022/08/19/FirstPY.html",
-            "relUrl": "/2022/08/19/FirstPY.html",
-            "date": " • Aug 19, 2022"
+            "url": "https://nvarap.github.io/blog/2022/08/21/FirstPY.html",
+            "relUrl": "/2022/08/21/FirstPY.html",
+            "date": " • Aug 21, 2022"
         }
         
     
@@ -40,7 +40,7 @@
   
       ,"page1": {
           "title": "About Me",
-          "content": "This website is powered by fastpages 1. . a blogging platform that natively supports Jupyter notebooks in addition to other formats. &#8617; . |",
+          "content": "This blog pertains to Varaprasad Nibhanupudi, APCSP 1 Student. . Advanced Placement: Computer Science &#8617; . |",
           "url": "https://nvarap.github.io/blog/about/",
           "relUrl": "/about/",
           "date": ""
