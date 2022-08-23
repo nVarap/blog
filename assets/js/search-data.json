@@ -13,10 +13,10 @@
   
     
         ,"post1": {
-            "title": "Title",
+            "title": "first python post",
             "content": "print(&quot;&quot;&quot;hello world this is the first python notebook I will be adding to my blog&quot;&quot;&quot;) # hello world . hello world this is the first python notebook I will be adding to my blog .",
-            "url": "https://nvarap.github.io/blog/2022/08/20/First-Python.html",
-            "relUrl": "/2022/08/20/First-Python.html",
+            "url": "https://nvarap.github.io/blog/Notebooks/PythonOne",
+            "relUrl": "/Notebooks/PythonOne",
             "date": " • Aug 20, 2022"
         }
         
@@ -24,10 +24,10 @@
   
     
         ,"post2": {
-            "title": "Title",
+            "title": "First Bash Project",
             "content": "str=&quot;bash&quot; echo $str # displays first iteration of str, where it equals bash str=&quot;newbash&quot; # override variable echo $str # displays new iteration of str, as newbash . export project_dir=$HOME/vscode export project=project_dir/APCSP export repo=&quot;https://github.com/nighthawkcoders/APCSP.git&quot; cd ~ if [ ! -d $project_dir ] then echo &quot;Creating project dir at $project_dir as it doesn&#39;t exist&quot; mkdir -p $project_dir fi echo &quot;$project_dir exists&quot; if [ ! -d $project ] then echo &quot;Directory exists but not subdir $project. Cloning into subdir&quot; cd $project_dir git clone $repo cd ~ fi echo &quot; project exists, all set! &quot; .",
-            "url": "https://nvarap.github.io/blog/2022/08/20/Bash.html",
-            "relUrl": "/2022/08/20/Bash.html",
+            "url": "https://nvarap.github.io/blog/Notebooks/BashOne",
+            "relUrl": "/Notebooks/BashOne",
             "date": " • Aug 20, 2022"
         }
         
