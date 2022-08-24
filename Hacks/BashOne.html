@@ -221,7 +221,7 @@ window.onload = wrap_img;
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span><span class="nb">echo</span> <span class="s2">"We can verify tools by using conditional commands to tell us about the versions"</span>
-<span class="nb">echo</span> <span class="s2">"We can use ``conda list`` to check all installed packages and their version"</span>
+<span class="nb">echo</span> <span class="s2">"We can use conda list to check all installed packages and their version"</span>
 <span class="nb">echo</span> <span class="s2">"use git add to add any relevant files, use git commit to commit to the relevant repository, and use git push to push changes to the master branch"</span>
 <span class="nb">echo</span> <span class="s2">"We can create a script to install automatically"</span>
 </pre></div>
@@ -261,30 +261,13 @@ We can create a script to install automatically
 <span class="o">{</span>
     sudo apt-get install <span class="nv">$package</span> 
 <span class="o">}</span> <span class="o">||</span> <span class="o">{</span>
-    <span class="nb">echo</span> <span class="s2">"</span><span class="nv">$packages</span><span class="s2"> doesn't seem to isntall. Check sudo perms"</span>
+    <span class="nb">echo</span> <span class="s2">"</span><span class="nv">$packages</span><span class="s2"> doesn't seem to install. Check sudo perms"</span>
 <span class="o">}</span>
 
 <span class="nb">echo</span> <span class="nv">$packages</span> --version
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>bash: syntax error near unexpected token `('
-Password:
-sudo: a password is required
- doesn't seem to isntall. Check sudo perms
-</pre>
-</div>
-</div>
-
 </div>
 </div>
 
