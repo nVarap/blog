@@ -26,8 +26,8 @@
         ,"post2": {
             "title": "first python post",
             "content": "print(&quot;&quot;&quot;hello world this is the first python notebook I will be adding to my blog&quot;&quot;&quot;) # hello world . hello world this is the first python notebook I will be adding to my blog .",
-            "url": "https://nvarap.github.io/blog/Notebooks/PythonOne",
-            "relUrl": "/Notebooks/PythonOne",
+            "url": "https://nvarap.github.io/blog/Hacks/PythonOne",
+            "relUrl": "/Hacks/PythonOne",
             "date": " • Aug 20, 2022"
         }
         
