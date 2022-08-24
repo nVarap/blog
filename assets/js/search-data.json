@@ -3,7 +3,7 @@
     
         "post0": {
             "title": "Python Assignment Hacks",
-            "content": "Hack 1 . Import quiz.py run the program steps: . download the quiz.py file | cd to the file either through vscode or terminal | use &gt; python quiz.py | input! | .",
+            "content": "Hack 1 . Import quiz.py run the program steps: . download the quiz.py file | cd to the file either through vscode or terminal | use python quiz.py | input! | .",
             "url": "https://nvarap.github.io/blog/Hacks/PythonHacks",
             "relUrl": "/Hacks/PythonHacks",
             "date": " • Aug 23, 2022"
