@@ -4,8 +4,8 @@
         "post0": {
             "title": "Python Assignment Hacks",
             "content": "Hack 1 . Import quiz.py run the program steps: . download the quiz.py file | cd to the file either through vscode or terminal | use &gt; python quiz.py | input! | .",
-            "url": "https://nvarap.github.io/blog/Notebooks/PythonHacks",
-            "relUrl": "/Notebooks/PythonHacks",
+            "url": "https://nvarap.github.io/blog/Hacks/PythonHacks",
+            "relUrl": "/Hacks/PythonHacks",
             "date": " • Aug 23, 2022"
         }
         
@@ -26,8 +26,8 @@
         ,"post2": {
             "title": "first python post",
             "content": "print(&quot;&quot;&quot;hello world this is the first python notebook I will be adding to my blog&quot;&quot;&quot;) # hello world . hello world this is the first python notebook I will be adding to my blog .",
-            "url": "https://nvarap.github.io/blog/Hacks/PythonOne",
-            "relUrl": "/Hacks/PythonOne",
+            "url": "https://nvarap.github.io/blog/Notebooks/PythonOne",
+            "relUrl": "/Notebooks/PythonOne",
             "date": " • Aug 20, 2022"
         }
         
@@ -37,8 +37,8 @@
         ,"post3": {
             "title": "First Bash Project",
             "content": "str=&quot;bash&quot; echo $str # displays first iteration of str, where it equals bash str=&quot;newbash&quot; # override variable echo $str # displays new iteration of str, as newbash . export project_dir=$HOME/vscode export project=project_dir/APCSP export repo=&quot;https://github.com/nighthawkcoders/APCSP.git&quot; cd ~ if [ ! -d $project_dir ] then echo &quot;Creating project dir at $project_dir as it doesn&#39;t exist&quot; mkdir -p $project_dir fi echo &quot;$project_dir exists&quot; if [ ! -d $project ] then echo &quot;Directory exists but not subdir $project. Cloning into subdir&quot; cd $project_dir git clone $repo cd ~ fi echo &quot; project exists, all set! &quot; . Answers to hacks . We can verify tools by using conditional commands to tell us about the versions | We can use conda list to check all installed packages and their version | use git add to add any relevant files, use git commit to commit to the relevant repository, and use git push to push changes to the master branch | We can create a script. | . .",
-            "url": "https://nvarap.github.io/blog/Notebooks/BashOne",
-            "relUrl": "/Notebooks/BashOne",
+            "url": "https://nvarap.github.io/blog/Hacks/BashOne",
+            "relUrl": "/Hacks/BashOne",
             "date": " • Aug 20, 2022"
         }
         
