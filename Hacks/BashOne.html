@@ -257,14 +257,9 @@ We can create a script to install automatically
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-bash"><pre><span></span><span class="nb">read</span> package
-<span class="o">{</span>
-    sudo apt-get install <span class="nv">$package</span> 
-<span class="o">}</span> <span class="o">||</span> <span class="o">{</span>
-    <span class="nb">echo</span> <span class="s2">"</span><span class="nv">$packages</span><span class="s2"> doesn't seem to install. Check sudo perms"</span>
-<span class="o">}</span>
-
-<span class="nb">echo</span> <span class="nv">$packages</span> --version
+<div class=" highlight hl-bash"><pre><span></span><span class="nb">echo</span> <span class="s2">"Using conditional statement to create a project directory and project"</span>
+<span class="nb">echo</span> <span class="s2">"Directory /Users/vn1/vscode exists."</span>
+<span class="nb">echo</span> <span class="s2">"Directory /Users/vn1/vscode/APCSP exists."</span>
 </pre></div>
 
     </div>
