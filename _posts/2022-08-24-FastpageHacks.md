@@ -18,3 +18,4 @@ image: images/logo.png
     ---
 }
 ```
+this is how to create a layout for a page (put this at the top of your .md or HTML file)
