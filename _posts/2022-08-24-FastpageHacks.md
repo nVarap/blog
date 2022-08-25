@@ -4,6 +4,7 @@ layout: post
 description: Hacks for APCSP fastpages hacks
 categories: [Hacks]
 title: Fastpages Hacks
+image: images/logo.png
 ---
 
 ```
