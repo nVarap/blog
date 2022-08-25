@@ -4,8 +4,6 @@ title: Notes
 permalink: /notes/
 ---
 
-# Notes for AP Computer Science Principles
-
 ## Week 0
 - Discussed Fastpages creation
     - Go to the **[setup link](https://github.com/fastai/fastpages)**
