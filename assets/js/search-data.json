@@ -84,6 +84,22 @@
   
 
   
+      ,"page3": {
+          "title": "Notes",
+          "content": "Notes for AP Computer Science Principles . Week 0 . Discussed Fastpages creation Go to the setup link | Once you receive a pull request, use this utility Set settings to RSA and 4096 | Generate keys | Use utilities provided in the pull request to place keys in Note that the secret key must be SSH_DEPLOY_KEY exactly | . | | Once all these are done, check your URL to see if everything is workings if not: try checking the ==actions== page. | . | Otherwise continue with configuring your webste | . | Discussed Markdown files and syntax | . Week 1 . Started work on Fastpages Frontend Development | .",
+          "url": "https://nvarap.github.io/blog/notes/",
+          "relUrl": "/notes/",
+          "date": ""
+      }
+      
+  
+
+  
+  
+
+  
+
+  
   
 
   
@@ -92,18 +108,13 @@
   
 
   
-
-  
   
 
   
   
 
   
-  
-
-  
-      ,"page10": {
+      ,"page11": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://nvarap.github.io/blog/robots.txt",
