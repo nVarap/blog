@@ -15,8 +15,8 @@
         ,"post1": {
             "title": "Markdown",
             "content": "First markdown text . include markdown text .",
-            "url": "https://nvarap.github.io/blog/2022/08/21/Markdown.html",
-            "relUrl": "/2022/08/21/Markdown.html",
+            "url": "https://nvarap.github.io/blog/markdown/2022/08/21/Markdown.html",
+            "relUrl": "/markdown/2022/08/21/Markdown.html",
             "date": " • Aug 21, 2022"
         }
         
@@ -86,7 +86,7 @@
   
       ,"page3": {
           "title": "Notes",
-          "content": "Notes for AP Computer Science Principles . Week 0 . Discussed Fastpages creation Go to the setup link | Once you receive a pull request, use this utility Set settings to RSA and 4096 | Generate keys | Use utilities provided in the pull request to place keys in Note that the secret key must be SSH_DEPLOY_KEY exactly | . | | Once all these are done, check your URL to see if everything is workings if not: try checking the ==actions== page. | . | Otherwise continue with configuring your webste | . | Discussed Markdown files and syntax | . Week 1 . Started work on Fastpages Frontend Development | .",
+          "content": "Notes for AP Computer Science Principles . Week 0 . Discussed Fastpages creation Go to the setup link | Once you receive a pull request, use this utility Set settings to RSA and 4096 | Generate keys | Use utilities provided in the pull request to place keys in Note that the secret key must be SSH_DEPLOY_KEY exactly | . | | Once all these are done, check your URL to see if everything is workings if not: try checking the actions page. | . | Otherwise continue with configuring your website | . | Discussed Markdown files and syntax | . Week 1 . Started work on Fastpages Frontend Development Learned how to change tags configure when assigning tags in the TOC. Changing these tags add them | Create new pages, using TOC and making the .md file’s layout to page | . | Learn bash Use basic syntax, such as assigning variables without spaces str=&quot;string&quot; | Use echo to print | . | Learn basic python Use print and return to output | Create a quiz | . | .",
           "url": "https://nvarap.github.io/blog/notes/",
           "relUrl": "/notes/",
           "date": ""
