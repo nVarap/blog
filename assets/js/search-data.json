@@ -3,7 +3,7 @@
     
         "post0": {
             "title": "Python Hacks",
-            "content": "",
+            "content": "Hack 1 . Import quiz.py run the program steps: . download the quiz.py file | cd to the file either through vscode or terminal | use python quiz.py | input your answers! | . import PIL from PIL import Image im = Image.open(&quot;/Users/vn1/myblog/blog/images/pythonHacks.png&quot;) display(im) . Hacks Pseudocode . PROCEDURE qandresp (question) . DISPLAY question | answer &lt;-- input | RETURN answer QandA &lt;-- Dictionary(Questions and answers) | . correct &lt;-- 0 . DISPLAY welcome {user} DISPLAY length QandA . REPEAT for each key in QandA: . rsp &lt;-- qandresp(key) | IF (rsp == QandA(key)) DISPLAY correct correct &lt;-- correct +1 | . | ELSE: DISPLAY wrong! | . | . | . percent &lt;-- str(round(correct/QandA), 2) 2 is two decimal points DISPLAY user, you scored str(correct) / str(len(QandA)) DISPLAY percent .",
             "url": "https://nvarap.github.io/blog/Hacks/PythonHacks",
             "relUrl": "/Hacks/PythonHacks",
             "date": " • Aug 26, 2022"
