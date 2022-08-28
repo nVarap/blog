@@ -199,31 +199,27 @@ steps:</p>
 <h1 id="Hacks-Pseudocode">
 <a class="anchor" href="#Hacks-Pseudocode" aria-hidden="true"><span class="octicon octicon-link"></span></a>Hacks Pseudocode<a class="anchor-link" href="#Hacks-Pseudocode"> </a>
 </h1>
-<p>PROCEDURE qandresp (question)</p>
+<blockquote>
+<p>import sys, getpass
+PROCEDURE qandresp (question)</p>
 <ul>
 <li>DISPLAY question</li>
 <li>answer &lt;-- input </li>
 <li>RETURN answer</li>
 </ul>
+</blockquote>
 <p>QandA &lt;-- Dictionary(Questions and answers)</p>
 <p>correct &lt;-- 0</p>
 <p>DISPLAY <code>welcome {user}</code>
 DISPLAY length QandA</p>
-<p>REPEAT for each key in QandA:</p>
-<ul>
-<li>rsp &lt;-- qandresp(key).toLowerCase()</li>
-<li>IF (rsp == QandA(key))<ul>
-<li>DISPLAY correct<ul>
-<li>correct &lt;-- correct +1</li>
-</ul>
-</li>
-<li>ELSE:<ul>
-<li>DISPLAY wrong!</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
+<p>REPEAT for each key in QandA:- rsp &lt;-- qandresp(key).toLowerCase()- IF (rsp == QandA(key))</p>
+
+<pre><code>- DISPLAY correct
+    - correct &lt;-- correct +1
+- ELSE:
+    - DISPLAY wrong!
+
+</code></pre>
 <p>percent &lt;-- str(round(correct/QandA), 2) <code>2 is two decimal points</code>
 DISPLAY user, you scored str(correct) / str(len(QandA))
 DISPLAY percent</p>
