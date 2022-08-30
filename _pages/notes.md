@@ -25,5 +25,15 @@ permalink: /notes/
     - Use basic syntax, such as assigning variables without spaces `str="string"`
     - Use `echo` to print
 - Learn basic python
-    - Use `print` and  `return` to output
+    - Use `print` and  
+    - `return` to output
     - Create a quiz
+
+## Week 2
+- Started learning about python dictionaries
+    - Create lists using `[]` and dictionaries using `{}`
+    - use `append` to add to the end of a list
+    - You can **nest** lists and dictionaries, which means to put multiple of a similar structure in one
+    - You can print out a list and dictionary, or print out an **index** (an element or object in a list)
+    - You can use a `for i in range(x)` loop, a `for element in list`, `while i != x` or a recursive loop (using a function that calls itself)
+ 
