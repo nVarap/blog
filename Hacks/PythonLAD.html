@@ -135,6 +135,7 @@ window.onload = wrap_img;
 <li class="toc-entry toc-h4"><a href="#Hacks-3.1:">Hacks 3.1: </a></li>
 <li class="toc-entry toc-h4"><a href="#Hacks-3.2">Hacks 3.2 </a></li>
 <li class="toc-entry toc-h4"><a href="#Hacks-3.3">Hacks 3.3 </a></li>
+<li class="toc-entry toc-h4"><a href="#Hacks-3.4">Hacks 3.4 </a></li>
 </ul>
 </li>
 </ul>
@@ -502,7 +503,76 @@ Owns_Cars
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>{'hello': 'world'}
+<pre>{'g': 'u'}
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Hacks-3.4">
+<a class="anchor" href="#Hacks-3.4" aria-hidden="true"><span class="octicon octicon-link"></span></a>Hacks 3.4<a class="anchor-link" href="#Hacks-3.4"> </a>
+</h4>
+<p>My previous quiz utilized dictionaries to store questions and answers. It would be easier to just use a dictionary, but one can use a list of dictionaries to store question/answers</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">listofds</span> <span class="o">=</span> <span class="p">[</span> <span class="p">{</span> <span class="s2">"Question"</span><span class="p">:</span> <span class="s2">"Hello there"</span><span class="p">,</span>
+             <span class="s2">"Answer"</span><span class="p">:</span> <span class="s2">"General Kenobi"</span><span class="p">,</span>
+             <span class="s2">"Feedback"</span><span class="p">:</span> <span class="s2">"Episode three"</span><span class="p">},</span>
+            <span class="p">{</span> <span class="s2">"Question"</span><span class="p">:</span> <span class="s2">"Never tell me"</span><span class="p">,</span>
+             <span class="s2">"Answer"</span><span class="p">:</span> <span class="s2">"The odds!"</span><span class="p">,</span>
+             <span class="s2">"Feedback"</span><span class="p">:</span> <span class="s2">"Episode 5"</span><span class="p">},</span>
+            <span class="p">{</span><span class="s2">"Question"</span><span class="p">:</span> <span class="s2">"Who shot first?"</span><span class="p">,</span>
+             <span class="s2">"Answer"</span><span class="p">:</span> <span class="s2">"Han Solo"</span><span class="p">,</span>
+             <span class="s2">"Feedback"</span> <span class="p">:</span> <span class="s2">"According to lucas, in the first draft it was Han who shot first"</span>
+             <span class="p">}]</span>
+
+<span class="k">def</span> <span class="nf">qanda</span><span class="p">(</span><span class="n">q</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">q</span><span class="p">)</span>
+    <span class="n">a</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Answer: "</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">a</span>
+
+<span class="k">for</span> <span class="nb">dict</span> <span class="ow">in</span> <span class="n">listofds</span><span class="p">:</span>
+    <span class="n">answer</span> <span class="o">=</span> <span class="n">qanda</span><span class="p">(</span><span class="nb">dict</span><span class="p">[</span><span class="s2">"Question"</span><span class="p">])</span>
+    <span class="n">feedback</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">[</span><span class="s2">"Feedback"</span><span class="p">]</span>
+    <span class="k">if</span> <span class="n">answer</span> <span class="o">==</span> <span class="nb">dict</span><span class="p">[</span><span class="s2">"Answer"</span><span class="p">]:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">answer</span><span class="si">}</span><span class="s2"> is correct"</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span> 
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">answer</span><span class="si">}</span><span class="s2"> is incorrect here is some here's some feedback: </span><span class="si">{</span><span class="n">feedback</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Hello there
+General Kenobi is correct
+Never tell me
+The odds! is correct
+Who shot first?
+Greedo is incorrect here is some here's some feedback: According to lucas, in the first draft it was Han who shot first
 </pre>
 </div>
 </div>
