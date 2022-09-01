@@ -14,6 +14,7 @@ Changing my theme wasn't too tough, and I changed my theme to `hacker`. While I 
 
 ![]({{site.baseurl}}/images/chakerrr.png "Hacker Theme")
 
+Apart from different pages not being available, clicking on items leads to weird notation. I feel that hacker would be much better for bullet points as opposed to actual paragraphs.
 
 
 
