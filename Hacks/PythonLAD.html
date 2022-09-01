@@ -67,7 +67,7 @@ window.onload = wrap_img;
           </span>
         </label>
 
-        <div class="trigger"><a class="page-link" href="/blog/MUN/">MUN</a><a class="page-link" href="/blog/about/">About Me</a><a class="page-link" href="/blog/notes/">Notes</a><a class="page-link" href="/blog/search/">Search</a><a class="page-link" href="/blog/categories/">Tags</a></div>
+        <div class="trigger"><a class="page-link" href="/blog/MUN/">MUN</a><a class="page-link" href="/blog/Table/">Table</a><a class="page-link" href="/blog/about/">About Me</a><a class="page-link" href="/blog/notes/">Notes</a><a class="page-link" href="/blog/search/">Search</a><a class="page-link" href="/blog/categories/">Tags</a></div>
       </nav></div>
 </header>
 <main class="page-content" aria-label="Content">
@@ -81,7 +81,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      3 min read
+      5 min read
     
 </span></p>
 
@@ -541,8 +541,20 @@ Owns_Cars
             <span class="p">{</span><span class="s2">"Question"</span><span class="p">:</span> <span class="s2">"Who shot first?"</span><span class="p">,</span>
              <span class="s2">"Answer"</span><span class="p">:</span> <span class="s2">"Han Solo"</span><span class="p">,</span>
              <span class="s2">"Feedback"</span> <span class="p">:</span> <span class="s2">"According to lucas, in the first draft it was Han who shot first"</span>
-             <span class="p">}]</span>
-
+             <span class="p">},</span>
+             <span class="p">{</span><span class="s2">"Question"</span><span class="p">:</span> <span class="s2">"It's over Anakin!"</span><span class="p">,</span>
+             <span class="s2">"Answer"</span><span class="p">:</span> <span class="s2">"I have the high ground!"</span><span class="p">,</span>
+             <span class="s2">"Feedback"</span> <span class="p">:</span> <span class="s2">"Episode three, in the final battle between Obi-Wan and Anakin"</span>
+             <span class="p">},</span>
+             <span class="p">{</span><span class="s2">"Question"</span><span class="p">:</span> <span class="s2">"Who is the composer of all of star war's music"</span><span class="p">,</span>
+             <span class="s2">"Answer"</span><span class="p">:</span> <span class="s2">"John Williams"</span><span class="p">,</span>
+             <span class="s2">"Feedback"</span> <span class="p">:</span> <span class="s2">"Makes sense if you didn't know this but still, John Williams is still the composer of star war's great catalogue of music"</span>
+             <span class="p">},</span>
+             <span class="p">{</span><span class="s2">"Question"</span><span class="p">:</span> <span class="s2">"What is one predecessor to star wars created in france"</span><span class="p">,</span>
+             <span class="s2">"Answer"</span><span class="p">:</span> <span class="s1">'Valerian'</span><span class="p">,</span>
+             <span class="s2">"Feedback"</span> <span class="p">:</span> <span class="s2">"Valerian was a star wars equivalent created beforehand in france."</span><span class="p">}</span>
+             <span class="p">]</span>
+<span class="n">correct</span> <span class="o">=</span> <span class="mi">0</span>
 <span class="k">def</span> <span class="nf">qanda</span><span class="p">(</span><span class="n">q</span><span class="p">):</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">q</span><span class="p">)</span>
     <span class="n">a</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Answer: "</span><span class="p">)</span>
@@ -553,8 +565,12 @@ Owns_Cars
     <span class="n">feedback</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">[</span><span class="s2">"Feedback"</span><span class="p">]</span>
     <span class="k">if</span> <span class="n">answer</span> <span class="o">==</span> <span class="nb">dict</span><span class="p">[</span><span class="s2">"Answer"</span><span class="p">]:</span>
         <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">answer</span><span class="si">}</span><span class="s2"> is correct"</span><span class="p">)</span>
+        <span class="n">correct</span> <span class="o">+=</span> <span class="mi">1</span>
     <span class="k">else</span><span class="p">:</span> 
         <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">answer</span><span class="si">}</span><span class="s2"> is incorrect here is some here's some feedback: </span><span class="si">{</span><span class="n">feedback</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"You got </span><span class="si">{</span><span class="n">correct</span><span class="si">}</span><span class="s2">/</span><span class="si">{</span><span class="nb">str</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">listofds</span><span class="p">))</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span> 
 </pre></div>
 
     </div>
@@ -570,9 +586,16 @@ Owns_Cars
 <pre>Hello there
 General Kenobi is correct
 Never tell me
-The odds! is correct
+The odds is incorrect here is some here's some feedback: Episode 5
 Who shot first?
 Greedo is incorrect here is some here's some feedback: According to lucas, in the first draft it was Han who shot first
+It's over Anakin!
+I have the high ground! is correct
+Who is the composer of all of star war's music
+Hans Zimmer is incorrect here is some here's some feedback: Makes sense if you didn't know this but still, John Williams is still the composer of star war's great catalogue of music
+What is one predecessor to star wars created in france
+Star Trek? is incorrect here is some here's some feedback: Valerian was a star wars equivalent created beforehand in france.
+You got 2/6
 </pre>
 </div>
 </div>
