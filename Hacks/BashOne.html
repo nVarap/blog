@@ -152,13 +152,13 @@ window.onload = wrap_img;
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-bash"><pre><span></span><span class="nv">str</span><span class="o">=</span><span class="s2">"bash"</span>
+<div class=" highlight hl-python"><pre><span></span><span class="nb">str</span><span class="o">=</span><span class="s2">"bash"</span>
 
-<span class="nb">echo</span> <span class="nv">$str</span> <span class="c1"># displays first iteration of str, where it equals bash</span>
+<span class="n">echo</span> <span class="err">$</span><span class="nb">str</span> <span class="c1"># displays first iteration of str, where it equals bash</span>
 
-<span class="nv">str</span><span class="o">=</span><span class="s2">"newbash"</span> <span class="c1"># override variable</span>
+<span class="nb">str</span><span class="o">=</span><span class="s2">"newbash"</span> <span class="c1"># override variable</span>
 
-<span class="nb">echo</span> <span class="nv">$str</span> <span class="c1"># displays new iteration of str, as newbash</span>
+<span class="n">echo</span> <span class="err">$</span><span class="nb">str</span> <span class="c1"># displays new iteration of str, as newbash</span>
 </pre></div>
 
     </div>
@@ -190,28 +190,28 @@ newbash
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-bash"><pre><span></span><span class="nb">export</span> <span class="nv">project_dir</span><span class="o">=</span><span class="nv">$HOME</span>/vscode
-<span class="nb">export</span> <span class="nv">project</span><span class="o">=</span>project_dir/APCSP
-<span class="nb">export</span> <span class="nv">repo</span><span class="o">=</span><span class="s2">"https://github.com/nighthawkcoders/APCSP.git"</span>
+<div class=" highlight hl-python"><pre><span></span><span class="n">export</span> <span class="n">project_dir</span><span class="o">=</span><span class="err">$</span><span class="n">HOME</span><span class="o">/</span><span class="n">vscode</span>
+<span class="n">export</span> <span class="n">project</span><span class="o">=</span><span class="n">project_dir</span><span class="o">/</span><span class="n">APCSP</span>
+<span class="n">export</span> <span class="n">repo</span><span class="o">=</span><span class="s2">"https://github.com/nighthawkcoders/APCSP.git"</span>
 
-<span class="nb">cd</span> ~
+<span class="n">cd</span> <span class="o">~</span>
 
-<span class="k">if</span> <span class="o">[</span> ! -d <span class="nv">$project_dir</span> <span class="o">]</span>
-<span class="k">then</span> 
-    <span class="nb">echo</span> <span class="s2">"Creating project dir at </span><span class="nv">$project_dir</span><span class="s2"> as it doesn't exist"</span>
-    mkdir -p <span class="nv">$project_dir</span>
+<span class="k">if</span> <span class="p">[</span> <span class="err">!</span> <span class="o">-</span><span class="n">d</span> <span class="err">$</span><span class="n">project_dir</span> <span class="p">]</span>
+<span class="n">then</span> 
+    <span class="n">echo</span> <span class="s2">"Creating project dir at $project_dir as it doesn't exist"</span>
+    <span class="n">mkdir</span> <span class="o">-</span><span class="n">p</span> <span class="err">$</span><span class="n">project_dir</span>
     
-<span class="k">fi</span> 
-    <span class="nb">echo</span> <span class="s2">"</span><span class="nv">$project_dir</span><span class="s2"> exists"</span>
+<span class="n">fi</span> 
+    <span class="n">echo</span> <span class="s2">"$project_dir exists"</span>
 
-<span class="k">if</span> <span class="o">[</span> ! -d <span class="nv">$project</span> <span class="o">]</span> 
-<span class="k">then</span>
-    <span class="nb">echo</span> <span class="s2">"Directory exists but not subdir </span><span class="nv">$project</span><span class="s2">. Cloning into subdir"</span>
-    <span class="nb">cd</span> <span class="nv">$project_dir</span>
-    git clone <span class="nv">$repo</span>
-    <span class="nb">cd</span> ~
- <span class="k">fi</span> 
-    <span class="nb">echo</span> <span class="s2">" project exists, all set! "</span>
+<span class="k">if</span> <span class="p">[</span> <span class="err">!</span> <span class="o">-</span><span class="n">d</span> <span class="err">$</span><span class="n">project</span> <span class="p">]</span> 
+<span class="n">then</span>
+    <span class="n">echo</span> <span class="s2">"Directory exists but not subdir $project. Cloning into subdir"</span>
+    <span class="n">cd</span> <span class="err">$</span><span class="n">project_dir</span>
+    <span class="n">git</span> <span class="n">clone</span> <span class="err">$</span><span class="n">repo</span>
+    <span class="n">cd</span> <span class="o">~</span>
+ <span class="n">fi</span> 
+    <span class="n">echo</span> <span class="s2">" project exists, all set! "</span>
 </pre></div>
 
     </div>
@@ -509,10 +509,10 @@ Please use the [nbdev &amp; blogging channel](https://forums.fast.ai/c/fastai-us
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-bash"><pre><span></span><span class="nb">echo</span> <span class="s2">"We can verify tools by using conditional commands to tell us about the versions"</span>
-<span class="nb">echo</span> <span class="s2">"We can use conda list to check all installed packages and their version"</span>
-<span class="nb">echo</span> <span class="s2">"use git add to add any relevant files, use git commit to commit to the relevant repository, and use git push to push changes to the master branch"</span>
-<span class="nb">echo</span> <span class="s2">"We can create a script to install automatically"</span>
+<div class=" highlight hl-python"><pre><span></span><span class="n">echo</span> <span class="s2">"We can verify tools by using conditional commands to tell us about the versions"</span>
+<span class="n">echo</span> <span class="s2">"We can use conda list to check all installed packages and their version"</span>
+<span class="n">echo</span> <span class="s2">"use git add to add any relevant files, use git commit to commit to the relevant repository, and use git push to push changes to the master branch"</span>
+<span class="n">echo</span> <span class="s2">"We can create a script to install automatically"</span>
 </pre></div>
 
     </div>
@@ -546,9 +546,9 @@ We can create a script to install automatically
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-bash"><pre><span></span><span class="nb">echo</span> <span class="s2">"Using conditional statement to create a project directory and project"</span>
-<span class="nb">echo</span> <span class="s2">"Directory /Users/vn1/vscode exists."</span>
-<span class="nb">echo</span> <span class="s2">"Directory /Users/vn1/vscode/APCSP exists."</span>
+<div class=" highlight hl-python"><pre><span></span><span class="n">echo</span> <span class="s2">"Using conditional statement to create a project directory and project"</span>
+<span class="n">echo</span> <span class="s2">"Directory /Users/vn1/vscode exists."</span>
+<span class="n">echo</span> <span class="s2">"Directory /Users/vn1/vscode/APCSP exists."</span>
 </pre></div>
 
     </div>
