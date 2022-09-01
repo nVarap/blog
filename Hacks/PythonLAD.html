@@ -543,6 +543,9 @@ Owns_Cars
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">json</span>
 
+<span class="k">def</span> <span class="nf">clearFile</span><span class="p">(</span><span class="n">filename</span><span class="p">):</span>
+    <span class="nb">open</span><span class="p">(</span><span class="sa">f</span><span class="s1">'</span><span class="si">{</span><span class="n">filename</span><span class="si">}</span><span class="s1">.txt'</span><span class="p">,</span> <span class="s1">'w'</span><span class="p">)</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+
 <span class="k">def</span> <span class="nf">checkForConsistency</span><span class="p">(</span><span class="n">user</span><span class="p">,</span> <span class="n">password</span><span class="p">,</span> <span class="n">lst</span><span class="p">):</span>
     <span class="k">for</span> <span class="nb">dict</span> <span class="ow">in</span> <span class="n">lst</span><span class="p">:</span>
         <span class="k">if</span> <span class="nb">dict</span><span class="p">[</span><span class="s2">"Name"</span><span class="p">]</span> <span class="o">==</span> <span class="n">user</span> <span class="ow">and</span> <span class="nb">dict</span><span class="p">[</span><span class="s2">"password"</span><span class="p">]</span> <span class="o">==</span> <span class="n">password</span><span class="p">:</span>
@@ -562,7 +565,7 @@ Owns_Cars
     <span class="p">}</span>
     <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">"info.txt"</span><span class="p">,</span> <span class="s1">'r+'</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
         <span class="n">biglst</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">())</span>
-        <span class="n">f</span><span class="o">.</span><span class="n">truncate</span>
+        <span class="n">f</span><span class="o">.</span><span class="n">truncate</span><span class="p">()</span>
         <span class="n">biglst</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">dictionary</span><span class="p">)</span>
         <span class="n">wStr</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">biglst</span><span class="p">)</span>
         <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">wStr</span><span class="p">)</span>
@@ -595,8 +598,10 @@ Owns_Cars
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>When prompted enter in sign in info
-Signed in!
+<pre>Welcome info placement, place you information when prompted and it will be added to database
+Info input: one, 
+ one@email.com, 
+ onepassword
 </pre>
 </div>
 </div>
