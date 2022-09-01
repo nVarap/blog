@@ -560,16 +560,17 @@ Owns_Cars
         <span class="s1">'Email'</span><span class="p">:</span> <span class="n">email</span><span class="p">,</span>
         <span class="s1">'password'</span> <span class="p">:</span> <span class="n">password</span>
     <span class="p">}</span>
-    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">"info.txt"</span><span class="p">,</span> <span class="s1">'w'</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">"info.txt"</span><span class="p">,</span> <span class="s1">'r+'</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
         <span class="n">biglst</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">())</span>
+        <span class="n">f</span><span class="o">.</span><span class="n">truncate</span>
         <span class="n">biglst</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">dictionary</span><span class="p">)</span>
         <span class="n">wStr</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">biglst</span><span class="p">)</span>
-        <span class="n">f</span><span class="o">.</span><span class="n">truncate</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
         <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">wStr</span><span class="p">)</span>
-        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Info input: </span><span class="si">{</span><span class="n">dictionary</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="si">}</span><span class="s2">, </span><span class="se">\n</span><span class="s2"> </span><span class="si">{</span><span class="n">dictionary</span><span class="p">[</span><span class="n">email</span><span class="p">]</span><span class="si">}</span><span class="s2">, </span><span class="se">\n</span><span class="s2"> </span><span class="si">{</span><span class="n">dictionary</span><span class="p">[</span><span class="n">password</span><span class="p">]</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Info input: </span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s2">, </span><span class="se">\n</span><span class="s2"> </span><span class="si">{</span><span class="n">email</span><span class="si">}</span><span class="s2">, </span><span class="se">\n</span><span class="s2"> </span><span class="si">{</span><span class="n">password</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
 <span class="k">elif</span> <span class="n">place</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="s2">"sign"</span><span class="p">:</span>
-    <span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">"info.txt"</span><span class="p">,</span> <span class="s1">'w'</span><span class="p">)</span>
-    <span class="n">biglst</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">())</span>
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">"info.txt"</span><span class="p">,</span> <span class="s1">'r+'</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+        <span class="n">reader</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+        <span class="n">biglst</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">reader</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">"When prompted enter in sign in info"</span><span class="p">)</span>
     <span class="n">user</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter username: "</span><span class="p">)</span>
     <span class="n">password</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter password: "</span><span class="p">)</span>
@@ -594,29 +595,9 @@ Owns_Cars
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Welcome info placement, place you information when prompted and it will be added to database
+<pre>When prompted enter in sign in info
+Signed in!
 </pre>
-</div>
-</div>
-
-<div class="output_area">
-
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">UnsupportedOperation</span>                      Traceback (most recent call last)
-<span class="ansi-green-intense-fg ansi-bold">/Users/vn1/myblog/blog/_notebooks/2022-08-30-PTH.ipynb Cell 14</span> in <span class="ansi-cyan-fg">&lt;cell line: 9&gt;</span><span class="ansi-blue-fg">()</span>
-<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell:/Users/vn1/myblog/blog/_notebooks/2022-08-30-PTH.ipynb#X16sZmlsZQ%3D%3D?line=14'&gt;15&lt;/a&gt;</span> dictionary = {
-<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell:/Users/vn1/myblog/blog/_notebooks/2022-08-30-PTH.ipynb#X16sZmlsZQ%3D%3D?line=15'&gt;16&lt;/a&gt;</span>     "Name" : name,
-<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell:/Users/vn1/myblog/blog/_notebooks/2022-08-30-PTH.ipynb#X16sZmlsZQ%3D%3D?line=16'&gt;17&lt;/a&gt;</span>     'Email': email,
-<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell:/Users/vn1/myblog/blog/_notebooks/2022-08-30-PTH.ipynb#X16sZmlsZQ%3D%3D?line=17'&gt;18&lt;/a&gt;</span>     'password' : password
-<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell:/Users/vn1/myblog/blog/_notebooks/2022-08-30-PTH.ipynb#X16sZmlsZQ%3D%3D?line=18'&gt;19&lt;/a&gt;</span> }
-<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell:/Users/vn1/myblog/blog/_notebooks/2022-08-30-PTH.ipynb#X16sZmlsZQ%3D%3D?line=19'&gt;20&lt;/a&gt;</span> with open("info.txt", 'w') as f:
-<span class="ansi-green-fg">---&gt; &lt;a href='vscode-notebook-cell:/Users/vn1/myblog/blog/_notebooks/2022-08-30-PTH.ipynb#X16sZmlsZQ%3D%3D?line=20'&gt;21&lt;/a&gt;</span>     biglst = json.loads(f.read())
-<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell:/Users/vn1/myblog/blog/_notebooks/2022-08-30-PTH.ipynb#X16sZmlsZQ%3D%3D?line=21'&gt;22&lt;/a&gt;</span>     biglst.append(dictionary)
-<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell:/Users/vn1/myblog/blog/_notebooks/2022-08-30-PTH.ipynb#X16sZmlsZQ%3D%3D?line=22'&gt;23&lt;/a&gt;</span>     wStr = json.dumps(biglst)
-
-<span class="ansi-red-fg">UnsupportedOperation</span>: not readable</pre>
 </div>
 </div>
 
