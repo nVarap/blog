@@ -1,1 +1,1 @@
-[{"Name": "addinfo", "Email": "addemail@email.com", "password": "password"}]
+[{"Name": "one", "Email": "one@email.com", "password": "onepassword"}]
