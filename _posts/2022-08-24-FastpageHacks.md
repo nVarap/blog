@@ -3,6 +3,7 @@ toc: true
 layout: post
 description: Hacks for APCSP fastpages hacks
 categories: [Hacks]
+tags: [Week 1]
 title: Fastpages Hacks
 image: images/logo.png
 ---

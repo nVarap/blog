@@ -3,7 +3,7 @@ toc: true
 layout: post
 description: HTML Hacks for week 2.
 categories: [Hacks]
-categories: [HTML]
+tags: [Week 1]
 title: HTML Hacks
 image: images/mkpng.png
 ---
