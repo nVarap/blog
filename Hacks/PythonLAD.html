@@ -554,36 +554,42 @@ Owns_Cars
         <span class="k">if</span> <span class="nb">dict</span><span class="p">[</span><span class="s2">"Name"</span><span class="p">]</span> <span class="o">==</span> <span class="n">user</span> <span class="ow">and</span> <span class="nb">dict</span><span class="p">[</span><span class="s2">"password"</span><span class="p">]</span> <span class="o">==</span> <span class="n">password</span><span class="p">:</span>
             <span class="k">return</span> <span class="kc">True</span>
     <span class="k">return</span> <span class="kc">False</span>
-<span class="n">place</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Input new info or sign in? [type info or sign]"</span><span class="p">)</span>
-<span class="k">if</span> <span class="n">place</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="s1">'info'</span><span class="p">:</span> 
+<span class="c1"># place = input("Input new info or sign in? [type info or sign]")</span>
+<span class="c1"># if place.lower() == 'info': </span>
 
-    <span class="nb">print</span><span class="p">(</span><span class="s2">"Welcome info placement, place you information when prompted and it will be added to database"</span><span class="p">)</span>
-    <span class="n">name</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Input name value: "</span><span class="p">)</span>
-    <span class="n">email</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Input email value: "</span><span class="p">)</span>
-    <span class="n">password</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Input password value "</span><span class="p">)</span>
-    <span class="n">dictionary</span> <span class="o">=</span> <span class="p">{</span>
-        <span class="s2">"Name"</span> <span class="p">:</span> <span class="n">name</span><span class="p">,</span>
-        <span class="s1">'Email'</span><span class="p">:</span> <span class="n">email</span><span class="p">,</span>
-        <span class="s1">'password'</span> <span class="p">:</span> <span class="n">password</span>
-    <span class="p">}</span>
-    <span class="n">biglst</span> <span class="o">=</span> <span class="n">returnListFrom</span><span class="p">(</span><span class="s2">"info.txt"</span><span class="p">)</span>
-    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">"info.txt"</span><span class="p">,</span> <span class="s1">'w'</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
-        <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">biglst</span><span class="p">))</span>
-
-    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Info input: </span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s2">, </span><span class="se">\n</span><span class="s2"> </span><span class="si">{</span><span class="n">email</span><span class="si">}</span><span class="s2">, </span><span class="se">\n</span><span class="s2"> </span><span class="si">{</span><span class="n">password</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
-<span class="k">elif</span> <span class="n">place</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="s2">"sign"</span><span class="p">:</span>
-    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">"info.txt"</span><span class="p">,</span> <span class="s1">'r+'</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
-        <span class="n">reader</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
-        <span class="n">biglst</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">reader</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">"When prompted enter in sign in info"</span><span class="p">)</span>
-    <span class="n">user</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter username: "</span><span class="p">)</span>
-    <span class="n">password</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter password: "</span><span class="p">)</span>
-    <span class="k">if</span> <span class="n">checkForConsistency</span><span class="p">(</span><span class="n">user</span><span class="p">,</span> <span class="n">password</span><span class="p">,</span> <span class="n">biglst</span><span class="p">):</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">"Signed in!"</span><span class="p">)</span>
-    <span class="k">else</span><span class="p">:</span>
-        <span class="s2">"user password either not exist or bad input. Consider checking spelling or creating an account"</span>
+<span class="c1">#     print("Welcome info placement, place you information when prompted and it will be added to database")</span>
+<span class="c1">#     name = input("Input name value: ")</span>
+<span class="c1">#     email = input("Input email value: ")</span>
+<span class="c1">#     password = input("Input password value ")</span>
+<span class="c1">#     dictionary = {</span>
+<span class="c1">#         "Name" : name,</span>
+<span class="c1">#         'Email': email,</span>
+<span class="c1">#         'password' : password</span>
+<span class="c1">#     }</span>
+<span class="c1">#     with open("info.txt", 'r+') as f:</span>
+<span class="c1">#         biglst = json.loads(f.read())</span>
+<span class="c1">#         clearFile(f)</span>
+<span class="c1">#         biglst.append(dictionary)</span>
+<span class="c1">#         wStr = json.dumps(biglst)</span>
+<span class="c1">#         f.write(wStr)</span>
+<span class="c1">#         print(f"Info input: {name}, \n {email}, \n {password}")</span>
+<span class="c1"># elif place.lower() == "sign":</span>
+<span class="c1">#     with open("info.txt", 'r+') as f:</span>
+<span class="c1">#         reader = f.read()</span>
+<span class="c1">#         biglst = json.loads(reader)</span>
+<span class="c1">#     print("When prompted enter in sign in info")</span>
+<span class="c1">#     user = input("Enter username: ")</span>
+<span class="c1">#     password = input("Enter password: ")</span>
+<span class="c1">#     if checkForConsistency(user, password, biglst):</span>
+<span class="c1">#         print("Signed in!")</span>
+<span class="c1">#     else:</span>
+<span class="c1">#         "user password either not exist or bad input. Consider checking spelling or creating an account"</span>
     
-
+<span class="n">string</span> <span class="o">=</span> <span class="n">returnListFrom</span><span class="p">(</span><span class="s2">"info.txt"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">string</span><span class="p">)</span>
+<span class="n">string</span><span class="o">.</span><span class="n">append</span><span class="p">({</span><span class="s2">"Name"</span><span class="p">:</span> <span class="s2">"Hello"</span><span class="p">,</span> <span class="s2">"Email"</span><span class="p">:</span> <span class="s2">"worked"</span><span class="p">,</span> <span class="s2">"password"</span><span class="p">:</span> <span class="s2">"Tried"</span><span class="p">})</span>
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">"info.txt"</span><span class="p">,</span> <span class="s1">'w'</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+    <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">string</span><span class="p">))</span>
     
 </pre></div>
 
@@ -598,9 +604,9 @@ Owns_Cars
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Welcome info placement, place you information when prompted and it will be added to database
-Info input: addingnewinfo, 
- addingnew@gmail.comeee, 
- addingnewpasswordvalue
+Info input: newinfo, 
+ emailemail, 
+ password
 </pre>
 </div>
 </div>
