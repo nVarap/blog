@@ -1,6 +1,6 @@
-$high-emph: rgba(white, 0.87);
-$med-emph: rgba(white, 0.69); //Noice
-$low-emph: rgba(white, 0.38);
+$high-emph: rgba(rgba(226, 102, 30, 0.947), 0.87);
+$med-emph: rgba(rgb(255, 255, 255), 0.69); //Noice
+$low-emph: rgba(rgb(255, 0, 0), 1.00);
 $dark-grey : #121212; 
 // $dark-grey : #1F1B24;
 $overlay: mix($dark-grey, white, 95%);
