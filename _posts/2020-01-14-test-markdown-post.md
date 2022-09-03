@@ -4,7 +4,7 @@ layout: post
 description: A minimal example of using markdown with fastpages.
 categories: [markdown]
 title: An Example Markdown Post
-show_tags: truegit 
+show_tags: true
 image: images/mkpng.png
 ---
 # Example Markdown Post
