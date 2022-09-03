@@ -5,6 +5,33 @@ title: Tags
 search_exclude: true
 ---
 
+<!DOCTYPE html>
+
+
+<table id = "Table1">
+    <tr>
+        <tr>Header 1</tr>
+        <tr>Header 2</tr>
+    </tr>
+initTable();
+
+</table>
+
+<script>
+    function initTable(){
+        var table = document.getElementById("Table1");
+        if (site.categories.size > 0){
+            for (c in site.categories){
+                var row = table.insertRow(0);
+                var cell1 = row.insertCell(0);
+                var cell2 = row.insertCell(1);
+                cell1.innerHTML = "#{{ c }}";
+                cell2.innerHTML = " something ";
+            }
+        }
+    }
+</script>
+
 {% if site.tags.size > 0 %}
 <h2>Contents</h2>
 
