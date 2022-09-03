@@ -1,1 +1,1 @@
-[{"Name": "one", "Email": "one@email.com", "password": "onepassword"}, {"Name": "addnewinfo", "Email": "addnew@email.com", "password": "addnewpassword"}, {"Name": "Hello", "Email": "worked", "password": "Tried"}]
+[{"Name": "addinginfoname", "Email": "addinginfo@gmail.com", "password": "addingpasswordinfo"}, {"Name": "infoexamplename", "Email": "infoexampleemail@gmail.com", "password": "infopasswordaddvalue2"}]
