@@ -6,6 +6,13 @@ search_exclude: true
 ---
 
 {% if site.categories.size > 0 %}
+
+{% assign categories = "" | split:"" %}
+{% for c in site.categories %}
+  {% assign categories = categories | push: c[0] %}
+{% endfor %}
+{% assign categories = categories | sort_natural %}
+
 <h2>Contents</h2>
     <table>
         <tr>
@@ -13,7 +20,7 @@ search_exclude: true
             <th>Work Done</th>
         </tr>
         {% for category in site.categories %}
-        <tr>{{ category }}</tr>
+        <tr>{{ category}}</tr>
     </table>
   
     
