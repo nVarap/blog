@@ -7,8 +7,15 @@ search_exclude: true
 
 {% if site.categories.size > 0 %}
 <h2>Contents</h2>
-
-  {% tablerow category in site.categories %}
-    {{ category.title }}
-  {% endtablerow %}
+    <table>
+        <tr>
+            <th>Week Number</th>
+            <th>Work Done</th>
+        </tr>
+        {% for category in site.categories %}
+        <tr>{{ category }}</tr>
+    </table>
+  
+    
+  {% endfor %}
 {% endif %}
