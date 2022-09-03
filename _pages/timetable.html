@@ -1,0 +1,14 @@
+---
+layout: categories
+permalink: /table/
+title: Table
+search_exclude: true
+---
+
+{% if site.categories.size > 0 %}
+<h2>Contents</h2>
+
+  {% tablerow category in site.categories %}
+    {{ category.title }}
+  {% endtablerow %}
+{% endif %}
