@@ -1,6 +1,5 @@
 ---
 layout: post
-tags: [Week 1]
 ---
 **HIPA** stands for
 
