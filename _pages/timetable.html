@@ -6,23 +6,20 @@ search_exclude: true
 ---
 
 {% if site.categories.size > 0 %}
-
-{% assign categories = "" | split:"" %}
-{% for c in site.categories %}
-  {% assign categories = categories | push: c[0] %}
-{% endfor %}
-{% assign categories = categories | sort_natural %}
-
 <h2>Contents</h2>
-    <table>
+
+
+<table>
+    <tr>
+        <th>Week Number</th>
+        <th>Work Done</th>
+        {% for tag in site.categories %}
+        {% for collection in tag%}
         <tr>
-            <th>Week Number</th>
-            <th>Work Done</th>
-        </tr>
-        {% for category in site.categories %}
-        <tr>{{ category}}</tr>
-    </table>
-  
-    
-  {% endfor %}
+            <td>{{ collection.title }}</td>
+        </tr>  
+    </tr>
+{% endfor %}
+{% endfor %}
 {% endif %}
+</table>
