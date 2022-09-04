@@ -1,12 +1,12 @@
 ---
 keywords: fastai
 description: My first python post to the blog
-title: first python post
+title: First Python post
 toc: true
 comments: true
 permalink: /Notebooks/PythonOne
 categories: [Notebooks]
-tags: [Week 1]
+tags: [Week 0]
 image: images/pythonlogo.png
 nb_path: _notebooks/2022-08-20-First-Python.ipynb
 layout: notebook
