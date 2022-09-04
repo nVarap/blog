@@ -27,7 +27,7 @@ search_exclude: true
         {% if post.tags contains tag %}
         <li>
           {{ post.title }}
-          <span class="date">{{ post.date | date: "%B %-d, %Y"  }}</span>
+          <span class="date"><b>|</b> {{ post.date | date: "%B %-d, %Y"  }}</span>
         </li>
         {% endif %}
       {% endfor %}
