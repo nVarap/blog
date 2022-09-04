@@ -1,25 +1,30 @@
 ---
-layout: categories
+layout: page
 permalink: /table/
 title: Table
 search_exclude: true
 ---
 
-{% if site.categories.size > 0 %}
+{% if site.tags.size > 0 %}
 <h2>Contents</h2>
 
+  {% assign tags = "" | split:"" %}
+  {% for c in site.tags %}
+    {% assign tags = tags | push: c[0] %}
+  {% endfor %}
+  {% assign tags = tags | sort_natural %}
 
-<table>
-    <tr>
+  <table>
+    <tr> 
         <th>Week Number</th>
-        <th>Work Done</th>
-        {% for tag in site.categories %}
-        {% for collection in tag%}
-        <tr>
-            <td>{{ collection.title }}</td>
-        </tr>  
+        <th> Hacks </th>
     </tr>
-{% endfor %}
-{% endfor %}
+  {% for tag in tags %}
+  <tr>
+    <td><a href="#{{ category }}">{{ tag }}</a></td>
+    <td> Hello </td>
+    </tr> 
+  {% endfor %}
+  </table>
+
 {% endif %}
-</table>
