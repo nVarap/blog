@@ -2,6 +2,7 @@
 layout: page
 title: Robotics
 permalink: /robotics/
+search_exclude: true
 ---
 
 FRC Robotics is a program that pushes children towards the STEM field through creating a robot and competing in a competition. FIRST also creates opportunities for volunteer and business work.

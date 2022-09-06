@@ -2,6 +2,7 @@
 layout: page
 title: MUN
 permalink: /MUN/
+search_exclude: true
 ---
 
 This page is to demonstrate my repertoire in Model United Nations.

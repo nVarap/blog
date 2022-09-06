@@ -2,6 +2,7 @@
 layout: page
 title: Notes
 permalink: /notes/
+search_exclude: true
 ---
 ### Notable Terms:
 - echo
