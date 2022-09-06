@@ -3,6 +3,21 @@ layout: page
 title: Notes
 permalink: /notes/
 ---
+### Notable Terms:
+- echo
+- versions
+- shells
+- print
+- return
+- iteration
+- append
+- procedural abstraction
+- data abstraction
+- for loops
+- recursive loops
+- while loops
+- Liquid (coding language)
+
 
 ## Week 0
 - Discussed Fastpages creation
@@ -36,4 +51,5 @@ permalink: /notes/
     - You can **nest** lists and dictionaries, which means to put multiple of a similar structure in one
     - You can print out a list and dictionary, or print out an **index** (an element or object in a list)
     - You can use a `for i in range(x)` loop, a `for element in list`, `while i != x` or a recursive loop (using a function that calls itself)
- 
+    - Used HTML fragments for images (such as ``<img>``)
+    - Used liquid to create a better table that reacts to new tags.
