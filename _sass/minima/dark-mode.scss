@@ -19,8 +19,13 @@ a:hover {
     color:$high-emph !important;
 }
 
-.site-title, .site-title:visited, .site-nav, .page-link {
+.site-title:visited, .site-nav, .page-link {
     color: $high-emph !important;
+}
+
+.site-title {
+    color: rgba(rgb(189, 31, 31), 0.7);
+    
 }
 
 .site-nav {
