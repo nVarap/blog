@@ -54,3 +54,9 @@ search_exclude: true
     - You can use a `for i in range(x)` loop, a `for element in list`, `while i != x` or a recursive loop (using a function that calls itself)
     - Used HTML fragments for images (such as ``<img>``)
     - Used liquid to create a better table that reacts to new tags.
+## Week 3
+- Started working with applab to build a foundation in JS
+- Created a Ninjago quiz that can save data and play different songs
+- Created a basic hangman game
+- Read about competencies for College board AP performance task
+- Read the rubric fo the performance task
