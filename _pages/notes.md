@@ -18,6 +18,8 @@ search_exclude: true
 - recursive loops
 - while loops
 - Liquid (coding language)
+- code.org
+- debug log
 
 
 ## Week 0
@@ -60,3 +62,4 @@ search_exclude: true
 - Created a basic hangman game
 - Read about competencies for College board AP performance task
 - Read the rubric fo the performance task
+- Debug log, use `console.log` to log when specific items and values occur, used heavily in debugging and not seen during the final product.
