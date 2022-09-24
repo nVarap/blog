@@ -3,7 +3,7 @@
     
         "post0": {
             "title": "Python List and Dictionaries",
-            "content": "console.log(&quot;hello world&quot;); . hello = function(msg){ console.log(msg); } .",
+            "content": "console.log(&quot;hello&quot;) . Failed to start the Kernel. View Jupyter &lt;a href=&#39;command:jupyter.viewOutput&#39;&gt;log&lt;/a&gt; for further details. . hello = function(msg){ console.log(msg); } . Failed to start the Kernel. View Jupyter &lt;a href=&#39;command:jupyter.viewOutput&#39;&gt;log&lt;/a&gt; for further details. .",
             "url": "https://nvarap.github.io/blog/Hacks/PythonLAD",
             "relUrl": "/Hacks/PythonLAD",
             "date": " • Sep 20, 2022"
@@ -200,15 +200,17 @@
   
 
   
-  
-
-  
 
   
   
 
   
-      ,"page9": {
+
+  
+  
+
+  
+      ,"page10": {
           "title": "Backlog",
           "content": "Educational Tips Fun Zone (Create Task Ideas) Blogging and Review . Try doing practice tests | Simple quiz | Blog experience and errors | . Do corrections on practice assessments | Minesweeper | Pseudocode | . Use Khan Academy | Adventure Game (similarly to atari’s) | Review with friends, take videos | . Take notes | Weather App? | Record specific techniques, code used between teammates | .",
           "url": "https://nvarap.github.io/blog/sprintbacklog/",
@@ -236,7 +238,7 @@
   
 
   
-      ,"page17": {
+      ,"page18": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://nvarap.github.io/blog/robots.txt",
