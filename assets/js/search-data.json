@@ -2,10 +2,10 @@
   
     
         "post0": {
-            "title": "Python List and Dictionaries",
-            "content": "console.log(&quot;hello&quot;) . Failed to start the Kernel. View Jupyter &lt;a href=&#39;command:jupyter.viewOutput&#39;&gt;log&lt;/a&gt; for further details. . hello = function(msg){ console.log(msg); } . Failed to start the Kernel. View Jupyter &lt;a href=&#39;command:jupyter.viewOutput&#39;&gt;log&lt;/a&gt; for further details. .",
-            "url": "https://nvarap.github.io/blog/Hacks/PythonLAD",
-            "relUrl": "/Hacks/PythonLAD",
+            "title": "Javascript Kernel",
+            "content": "// Run in the jupyter notebook, doesn&#39;t run in VSCODE console.log(&quot;hello&quot;) . hello . hello = function(msg){ console.log(msg); } hello(&quot;momentous&quot;) . momentous .",
+            "url": "https://nvarap.github.io/blog/Hacks/JS",
+            "relUrl": "/Hacks/JS",
             "date": " • Sep 20, 2022"
         }
         
