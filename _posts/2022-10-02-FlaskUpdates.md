@@ -13,3 +13,4 @@ title: Flask Updates
 ![]({{site.baseurl}}/images/RestartServer.png "Restarting server")
 ![]({{site.baseurl}}/images/shitsandlaughs.png "Stuff")
 ![]({{site.baseurl}}/images/fml.png "Personal Blog")
+![]({{site.baseurl}}/images/aws2.png "Personal Blog")
