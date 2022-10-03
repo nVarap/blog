@@ -12,3 +12,4 @@ title: Flask Updates
 ![]({{site.baseurl}}/images/lmaoimage "something lmao")
 ![]({{site.baseurl}}/images/RestartServer "Restarting server")
 ![]({{site.baseurl}}/images/shitsandlaughs "Stuff")
+![]({{site.baseurl}}/images/fml.png "Personal Blog")
