@@ -8,8 +8,8 @@ title: Flask Updates
 ---
 
 ![]({{site.baseurl}}/images/curloutput.png "curl output")
-![]({{site.baseurl}}/images/curlOutputwithHTML "curl output with different curl")
-![]({{site.baseurl}}/images/lmaoimage "something lmao")
-![]({{site.baseurl}}/images/RestartServer "Restarting server")
-![]({{site.baseurl}}/images/shitsandlaughs "Stuff")
+![]({{site.baseurl}}/images/curlOutputwithHTML.png "curl output with different curl")
+![]({{site.baseurl}}/images/lmaoimage.png "something lmao")
+![]({{site.baseurl}}/images/RestartServer.png "Restarting server")
+![]({{site.baseurl}}/images/shitsandlaughs.png "Stuff")
 ![]({{site.baseurl}}/images/fml.png "Personal Blog")
