@@ -247,9 +247,20 @@
   
 
   
+      ,"page1": {
+          "title": "API",
+          "content": "| Overview | Covid19 RapidAPI | Jokes API | Users Database | .",
+          "url": "https://nvarap.github.io/blog/api/",
+          "relUrl": "/api/",
+          "date": ""
+      }
+      
+  
 
   
-      ,"page2": {
+
+  
+      ,"page3": {
           "title": "About Me",
           "content": "This blog pertains to Varaprasad N, APCSP 1 Student. . Hobbies . I enjoy playing multiple games, mainly board games or TCGs 2 such as . The Pokémon TCG | The Yu-Gi-Oh TCG | Magic: The Gathering | . I also love to play Dungeons and Dragons, a TTRPG 3. I am also the President of the Tabletop Games club at my school . Clubs . I am a part of the Model United Nations Club, Dungeons and Dragons club, and Robotics . . Advanced Placement: Computer Science &#8617; . | Trading Card Games &#8617; . | Table Top RPG &#8617; . |",
           "url": "https://nvarap.github.io/blog/about/",
@@ -262,7 +273,7 @@
   
 
   
-      ,"page4": {
+      ,"page5": {
           "title": "",
           "content": "Table . Member Role .",
           "url": "https://nvarap.github.io/blog/omega/jstable",
@@ -285,7 +296,7 @@
   
 
   
-      ,"page10": {
+      ,"page11": {
           "title": "Backlog",
           "content": "Educational Tips Fun Zone (Create Task Ideas) Blogging and Review . Try doing practice tests | Simple quiz | Blog experience and errors | . Do corrections on practice assessments | Minesweeper | Pseudocode | . Use Khan Academy | Adventure Game (similarly to atari’s) | Review with friends, take videos | . Take notes | Weather App? | Record specific techniques, code used between teammates | .",
           "url": "https://nvarap.github.io/blog/sprintbacklog/",
@@ -313,7 +324,7 @@
   
 
   
-      ,"page18": {
+      ,"page19": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://nvarap.github.io/blog/robots.txt",
