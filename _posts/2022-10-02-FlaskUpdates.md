@@ -13,4 +13,5 @@ title: Flask Updates
 ![]({{site.baseurl}}/images/RestartServer.png "Docker-Compose")
 ![]({{site.baseurl}}/images/dockerpiss.png "Docker PS working!")
 ![]({{site.baseurl}}/images/fml.png "Personal Blog")
-![]({{site.baseurl}}/images/aws2.png "Personal Blog")
+![]({{site.baseurl}}/images/aws2.png "Group blog with change")
+![]({{site.baseurl}}/images/screnbe4.png "Screenie Before")
