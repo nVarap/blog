@@ -14,7 +14,7 @@
     
         ,"post1": {
             "title": "Covid-19 API",
-            "content": "| Overview | Covid19 RapidAPI | Jokes API | Users Database | . Time All-time Cases Recorded Deaths Active Cases . | | | | Country All-time Cases Recorded Deaths Active Cases .",
+            "content": "| Overview | Covid19 RapidAPI (Mr.Mortensen&#39;s Example) | Diff API | Diff API | . Time All-time Cases Recorded Deaths Active Cases . | | | | Country All-time Cases Recorded Deaths Active Cases .",
             "url": "https://nvarap.github.io/blog/data/covid",
             "relUrl": "/data/covid",
             "date": " • Oct 7, 2022"
@@ -271,7 +271,7 @@
   
       ,"page1": {
           "title": "API",
-          "content": "| Overview | Covid19 RapidAPI | Jokes API | Users Database | . APCSP API Page . A bunch of API pages :)&lt;/marl&gt;&lt;/p&gt; .",
+          "content": "| Overview | Covid19 RapidAPI (Mr.Mortensen&#39;s Example) | Diff API | Diff API | . APCSP API Page . A bunch of API pages :)&lt;/marl&gt;&lt;/p&gt; .",
           "url": "https://nvarap.github.io/blog/api/",
           "relUrl": "/api/",
           "date": ""
