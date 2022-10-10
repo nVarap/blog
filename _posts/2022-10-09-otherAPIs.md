@@ -3,10 +3,9 @@ title: Covid-19 API
 layout: default
 description: Covid stuff
 permalink: /data/covid
-image: /images/rapidapi.png
+image: /data/memes
 categories: [Hacks]
 hide: true
-author: Mr.Mortensen
 tags: [Week 7]
 ---
 
@@ -50,7 +49,7 @@ tags: [Week 7]
   const resultContainer = document.getElementById("result");
 
   // prepare fetch options
-  const url = "https://spring.nighthawkcodingsociety.com/api/covid/daily";
+  const url = "https://programming-memes-images.p.rapidapi.com/v1/memes";
 
   const options = {
     method: 'GET', // *GET, POST, PUT, DELETE, etc.
