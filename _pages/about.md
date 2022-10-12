@@ -18,6 +18,7 @@ I also love to play Dungeons and Dragons, a TTRPG [^3]. I am also the President 
 I am a part of the Model United Nations Club, Dungeons and Dragons club, and Robotics
 
 ![]({{site.baseurl}}/images/itsagoose.png "A goose of mine")
+![]({{site.baseurl}}/images/FOOTPOWDER2.png "A goose of mine")
 
 [^1]: Advanced Placement: Computer Science
 [^2]: Trading Card Games
