@@ -48,6 +48,7 @@ Vocab:
 - IP Addresses
     - We send IPs to different or a lot of people
 - Domain addresses allow us to set certain IPs to certain real-world names
+![]({{site.baseurl}}/images/sum.png "Third question")
 ![]({{site.baseurl}}/images/ikea.png "get rekt")
 ![]({{site.baseurl}}/images/koko.png "koko")
 ![]({{site.baseurl}}/images/azeeminggiskhankhan.png "Third question")
