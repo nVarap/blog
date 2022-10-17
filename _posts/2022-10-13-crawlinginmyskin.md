@@ -51,5 +51,6 @@ Vocab:
 ![]({{site.baseurl}}/images/sum.png "Third question")
 ![]({{site.baseurl}}/images/ikea.png "get rekt")
 ![]({{site.baseurl}}/images/koko.png "koko")
+![]({{site.baseurl}}/images/sign.png "koko")
 ![]({{site.baseurl}}/images/azeeminggiskhankhan.png "Third question")
 <mark>For the third question, I simply forgot to note what the internet was and wasn't rather believing the opposite.</mark>
