@@ -1,9 +1,3 @@
-console.log("this is *hopefully* a substitute to the notebook hacks");
-console.log("this shows that javascript is indeed working, rather that");
-console.log("it isn't working in vscode/jupyter notebooks");
-
-function func(msg){
-    console.log(msg+", Hello world");
-}
-
-func("Varalu")
+var info1 = 'London'
+var url = 'https://weatherapi-com.p.rapidapi.com/future.json?q=${info1}&dt=2022-12-25';
+console.log(url)
