@@ -1,3 +1,12 @@
+---
+toc: true
+layout: post
+description: Hacks For Sections 1-2
+categories: [Hacks]
+tags: [Week 14]
+title: Section 1-2 hacks 
+---
+
 # Hacks Questions
 
 ## Assignment 1
