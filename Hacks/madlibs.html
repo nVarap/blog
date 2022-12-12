@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Sections 14-15 | Varap blog</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="Sections 14-15" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Section 14 and 15 Hacks" />
+<meta property="og:description" content="Section 14 and 15 Hacks" />
+<link rel="canonical" href="https://nvarap.github.io/blog/Hacks/madlibs" />
+<meta property="og:url" content="https://nvarap.github.io/blog/Hacks/madlibs" />
+<meta property="og:site_name" content="Varap blog" />
+<meta property="og:image" content="https://nvarap.github.io/blog/images/pythonlogo.png" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2022-09-12T00:00:00-05:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="https://nvarap.github.io/blog/images/pythonlogo.png" />
+<meta property="twitter:title" content="Sections 14-15" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-09-12T00:00:00-05:00","datePublished":"2022-09-12T00:00:00-05:00","description":"Section 14 and 15 Hacks","headline":"Sections 14-15","image":"https://nvarap.github.io/blog/images/pythonlogo.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://nvarap.github.io/blog/Hacks/madlibs"},"url":"https://nvarap.github.io/blog/Hacks/madlibs"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/blog/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://nvarap.github.io/blog/feed.xml" title="Varap blog" /><link rel="shortcut icon" type="image/x-icon" href="/blog/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title") && (el.className != "emoji")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    });
+</script>
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/blog/">Varap blog</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/blog/MUN/">MUN</a><a class="page-link" href="/blog/about/">About Me</a><a class="page-link" href="/blog/notes/">Notes</a><a class="page-link" href="/blog/robotics/">Robotics</a><a class="page-link" href="/blog/search/">Search</a><a class="page-link" href="/blog/sprintbacklog/">Backlog</a><a class="page-link" href="/blog/omega/">Submenu</a><a class="page-link" href="/blog/categories/">Tags</a><a class="page-link" href="/blog/table/">Table</a><a class="page-link" href="/blog/vocabunit2/">Vocab</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Sections 14-15</h1><p class="page-description">Section 14 and 15 Hacks</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2022-09-12T00:00:00-05:00" itemprop="datePublished">
+        Sep 12, 2022
+      </time>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      6 min read
+    
+</span></p>
+
+    
+      <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
+      
+        <a class="category-tags-link" href="/blog/categories/#Hacks">Hacks</a>
+        
+      
+      </p>
+    
+
+    
+      
+        <div class="pb-5 d-flex flex-justify-center">
+          <div class="px-2">
+
+    <a href="https://github.com/nVarap/blog/tree/master/_notebooks/2022-09-12-madlibs.ipynb" role="button" target="_blank">
+<img class="notebook-badge-image" src="/blog/assets/badges/github.svg" alt="View On GitHub">
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://mybinder.org/v2/gh/nVarap/blog/master?filepath=_notebooks%2F2022-09-12-madlibs.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/blog/assets/badges/binder.svg" alt="Open In Binder"/>
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://colab.research.google.com/github/nVarap/blog/blob/master/_notebooks/2022-09-12-madlibs.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/blog/assets/badges/colab.svg" alt="Open In Colab"/>
+    </a>
+</div>
+          <div class="px-2">
+  <a href="https://deepnote.com/launch?url=https%3A%2F%2Fgithub.com%2FnVarap%2Fblog%2Fblob%2Fmaster%2F_notebooks%2F2022-09-12-madlibs.ipynb" target="_blank">
+      <img class="notebook-badge-image" src="/blog/assets/badges/deepnote.svg" alt="Launch in Deepnote"/>
+  </a>
+</div>
+
+        </div>
+      </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <ul id="toc" class="section-nav">
+<li class="toc-entry toc-h1"><a href="#Section-14">Section 14 </a>
+<ul>
+<li class="toc-entry toc-h2"><a href="#Vocab">Vocab </a></li>
+<li class="toc-entry toc-h2"><a href="#Documentation">Documentation </a></li>
+<li class="toc-entry toc-h2"><a href="#Practice-Problems:-Section-14">Practice Problems: Section 14 </a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h1"><a href="#Section-15:-Randomness">Section 15: Randomness </a>
+<ul>
+<li class="toc-entry toc-h2"><a href="#Necessities">Necessities </a></li>
+<li class="toc-entry toc-h2"><a href="#Practice-Problems">Practice Problems </a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h1"><a href="#Random-Values-Pt-1/2">Random Values Pt 1/2 </a>
+<ul>
+<li class="toc-entry toc-h2"><a href="#Practice">Practice </a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h1"><a href="#Hacks">Hacks </a></li>
+<li class="toc-entry toc-h1"><a href="#Hacks:-Extra-Credit">Hacks: Extra Credit </a></li>
+</ul><!--
+#################################################
+### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
+#################################################
+# file to edit: _notebooks/2022-09-12-madlibs.ipynb
+-->
+
+<div class="container" id="notebook-container">
+        
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Section-14">
+<a class="anchor" href="#Section-14" aria-hidden="true"><span class="octicon octicon-link"></span></a>Section 14<a class="anchor-link" href="#Section-14"> </a>
+</h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Vocab">
+<a class="anchor" href="#Vocab" aria-hidden="true"><span class="octicon octicon-link"></span></a>Vocab<a class="anchor-link" href="#Vocab"> </a>
+</h2>
+<ul>
+<li>Documentation: The what, how, or why of the code</li>
+<li>Libraries: Prewritten code or procedures that can be used to maximize efficiency</li>
+<li>API: Data stored in a database that can be accessed via code</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Documentation">
+<a class="anchor" href="#Documentation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Documentation<a class="anchor-link" href="#Documentation"> </a>
+</h2>
+<p>Comments, notes, etc. <br>
+<strong>Talk about function, parameters, and uses</strong>.</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="sd">'''</span>
+<span class="sd">function print(string)</span>
+<span class="sd">displays string in terminal</span>
+
+<span class="sd">::param string:: an object of string type</span>
+<span class="sd">'''</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"hello World"</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>hello World
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Practice-Problems:-Section-14">
+<a class="anchor" href="#Practice-Problems:-Section-14" aria-hidden="true"><span class="octicon octicon-link"></span></a>Practice Problems: Section 14<a class="anchor-link" href="#Practice-Problems:-Section-14"> </a>
+</h2>
+<ul>
+<li>Number 2: it is the only one that actually calculates GPA</li>
+<li>Number 3: It doesn't actually select a restaurant, only display the menu items on it</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Section-15:-Randomness">
+<a class="anchor" href="#Section-15:-Randomness" aria-hidden="true"><span class="octicon octicon-link"></span></a>Section 15: Randomness<a class="anchor-link" href="#Section-15:-Randomness"> </a>
+</h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Necessities">
+<a class="anchor" href="#Necessities" aria-hidden="true"><span class="octicon octicon-link"></span></a>Necessities<a class="anchor-link" href="#Necessities"> </a>
+</h2>
+<p><code>RANDOM(a, b)</code> - which generates and returns a random integer from a to b, inclusive. Each result is equally likely to occur. 
+For example, random(1,3) could return 1, 2, or 3.</p>
+<p><strong>YOU CAN ALSO ADD THESE UP</strong>
+random(0,2)+random(3,4) = possibilities through 0, 1, 2, 3, 4, 5, 6</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Practice-Problems">
+<a class="anchor" href="#Practice-Problems" aria-hidden="true"><span class="octicon octicon-link"></span></a>Practice Problems<a class="anchor-link" href="#Practice-Problems"> </a>
+</h2>
+<p>answer1 = random(0,2) <br>
+answer2 = random(1,5)  <br>
+answer3 = answer1 + answer2</p>
+<p>range: [1, 2, 3, 4, 5, 6, 7]
+<br></p>
+<p><strong>RNGs Question</strong> <br>
+Answer: C, because it does a random number (1,6), 3 times, and this amount added would be the simulation a dice roll 3 times
+<br></p>
+<p><strong>Random Function</strong>
+Answer: C, because since the initial value of i is two, we cannot get 3 from the random function.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Random-Values-Pt-1/2">
+<a class="anchor" href="#Random-Values-Pt-1/2" aria-hidden="true"><span class="octicon octicon-link"></span></a>Random Values Pt 1/2<a class="anchor-link" href="#Random-Values-Pt-1/2"> </a>
+</h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Practice">
+<a class="anchor" href="#Practice" aria-hidden="true"><span class="octicon octicon-link"></span></a>Practice<a class="anchor-link" href="#Practice"> </a>
+</h2>
+<ol>
+<li>Incomplete code section</li>
+</ol>
+<ul>
+<li>
+<strong>1</strong> and <strong>4</strong>, because both need to be equal in order to ensure 75% probability</li>
+</ul>
+<ol>
+<li>Points and Rows</li>
+</ol>
+<ul>
+<li>Today I learned I cannot read tables</li>
+<li>Secondly, the answer is 3, because it can take all 3 rows (all the way down) and 2 columns (so two across).</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">random</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">):</span>
+    <span class="n">integer</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">34</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">integer</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">'starting randrange'</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">):</span>
+    <span class="n">int2</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randrange</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">int2</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>7
+7
+28
+25
+23
+starting randrange
+51
+71
+71
+91
+91
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">hello</span> <span class="o">=</span> <span class="s2">"Hello world why must this occur constantly"</span>
+
+<span class="n">lst</span> <span class="o">=</span> <span class="p">[</span><span class="n">x</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">hello</span><span class="o">.</span><span class="n">split</span><span class="p">()]</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">):</span>
+    <span class="n">choice</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">lst</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">choice</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>why
+why
+this
+world
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">hello</span> <span class="o">=</span> <span class="s2">"Hello world why must this occur constantly"</span>
+
+<span class="n">lst</span> <span class="o">=</span> <span class="p">[</span><span class="n">x</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">hello</span><span class="o">.</span><span class="n">split</span><span class="p">()]</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"List before mutation: </span><span class="si">{</span><span class="n">lst</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">):</span>
+    <span class="n">random</span><span class="o">.</span><span class="n">shuffle</span><span class="p">(</span><span class="n">lst</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"List after mutation </span><span class="si">{</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="si">}</span><span class="s2">, </span><span class="si">{</span><span class="n">lst</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>List before mutation: ['Hello', 'world', 'why', 'must', 'this', 'occur', 'constantly']
+List after mutation 1, ['this', 'constantly', 'occur', 'why', 'world', 'Hello', 'must']
+List after mutation 2, ['occur', 'must', 'this', 'world', 'why', 'Hello', 'constantly']
+List after mutation 3, ['occur', 'constantly', 'why', 'must', 'world', 'this', 'Hello']
+List after mutation 4, ['occur', 'Hello', 'must', 'this', 'constantly', 'world', 'why']
+List after mutation 5, ['this', 'why', 'occur', 'Hello', 'constantly', 'world', 'must']
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Hacks">
+<a class="anchor" href="#Hacks" aria-hidden="true"><span class="octicon octicon-link"></span></a>Hacks<a class="anchor-link" href="#Hacks"> </a>
+</h1>
+<ol>
+<li>Reflection: today I learned about how libraries work and the random library in python. I learned about how the random library can be used to create new and novel code. Libraries are pre-coded, and I should use them in my code. Similarly, we can use APIs in our code to skip collecting data ourselves or storing it for it to be flexibly used. </li>
+</ol>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ol>
+<li>Multiple Choice Questions</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>Question</th>
+<th>Answer</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>B, the random function returns a random integer between a and b, inclusive, as seen in the practice problems</td>
+</tr>
+<tr>
+<td>2</td>
+<td>A, when you type <code>random.randrange</code> into the code debugger or search it up, it is clear to see that random.randrange's parameters are positionally <code>start, stop, and step</code>.</td>
+</tr>
+<tr>
+<td>3</td>
+<td>A. random.item is not a method in the random library, as seen when you use <code>dir(random)</code>
+</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ol>
+<li>SEQ</li>
+</ol>
+<p><strong>A.</strong> The advantage of using libraries is using high-level, well tested code at an instant, that doesn't require people to write it themselves or to have to test it. As a result libraries expedite coding. It also allows for flexible usage of the code you have written on your own.
+<br> 
+<strong>B.</strong></p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">random</span> 
+<span class="c1"># Import the random library</span>
+
+<span class="n">names_string</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Give me everybody's names, seperated by a comma."</span><span class="p">)</span>
+<span class="c1"># gets the names of "everybody" and then splits them into a list using the .split() method</span>
+<span class="n">names</span> <span class="o">=</span> <span class="n">names_string</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">","</span><span class="p">)</span>
+
+<span class="n">num_items</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">names</span><span class="p">)</span> <span class="c1"># Finds the number of items through the length of the names list</span>
+
+<span class="n">random_choice</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">num_items</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> 
+<span class="c1"># gets a random integer using the randint() function, choosing 0 (the first element) and </span>
+<span class="c1"># Numitems-1 (the last index, because of 0 base indexing everything moves back one hence the -1)</span>
+
+<span class="n">person_who_will_pay</span> <span class="o">=</span> <span class="n">names</span><span class="p">[</span><span class="n">random_choice</span><span class="p">]</span> <span class="c1"># assigns whoever to pay with the random choice</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">person_who_will_pay</span><span class="si">}</span><span class="s2"> is going to buy the meal today!"</span><span class="p">)</span>
+<span class="c1"># Displays the person_who_will_pay variable, an element in the names list.</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre> HIT THE GRIDDY is going to buy the meal today!
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ol>
+<li>Tasks: </li>
+</ol>
+<ul>
+<li><strong>Number 1: Create code that picks out a name from a list of 15</strong></li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">random</span>
+
+<span class="n">lst</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"Nevaeh"</span><span class="p">,</span> <span class="s2">"Destiny"</span><span class="p">,</span> <span class="s2">"Madison"</span><span class="p">,</span><span class="s2">"Mackenzie"</span><span class="p">,</span> <span class="s2">"McKenna"</span><span class="p">,</span> <span class="s2">"Jayden"</span><span class="p">,</span> <span class="s2">"Brayden"</span><span class="p">,</span><span class="s2">"Aiden"</span><span class="p">,</span> <span class="s2">"Kaden"</span><span class="p">,</span> <span class="s1">'Hunter'</span><span class="p">,</span> <span class="s2">"madden"</span><span class="p">,</span> <span class="s2">"martha"</span><span class="p">,</span> <span class="s2">"mickey"</span><span class="p">,</span> <span class="s2">"joe"</span><span class="p">,</span> <span class="s2">"obama"</span><span class="p">]</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">lst</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Madison
+Nevaeh
+martha
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">random</span>
+<span class="n">i1</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randrange</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">6</span><span class="p">)</span>
+<span class="n">i2</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randrange</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">6</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"First player rolls: </span><span class="si">{</span><span class="n">i1</span><span class="si">}</span><span class="s2"> and </span><span class="si">{</span><span class="n">i2</span><span class="si">}</span><span class="s2">: total </span><span class="si">{</span><span class="n">i1</span><span class="o">+</span><span class="n">i2</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+
+<span class="n">i3</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randrange</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">6</span><span class="p">)</span>
+<span class="n">i4</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randrange</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">6</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Second player rolls: </span><span class="si">{</span><span class="n">i3</span><span class="si">}</span><span class="s2"> and </span><span class="si">{</span><span class="n">i4</span><span class="si">}</span><span class="s2">: total </span><span class="si">{</span><span class="n">i3</span><span class="o">+</span><span class="n">i4</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+
+<span class="k">if</span> <span class="p">(</span><span class="n">i1</span><span class="o">+</span><span class="n">i2</span> <span class="o">&gt;</span> <span class="n">i3</span> <span class="o">+</span> <span class="n">i4</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"player 1 wins"</span><span class="p">)</span>
+<span class="k">elif</span> <span class="p">(</span><span class="n">i1</span><span class="o">+</span><span class="n">i2</span> <span class="o">&lt;</span> <span class="n">i3</span> <span class="o">+</span> <span class="n">i4</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"player 2 wins"</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span> 
+    <span class="nb">print</span><span class="p">(</span><span class="s1">'draw'</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>First player rolls: 3 and 2: total 5
+Second player rolls: 5 and 2: total 7
+player 2 wins
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Hacks:-Extra-Credit">
+<a class="anchor" href="#Hacks:-Extra-Credit" aria-hidden="true"><span class="octicon octicon-link"></span></a>Hacks: Extra Credit<a class="anchor-link" href="#Hacks:-Extra-Credit"> </a>
+</h1>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">PIL</span> <span class="kn">import</span> <span class="n">Image</span>
+<span class="kn">import</span> <span class="nn">random</span>
+
+<span class="k">def</span> <span class="nf">returnGoalAndRobot</span><span class="p">():</span>
+    <span class="n">lst</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">90</span><span class="p">,</span> <span class="mi">180</span><span class="p">,</span> <span class="mi">270</span><span class="p">]</span>
+    <span class="n">im</span> <span class="o">=</span> <span class="n">Image</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="s2">"../images/sprite.png"</span><span class="p">)</span>
+    <span class="n">im2</span> <span class="o">=</span> <span class="n">Image</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="s1">'RGB'</span><span class="p">,(</span><span class="mi">100</span><span class="p">,</span> <span class="mi">100</span><span class="p">),(</span><span class="mi">0</span><span class="p">,</span><span class="mi">255</span><span class="p">,</span><span class="mi">0</span><span class="p">))</span>
+    <span class="k">return</span> <span class="p">(</span><span class="n">im</span><span class="o">.</span><span class="n">rotate</span><span class="p">(</span><span class="nb">float</span><span class="p">(</span><span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">lst</span><span class="p">))),</span> <span class="n">im2</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">all_same</span><span class="p">(</span><span class="n">TwoDMatrix</span><span class="p">):</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="n">constant</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">TwoDMatrix</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+        <span class="k">for</span> <span class="n">array</span> <span class="ow">in</span> <span class="n">TwoDMatrix</span><span class="p">:</span>
+            <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">array</span><span class="p">)</span> <span class="o">!=</span> <span class="n">constant</span><span class="p">:</span>
+                <span class="k">return</span> <span class="kc">False</span>
+    <span class="k">except</span><span class="p">:</span>
+        <span class="k">return</span> <span class="kc">False</span>
+    <span class="k">return</span> <span class="kc">True</span>
+
+<span class="k">def</span> <span class="nf">generate_from_array</span><span class="p">(</span><span class="n">TwoDMatrix</span><span class="p">,</span> <span class="n">pixel</span><span class="o">=</span><span class="mi">100</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">all_same</span><span class="p">(</span><span class="n">TwoDMatrix</span><span class="p">):</span>
+        <span class="n">height</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">TwoDMatrix</span><span class="p">)</span>
+        <span class="n">length</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">TwoDMatrix</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+        <span class="n">paste_img</span> <span class="o">=</span> <span class="n">Image</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="s1">'RGB'</span><span class="p">,(</span><span class="n">pixel</span><span class="p">,</span> <span class="n">pixel</span><span class="p">),(</span><span class="mi">255</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">255</span><span class="p">))</span>
+        <span class="n">player_im</span> <span class="o">=</span> <span class="n">returnGoalAndRobot</span><span class="p">()[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="n">goal_im</span> <span class="o">=</span> <span class="n">returnGoalAndRobot</span><span class="p">()[</span><span class="mi">1</span><span class="p">]</span>
+
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">Image</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="s2">"../images/err.png"</span><span class="p">)</span>
+    <span class="n">contact_sheet</span><span class="o">=</span><span class="n">PIL</span><span class="o">.</span><span class="n">Image</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="s1">'RGB'</span><span class="p">,</span> <span class="p">(</span><span class="n">pixel</span><span class="o">*</span><span class="n">length</span><span class="p">,</span> <span class="n">pixel</span><span class="o">*</span><span class="n">height</span><span class="p">))</span>
+    <span class="n">box_Coord</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span>
+    <span class="k">for</span> <span class="n">array</span> <span class="ow">in</span> <span class="n">TwoDMatrix</span><span class="p">:</span>
+        <span class="k">for</span> <span class="nb">bin</span> <span class="ow">in</span> <span class="n">array</span><span class="p">:</span>
+            <span class="k">if</span> <span class="nb">bin</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+                <span class="n">contact_sheet</span><span class="o">.</span><span class="n">paste</span><span class="p">(</span><span class="n">paste_img</span><span class="p">,</span> <span class="p">(</span><span class="n">box_Coord</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span>  <span class="n">box_Coord</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span> <span class="p">)</span>
+            <span class="k">elif</span> <span class="nb">bin</span> <span class="o">==</span> <span class="mi">2</span><span class="p">:</span>
+                <span class="n">contact_sheet</span><span class="o">.</span><span class="n">paste</span><span class="p">(</span><span class="n">player_im</span><span class="p">,</span> <span class="p">(</span><span class="n">box_Coord</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">box_Coord</span><span class="p">[</span><span class="mi">1</span><span class="p">]))</span>
+            <span class="k">elif</span> <span class="nb">bin</span> <span class="o">==</span> <span class="mi">3</span><span class="p">:</span>
+                <span class="n">contact_sheet</span><span class="o">.</span><span class="n">paste</span><span class="p">(</span><span class="n">goal_im</span><span class="p">,</span> <span class="p">(</span><span class="n">box_Coord</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">box_Coord</span><span class="p">[</span><span class="mi">1</span><span class="p">]))</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="k">pass</span>
+            <span class="k">if</span> <span class="n">box_Coord</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="n">pixel</span> <span class="o">&gt;</span> <span class="n">contact_sheet</span><span class="o">.</span><span class="n">width</span><span class="o">-</span><span class="n">pixel</span><span class="p">:</span>
+                <span class="n">box_Coord</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span>
+                <span class="n">box_Coord</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">+=</span> <span class="n">pixel</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">box_Coord</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+=</span> <span class="n">pixel</span>
+    <span class="k">return</span> <span class="n">contact_sheet</span>
+
+<span class="k">def</span> <span class="nf">setup</span><span class="p">():</span>
+    <span class="n">grid</span> <span class="o">=</span> <span class="p">[[</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">)],</span> 
+    <span class="p">[</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">)],</span> 
+    <span class="p">[</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">)],</span>
+    <span class="p">[</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">)],</span>
+    <span class="p">[</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">)]]</span>
+    <span class="n">player_start</span> <span class="o">=</span> <span class="p">[</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">4</span><span class="p">),</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">4</span><span class="p">)]</span>
+    <span class="n">goal_start</span> <span class="o">=</span> <span class="p">[</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">4</span><span class="p">),</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">4</span><span class="p">)]</span>
+    <span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">goal_start</span><span class="p">))</span>
+    <span class="k">while</span> <span class="n">goal_start</span> <span class="o">==</span> <span class="n">player_start</span><span class="p">:</span>
+        <span class="n">goal_start</span> <span class="o">=</span> <span class="p">[</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">4</span><span class="p">),</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">4</span><span class="p">)]</span>
+    <span class="n">grid</span><span class="p">[</span><span class="n">player_start</span><span class="p">[</span><span class="mi">0</span><span class="p">]][</span><span class="n">player_start</span><span class="p">[</span><span class="mi">1</span><span class="p">]]</span> <span class="o">=</span> <span class="mi">2</span>
+    <span class="n">grid</span><span class="p">[</span><span class="n">goal_start</span><span class="p">[</span><span class="mi">0</span><span class="p">]][</span><span class="n">goal_start</span><span class="p">[</span><span class="mi">1</span><span class="p">]]</span> <span class="o">=</span> <span class="mi">3</span>
+    <span class="k">return</span> <span class="n">generate_from_array</span><span class="p">(</span><span class="n">grid</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">):</span>
+    <span class="n">d</span> <span class="o">=</span> <span class="n">setup</span><span class="p">()</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"legend: Walls = black, spaces = white, goal = green, red triangle = player"</span><span class="p">)</span>
+    <span class="n">display</span><span class="p">(</span><span class="n">d</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>&lt;class 'list'&gt;
+legend: Walls = black, spaces = white, goal = green, red triangle = player
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+
+
+<div class="output_png output_subarea ">
+<img src="data:image/png;base64,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">
+</div>
+
+</div>
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>&lt;class 'list'&gt;
+legend: Walls = black, spaces = white, goal = green, red triangle = player
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+
+
+<div class="output_png output_subarea ">
+<img src="data:image/png;base64,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">
+</div>
+
+</div>
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>&lt;class 'list'&gt;
+legend: Walls = black, spaces = white, goal = green, red triangle = player
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+
+
+<div class="output_png output_subarea ">
+<img src="data:image/png;base64,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">
+</div>
+
+</div>
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>&lt;class 'list'&gt;
+legend: Walls = black, spaces = white, goal = green, red triangle = player
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+
+
+<div class="output_png output_subarea ">
+<img src="data:image/png;base64,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">
+</div>
+
+</div>
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>&lt;class 'list'&gt;
+legend: Walls = black, spaces = white, goal = green, red triangle = player
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+
+
+<div class="output_png output_subarea ">
+<img src="data:image/png;base64,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">
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>I chose not to do the second extra credit.</strong></p>
+
+</div>
+</div>
+</div>
+</div>
+
+
+
+  </div><!-- from https://github.com/utterance/utterances -->
+<script src="https://utteranc.es/client.js"
+        repo="nVarap/blog"
+        issue-term="title"
+        label="blogpost-comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script><a class="u-url" href="/blog/Hacks/madlibs" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/blog/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="/blog/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/blog/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p>A blog for a CSP Student</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"></ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
