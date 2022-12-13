@@ -81,7 +81,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      6 min read
+      7 min read
     
 </span></p>
 
@@ -642,13 +642,44 @@ martha
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>First player rolls: 3 and 2: total 5
-Second player rolls: 5 and 2: total 7
+<pre>First player rolls: 5 and 3: total 8
+Second player rolls: 4 and 5: total 9
 player 2 wins
 </pre>
 </div>
 </div>
 
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">random</span>
+<span class="n">i1</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randrange</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">6</span><span class="p">)</span>
+<span class="n">i2</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randrange</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">6</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"First player rolls: </span><span class="si">{</span><span class="n">i1</span><span class="si">}</span><span class="s2"> and </span><span class="si">{</span><span class="n">i2</span><span class="si">}</span><span class="s2">: total </span><span class="si">{</span><span class="n">i1</span><span class="o">+</span><span class="n">i2</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+
+<span class="n">i3</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randrange</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">6</span><span class="p">)</span>
+<span class="n">i4</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randrange</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">6</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Second player rolls: </span><span class="si">{</span><span class="n">i3</span><span class="si">}</span><span class="s2"> and </span><span class="si">{</span><span class="n">i4</span><span class="si">}</span><span class="s2">: total </span><span class="si">{</span><span class="n">i3</span><span class="o">+</span><span class="n">i4</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+
+<span class="k">if</span> <span class="p">(</span><span class="n">i1</span><span class="o">+</span><span class="n">i2</span> <span class="o">&gt;</span> <span class="n">i3</span> <span class="o">+</span> <span class="n">i4</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"player 1 wins"</span><span class="p">)</span>
+<span class="k">elif</span> <span class="p">(</span><span class="n">i1</span><span class="o">+</span><span class="n">i2</span> <span class="o">&lt;</span> <span class="n">i3</span> <span class="o">+</span> <span class="n">i4</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"player 2 wins"</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span> 
+    <span class="nb">print</span><span class="p">(</span><span class="s1">'draw'</span><span class="p">)</span>
+</pre></div>
+
+    </div>
 </div>
 </div>
 
@@ -672,15 +703,16 @@ player 2 wins
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">PIL</span> <span class="kn">import</span> <span class="n">Image</span>
-<span class="kn">import</span> <span class="nn">random</span>
+<span class="kn">import</span> <span class="nn">random</span><span class="o">,</span> <span class="nn">PIL</span> 
+<span class="c1"># ^ import libraries</span>
 
-<span class="k">def</span> <span class="nf">returnGoalAndRobot</span><span class="p">():</span>
+<span class="k">def</span> <span class="nf">returnGoalAndRobot</span><span class="p">():</span> <span class="c1"># returns the robot, oriented at a random position</span>
     <span class="n">lst</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">90</span><span class="p">,</span> <span class="mi">180</span><span class="p">,</span> <span class="mi">270</span><span class="p">]</span>
-    <span class="n">im</span> <span class="o">=</span> <span class="n">Image</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="s2">"../images/sprite.png"</span><span class="p">)</span>
+    <span class="n">im</span> <span class="o">=</span> <span class="n">Image</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="s2">"../images/sprite.png"</span><span class="p">)</span> <span class="c1"># stored in house</span>
     <span class="n">im2</span> <span class="o">=</span> <span class="n">Image</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="s1">'RGB'</span><span class="p">,(</span><span class="mi">100</span><span class="p">,</span> <span class="mi">100</span><span class="p">),(</span><span class="mi">0</span><span class="p">,</span><span class="mi">255</span><span class="p">,</span><span class="mi">0</span><span class="p">))</span>
-    <span class="k">return</span> <span class="p">(</span><span class="n">im</span><span class="o">.</span><span class="n">rotate</span><span class="p">(</span><span class="nb">float</span><span class="p">(</span><span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">lst</span><span class="p">))),</span> <span class="n">im2</span><span class="p">)</span>
+    <span class="k">return</span> <span class="p">(</span><span class="n">im</span><span class="o">.</span><span class="n">rotate</span><span class="p">(</span><span class="nb">float</span><span class="p">(</span><span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">lst</span><span class="p">))),</span> <span class="n">im2</span><span class="p">)</span> <span class="c1"># returns the image, rotated</span>
 
-<span class="k">def</span> <span class="nf">all_same</span><span class="p">(</span><span class="n">TwoDMatrix</span><span class="p">):</span>
+<span class="k">def</span> <span class="nf">all_same</span><span class="p">(</span><span class="n">TwoDMatrix</span><span class="p">):</span> <span class="c1"># contingency, checks to make sure all have the same length</span>
     <span class="k">try</span><span class="p">:</span>
         <span class="n">constant</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">TwoDMatrix</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
         <span class="k">for</span> <span class="n">array</span> <span class="ow">in</span> <span class="n">TwoDMatrix</span><span class="p">:</span>
@@ -688,56 +720,55 @@ player 2 wins
                 <span class="k">return</span> <span class="kc">False</span>
     <span class="k">except</span><span class="p">:</span>
         <span class="k">return</span> <span class="kc">False</span>
-    <span class="k">return</span> <span class="kc">True</span>
+    <span class="k">return</span> <span class="kc">True</span> <span class="c1"># returns true if everything is the same, returns false otherwise</span>
 
-<span class="k">def</span> <span class="nf">generate_from_array</span><span class="p">(</span><span class="n">TwoDMatrix</span><span class="p">,</span> <span class="n">pixel</span><span class="o">=</span><span class="mi">100</span><span class="p">):</span>
-    <span class="k">if</span> <span class="n">all_same</span><span class="p">(</span><span class="n">TwoDMatrix</span><span class="p">):</span>
-        <span class="n">height</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">TwoDMatrix</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">generate_from_array</span><span class="p">(</span><span class="n">TwoDMatrix</span><span class="p">,</span> <span class="n">pixel</span><span class="o">=</span><span class="mi">100</span><span class="p">):</span> <span class="c1"># generates the board using info stored in TwoDMatrix</span>
+    <span class="k">if</span> <span class="n">all_same</span><span class="p">(</span><span class="n">TwoDMatrix</span><span class="p">):</span> <span class="c1"># checks if everything is the same</span>
+        <span class="n">height</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">TwoDMatrix</span><span class="p">)</span> <span class="c1"># sets height and length equal to various heights/widths</span>
         <span class="n">length</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">TwoDMatrix</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
-        <span class="n">paste_img</span> <span class="o">=</span> <span class="n">Image</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="s1">'RGB'</span><span class="p">,(</span><span class="n">pixel</span><span class="p">,</span> <span class="n">pixel</span><span class="p">),(</span><span class="mi">255</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">255</span><span class="p">))</span>
-        <span class="n">player_im</span> <span class="o">=</span> <span class="n">returnGoalAndRobot</span><span class="p">()[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="n">paste_img</span> <span class="o">=</span> <span class="n">Image</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="s1">'RGB'</span><span class="p">,(</span><span class="n">pixel</span><span class="p">,</span> <span class="n">pixel</span><span class="p">),(</span><span class="mi">255</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">255</span><span class="p">))</span> <span class="c1"># inits images</span>
+        <span class="n">player_im</span> <span class="o">=</span> <span class="n">returnGoalAndRobot</span><span class="p">()[</span><span class="mi">0</span><span class="p">]</span> 
         <span class="n">goal_im</span> <span class="o">=</span> <span class="n">returnGoalAndRobot</span><span class="p">()[</span><span class="mi">1</span><span class="p">]</span>
 
     <span class="k">else</span><span class="p">:</span>
-        <span class="k">return</span> <span class="n">Image</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="s2">"../images/err.png"</span><span class="p">)</span>
-    <span class="n">contact_sheet</span><span class="o">=</span><span class="n">PIL</span><span class="o">.</span><span class="n">Image</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="s1">'RGB'</span><span class="p">,</span> <span class="p">(</span><span class="n">pixel</span><span class="o">*</span><span class="n">length</span><span class="p">,</span> <span class="n">pixel</span><span class="o">*</span><span class="n">height</span><span class="p">))</span>
-    <span class="n">box_Coord</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span>
-    <span class="k">for</span> <span class="n">array</span> <span class="ow">in</span> <span class="n">TwoDMatrix</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">Image</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="s2">"../images/err.png"</span><span class="p">)</span> <span class="c1"># error image</span>
+    <span class="n">contact_sheet</span><span class="o">=</span><span class="n">PIL</span><span class="o">.</span><span class="n">Image</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="s1">'RGB'</span><span class="p">,</span> <span class="p">(</span><span class="n">pixel</span><span class="o">*</span><span class="n">length</span><span class="p">,</span> <span class="n">pixel</span><span class="o">*</span><span class="n">height</span><span class="p">))</span> <span class="c1"># creates a sheet using the length and height</span>
+    <span class="n">box_Coord</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span> <span class="c1"># sets coordinates to draw images</span>
+    <span class="k">for</span> <span class="n">array</span> <span class="ow">in</span> <span class="n">TwoDMatrix</span><span class="p">:</span> <span class="c1"># loops over the 2d matrix array (parameter)</span>
         <span class="k">for</span> <span class="nb">bin</span> <span class="ow">in</span> <span class="n">array</span><span class="p">:</span>
-            <span class="k">if</span> <span class="nb">bin</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+            <span class="k">if</span> <span class="nb">bin</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span> <span class="c1"># if the item is 1, that is a wall</span>
                 <span class="n">contact_sheet</span><span class="o">.</span><span class="n">paste</span><span class="p">(</span><span class="n">paste_img</span><span class="p">,</span> <span class="p">(</span><span class="n">box_Coord</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span>  <span class="n">box_Coord</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span> <span class="p">)</span>
-            <span class="k">elif</span> <span class="nb">bin</span> <span class="o">==</span> <span class="mi">2</span><span class="p">:</span>
+            <span class="k">elif</span> <span class="nb">bin</span> <span class="o">==</span> <span class="mi">2</span><span class="p">:</span> <span class="c1"># if the item is two (which there is only 1) that is the player</span>
                 <span class="n">contact_sheet</span><span class="o">.</span><span class="n">paste</span><span class="p">(</span><span class="n">player_im</span><span class="p">,</span> <span class="p">(</span><span class="n">box_Coord</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">box_Coord</span><span class="p">[</span><span class="mi">1</span><span class="p">]))</span>
-            <span class="k">elif</span> <span class="nb">bin</span> <span class="o">==</span> <span class="mi">3</span><span class="p">:</span>
+            <span class="k">elif</span> <span class="nb">bin</span> <span class="o">==</span> <span class="mi">3</span><span class="p">:</span> <span class="c1"># if the item is three (which there is only 1) that is the goal</span>
                 <span class="n">contact_sheet</span><span class="o">.</span><span class="n">paste</span><span class="p">(</span><span class="n">goal_im</span><span class="p">,</span> <span class="p">(</span><span class="n">box_Coord</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">box_Coord</span><span class="p">[</span><span class="mi">1</span><span class="p">]))</span>
-            <span class="k">else</span><span class="p">:</span>
+            <span class="k">else</span><span class="p">:</span> <span class="c1"># otherwise 0, pass</span>
                 <span class="k">pass</span>
-            <span class="k">if</span> <span class="n">box_Coord</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="n">pixel</span> <span class="o">&gt;</span> <span class="n">contact_sheet</span><span class="o">.</span><span class="n">width</span><span class="o">-</span><span class="n">pixel</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">box_Coord</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="n">pixel</span> <span class="o">&gt;</span> <span class="n">contact_sheet</span><span class="o">.</span><span class="n">width</span><span class="o">-</span><span class="n">pixel</span><span class="p">:</span> <span class="c1"># if we go over bounds the image</span>
                 <span class="n">box_Coord</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span>
-                <span class="n">box_Coord</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">+=</span> <span class="n">pixel</span>
-            <span class="k">else</span><span class="p">:</span>
+                <span class="n">box_Coord</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">+=</span> <span class="n">pixel</span> <span class="c1"># loop back</span>
+            <span class="k">else</span><span class="p">:</span> <span class="c1"># otherwise advance</span>
                 <span class="n">box_Coord</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+=</span> <span class="n">pixel</span>
-    <span class="k">return</span> <span class="n">contact_sheet</span>
+    <span class="k">return</span> <span class="n">contact_sheet</span> <span class="c1"># return when finished</span>
 
-<span class="k">def</span> <span class="nf">setup</span><span class="p">():</span>
+<span class="k">def</span> <span class="nf">setup</span><span class="p">():</span> <span class="c1"># consolidating setup for easy usage</span>
     <span class="n">grid</span> <span class="o">=</span> <span class="p">[[</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">)],</span> 
-    <span class="p">[</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">)],</span> 
+    <span class="p">[</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">)],</span> <span class="c1"># create a random grid using list comprehensions</span>
     <span class="p">[</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">)],</span>
     <span class="p">[</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">)],</span>
     <span class="p">[</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">)]]</span>
-    <span class="n">player_start</span> <span class="o">=</span> <span class="p">[</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">4</span><span class="p">),</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">4</span><span class="p">)]</span>
+    <span class="n">player_start</span> <span class="o">=</span> <span class="p">[</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">4</span><span class="p">),</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">4</span><span class="p">)]</span> <span class="c1"># find player start and stop</span>
     <span class="n">goal_start</span> <span class="o">=</span> <span class="p">[</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">4</span><span class="p">),</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">4</span><span class="p">)]</span>
-    <span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">goal_start</span><span class="p">))</span>
-    <span class="k">while</span> <span class="n">goal_start</span> <span class="o">==</span> <span class="n">player_start</span><span class="p">:</span>
+    <span class="k">while</span> <span class="n">goal_start</span> <span class="o">==</span> <span class="n">player_start</span><span class="p">:</span> <span class="c1"># contingency, make sure they aren't equal</span>
         <span class="n">goal_start</span> <span class="o">=</span> <span class="p">[</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">4</span><span class="p">),</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">4</span><span class="p">)]</span>
     <span class="n">grid</span><span class="p">[</span><span class="n">player_start</span><span class="p">[</span><span class="mi">0</span><span class="p">]][</span><span class="n">player_start</span><span class="p">[</span><span class="mi">1</span><span class="p">]]</span> <span class="o">=</span> <span class="mi">2</span>
     <span class="n">grid</span><span class="p">[</span><span class="n">goal_start</span><span class="p">[</span><span class="mi">0</span><span class="p">]][</span><span class="n">goal_start</span><span class="p">[</span><span class="mi">1</span><span class="p">]]</span> <span class="o">=</span> <span class="mi">3</span>
-    <span class="k">return</span> <span class="n">generate_from_array</span><span class="p">(</span><span class="n">grid</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">generate_from_array</span><span class="p">(</span><span class="n">grid</span><span class="p">)</span> <span class="c1"># return the generated array using grid</span>
 
-<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">):</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">):</span> <span class="c1"># do this 5 times, to display randomness</span>
     <span class="n">d</span> <span class="o">=</span> <span class="n">setup</span><span class="p">()</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">"legend: Walls = black, spaces = white, goal = green, red triangle = player"</span><span class="p">)</span>
-    <span class="n">display</span><span class="p">(</span><span class="n">d</span><span class="p">)</span>
+    <span class="n">display</span><span class="p">(</span><span class="n">d</span><span class="p">)</span> <span class="c1"># display the image</span>
 </pre></div>
 
     </div>
