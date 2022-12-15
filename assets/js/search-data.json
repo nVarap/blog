@@ -4,8 +4,8 @@
         "post0": {
             "title": "Grade Reviews Week 16",
             "content": "Grades on : . Section Grade/Explanation . 9 &amp; 11 | 0.9, as I did all was asked and no extras, I deserved this score. I probably should have done extras for this though, event though I did code the actual algorithm I understand how that isn’t extra | . 13.2-13.3 | 1.0, as I finished all that was asked for and created my own robot course, goal, and way to get through it using procedural abstraction. I’m happy with my score. | . 3.14 - 3.15 | 1.0, as I finished everything + attempting the extra credit, which I actually found very fun and interesting. | . Overall reflection : I’m happy with my scores, but I’m going to start moving towards actually doing extra in order to get 1.0s for not only these assignments but future ones. .",
-            "url": "https://nvarap.github.io/blog/hacks/2022/12/15/graaades.html",
-            "relUrl": "/hacks/2022/12/15/graaades.html",
+            "url": "https://nvarap.github.io/blog/hacks/algorithm/2022/12/15/graaades.html",
+            "relUrl": "/hacks/algorithm/2022/12/15/graaades.html",
             "date": " • Dec 15, 2022"
         }
         
@@ -46,10 +46,10 @@
   
     
         ,"post4": {
-            "title": "Vocab",
-            "content": ". toc: true layout: post description: Hacks Grade Reviews categories: [Hacks] tags: [Week 15] title: Grade Reviews Week 15 — . Grades and review . Section 5-7 I got a 0.9, and given I did all the work, I am quite proud of all the things that I did. I learned a lot about the subject at hand. I spent an amount of time I was proud of and believed my learning benefitted. . Section 8&amp;10: N/A, we taught this . Unit 2… Binary/Data Terms . Bits, Bytes, Hexadecimal / Nibbles : Various ways of representing data. Binary Numbers: Unsigned Integer, Signed Integer, Floating Point - Floating points are decimals, unsigned integers are integers without a sing (abs value), and signed integers have signs Binary Data Abstractions: Boolean, ASCII, Unicode, RGB - these are various representations of binary, ASCII is characters, unicode and RGB are colors, booleans are 1s and 0, on and off Data Compression: Lossy, Lossless (not discussed yet) - lossy is compressing, but you may lose data. Lossless is the opposite, as it does not lose data. . Unit 3… Algorithm/Programming Terms - . Variables, Data Types, Assignment Operators - Variables are variable holders of values, data types are the types of what they can be, and assignment operators assign values to variables Managing Complexity with Variables: Lists, 2D Lists, Dictionaries, Class Algorithms, Sequence, Selection, Iteration - These are ways to manage complexity through abstraction of various data and procedures that influence Expressions and Iteration, Truth Tables - ways of representing true and false operators, mainly between the 1s and 0s of binary. True trumps false in OR, but fails to in AND. Characters, Strings, Length, Concatenation, Upper, Lower, Traversing Strings - Strings are plaintext, and these are various ways of manipulating strings. Making them upper and lower case, adding more string to the string, and iterating over them. Python If, Elif, Else conditionals; Nested Selection Statements - Conditionals, if checks if something is true. Elif checks if the above if statement isn’t true, and else checks if nothing above ois true. Python For, While loops with Range, with List - various loops to iterate over iterables. While loops have a conditional, loop over range loops over a range of numbers, and for loops over an iterable. Combining loops with conditionals to Break, Continue - continue resets the loop, break breaks out of it Procedural Abstraction, Python Def procedures, Parameters, Return Values - Ways of managing complexity in repeatable procedures (def in python). These return return values and contain parameters that influence the output. .",
-            "url": "https://nvarap.github.io/blog/2022/12/07/Vocab.html",
-            "relUrl": "/2022/12/07/Vocab.html",
+            "title": "Grade Reviews Week 16",
+            "content": "Grades and review . Section 5-7 I got a 0.9, and given I did all the work, I am quite proud of all the things that I did. I learned a lot about the subject at hand. I spent an amount of time I was proud of and believed my learning benefitted. . Section 8&amp;10: N/A, we taught this . Unit 2… Binary/Data Terms . Bits, Bytes, Hexadecimal / Nibbles : Various ways of representing data. Binary Numbers: Unsigned Integer, Signed Integer, Floating Point - Floating points are decimals, unsigned integers are integers without a sing (abs value), and signed integers have signs Binary Data Abstractions: Boolean, ASCII, Unicode, RGB - these are various representations of binary, ASCII is characters, unicode and RGB are colors, booleans are 1s and 0, on and off Data Compression: Lossy, Lossless (not discussed yet) - lossy is compressing, but you may lose data. Lossless is the opposite, as it does not lose data. . Unit 3… Algorithm/Programming Terms - . Variables, Data Types, Assignment Operators - Variables are variable holders of values, data types are the types of what they can be, and assignment operators assign values to variables Managing Complexity with Variables: Lists, 2D Lists, Dictionaries, Class Algorithms, Sequence, Selection, Iteration - These are ways to manage complexity through abstraction of various data and procedures that influence Expressions and Iteration, Truth Tables - ways of representing true and false operators, mainly between the 1s and 0s of binary. True trumps false in OR, but fails to in AND. Characters, Strings, Length, Concatenation, Upper, Lower, Traversing Strings - Strings are plaintext, and these are various ways of manipulating strings. Making them upper and lower case, adding more string to the string, and iterating over them. Python If, Elif, Else conditionals; Nested Selection Statements - Conditionals, if checks if something is true. Elif checks if the above if statement isn’t true, and else checks if nothing above ois true. Python For, While loops with Range, with List - various loops to iterate over iterables. While loops have a conditional, loop over range loops over a range of numbers, and for loops over an iterable. Combining loops with conditionals to Break, Continue - continue resets the loop, break breaks out of it Procedural Abstraction, Python Def procedures, Parameters, Return Values - Ways of managing complexity in repeatable procedures (def in python). These return return values and contain parameters that influence the output. .",
+            "url": "https://nvarap.github.io/blog/hacks/algorithm/2022/12/07/Vocab.html",
+            "relUrl": "/hacks/algorithm/2022/12/07/Vocab.html",
             "date": " • Dec 7, 2022"
         }
         
@@ -70,8 +70,8 @@
         ,"post6": {
             "title": "Grade Reviews Week 14",
             "content": "Grade for Section 1-2: 0.8 Grade for section 3-4: 0.9 . Reflection: I felt I may have deserved a full score, however I understand how my score may have been lowered. I’m pretty sure that I completed every task however I am not one to doubt the graders. I guess I mainly need to look to finish up each section while keeping an eye on what I have and have not done. For our presentation and homework, I’d ensure that we have checks to make sure that people completed the sections, and categorize hacks in more concise sections to ensure that people would be able to check what they have and haven’t done without missing anything. .",
-            "url": "https://nvarap.github.io/blog/hacks/2022/12/02/reflectionWeek13.html",
-            "relUrl": "/hacks/2022/12/02/reflectionWeek13.html",
+            "url": "https://nvarap.github.io/blog/hacks/algorithm/2022/12/02/reflectionWeek13.html",
+            "relUrl": "/hacks/algorithm/2022/12/02/reflectionWeek13.html",
             "date": " • Dec 2, 2022"
         }
         
@@ -81,8 +81,8 @@
         ,"post7": {
             "title": "Sections 5-7",
             "content": "Section 5 Notes . QUESTION ANSWER . 1 | B | . 2 | A | . 3 | A | . 4 | A | . Fill in the blanks . AND Operator Value 1 Value 2 Result . 1 | 1 | 1 | . 1 | 0 | 0 | . 0 | 1 | 0 | . 0 | 0 | 0 | . OR Operator Value 1 Value 2 Result . 1 | 1 | 1 | . 1 | 0 | 1 | . 0 | 1 | 1 | . 0 | 0 | 0 | . Not operator Not Value Result . Not | 1 | 0 | . Not | 0 | 1 | . . Python Practice . . Section 6 Notes . QUESTION ANSWER . 1 | 3 | . 2 | 2 | . 3 | 2 | . 4 | 1 | . Python Practice . What Boolean Value does i == shark cause? . true if i is shark, otherwise false there is no shark therefore false | . | . . Section 6 Notes . .",
-            "url": "https://nvarap.github.io/blog/hacks/2022/12/01/dash-br.html",
-            "relUrl": "/hacks/2022/12/01/dash-br.html",
+            "url": "https://nvarap.github.io/blog/hacks/algorithm/2022/12/01/dash-br.html",
+            "relUrl": "/hacks/algorithm/2022/12/01/dash-br.html",
             "date": " • Dec 1, 2022"
         }
         
@@ -103,8 +103,8 @@
         ,"post9": {
             "title": "Section 1-2 hacks",
             "content": "Hacks Questions . Assignment 1 . Question Number Answer . 0 | 1 | . 1 | 3 | . 2 | 1 | . 3 | 2 | . 4 | 1 | . 5 | 4 | . My own questions . You are a school who wants to iterate over a bunch of student IDs (which are in the order such that if you added one, you would get the next student) to contact them, what variable name/data type would you use . ID, integer | stuID, integer | studentID, string | IDofStudentNumber, integer | Click for the answer! 1. ID is descriptive enough, especially if iterating. Also, if you are iterating it is inefficient to iterate over a string of multiple numbers, so adding would actually be the most efficient method. You want to store the grade of you and your friend. What would you call your score and what datatype? . score, integer | My score, integer | myScore, float | myScore, integer | Click for the answer! 3. Floats are the way to store decimal types, such as grades. myScore is a name that is descriptive enough, since you have to differ between two scores. You want store a name over a interation. What would you call your variable and what data type . name, string | name, integer | myName, string | lmao_get_rekt, integer | Click for the answer! 1. you want to store an arbitrary name, not a regular one, so you&#39;ll use a generic name. This is a name, so you&#39;d use a string. Assignment 2 pt 1 . Question Number Answer . 0 | 3 | . 1 | 2 | . 2 | 4 | . 3 | 2 | . 4 | 3 | . 5 | 1 | . Nothing wrong! . Hacks 2 pt 2 pt 1/2 . | Question Number | Answer | | ———– | ———– | | 0 | 7 | | 1 | 11 | | 2 | 107 | | 3 | 1100 | | 4 | 101100 | | 5 | 1111110 | | 6 | 1110000000000001 | | 7 | 111111111111111111111111 | | 8 | 101010101010101010101010 | | 9 | 2794 | | 10 | 1248 | | 11 | 53800 | . Hacks 2 pt 2 pt 3 . | Question Number | Answer | | ———– | ———– | | 0 | 4 | | 1 | 1 | | 2 | 3 | | 3 | 4 | | 4 | 4 | | 5 | 2 | | 6 | 3 | | 7 | 2 | | 8 | 4 | . Reflection . Nothing wrong! I enjoyed the presentation and thought the teaching overall was very effective. I answered most of the questions with the knowledge I had and gained. .",
-            "url": "https://nvarap.github.io/blog/hacks/2022/11/28/All-The-Questions.html",
-            "relUrl": "/hacks/2022/11/28/All-The-Questions.html",
+            "url": "https://nvarap.github.io/blog/hacks/algorithm/2022/11/28/All-The-Questions.html",
+            "relUrl": "/hacks/algorithm/2022/11/28/All-The-Questions.html",
             "date": " • Nov 28, 2022"
         }
         
@@ -502,9 +502,20 @@
   
 
   
+      ,"page3": {
+          "title": "Electrical",
+          "content": "Team Optix 3749 Electrical Blog Posts . Nothing here RIP Team Members: . .",
+          "url": "https://nvarap.github.io/blog/electrical/",
+          "relUrl": "/electrical/",
+          "date": ""
+      }
+      
+  
 
   
-      ,"page4": {
+
+  
+      ,"page5": {
           "title": "",
           "content": "Table . Member Role .",
           "url": "https://nvarap.github.io/blog/omega/jstable",
@@ -527,7 +538,7 @@
   
 
   
-      ,"page10": {
+      ,"page11": {
           "title": "Backlog",
           "content": "Educational Tips Fun Zone (Create Task Ideas) Blogging and Review . Try doing practice tests | Simple quiz | Blog experience and errors | . Do corrections on practice assessments | Minesweeper | Pseudocode | . Use Khan Academy | Adventure Game (similarly to atari’s) | Review with friends, take videos | . Take notes | Weather App? | Record specific techniques, code used between teammates | .",
           "url": "https://nvarap.github.io/blog/sprintbacklog/",
@@ -544,7 +555,7 @@
   
 
   
-      ,"page14": {
+      ,"page15": {
           "title": "Vocab",
           "content": "nit 2… Binary/Data Terms . Bits, Bytes, Hexadecimal / Nibbles : Various ways of representing data. Binary Numbers: Unsigned Integer, Signed Integer, Floating Point - Floating points are decimals, unsigned integers are integers without a sing (abs value), and signed integers have signs Binary Data Abstractions: Boolean, ASCII, Unicode, RGB - these are various representations of binary, ASCII is characters, unicode and RGB are colors, booleans are 1s and 0, on and off Data Compression: Lossy, Lossless (not discussed yet) - lossy is compressing, but you may lose data. Lossless is the opposite, as it does not lose data. . Unit 3… Algorithm/Programming Terms - . Variables, Data Types, Assignment Operators - Variables are variable holders of values, data types are the types of what they can be, and assignment operators assign values to variables . Managing Complexity with Variables: Lists, 2D Lists, Dictionaries, Class Algorithms, Sequence, Selection, Iteration - These are ways to manage complexity through abstraction of various data and procedures that influence . Expressions and Iteration, Truth Tables - ways of representing true and false operators, mainly between the 1s and 0s of binary. True trumps false in OR, but fails to in AND. . Characters, Strings, Length, Concatenation, Upper, Lower, Traversing Strings - Strings are plaintext, and these are various ways of manipulating strings. Making them upper and lower case, adding more string to the string, and iterating over them. . Python If, Elif, Else conditionals; Nested Selection Statements - Conditionals, if checks if something is true. Elif checks if the above if statement isn’t true, and else checks if nothing above ois true. . Python For, While loops with Range, with List - various loops to iterate over iterables. While loops have a conditional, loop over range loops over a range of numbers, and for loops over an iterable. . Combining loops with conditionals to Break, Continue - continue resets the loop, break breaks out of it . Procedural Abstraction, Python Def procedures, Parameters, Return Values - Ways of managing complexity in repeatable procedures (def in python). These return return values and contain parameters that influence the output. . Decidable problems: You can develop an algorithm for these problems, specifically yes or no . Undecidable problem: No algorithm can be used in order to provide a correct yes or no problems. . Problem: description of a task that may or may not be able to be solved through the use of an algorithm Decision problem: A problem with a binary answer Algorithm: A series of ways to solve a problem. Process or a set of rules . 1, 2, 3, and 4 step | 1: Linear | 2: Exponential | 3: Square | 4: Factorial Superpolynomial: Offers an incredibly small amount of data incredibly large amounts of time. | . Simulation: Simulates a real-world experiment (abstraction of a complicated phenomena) . Removes unnecessary details | Level of abstraction depends on who/why we’re creating it | Ex: A flying simulator | . Documentation: The what, how, or why of the code Libraries: Prewritten code or procedures that can be used to maximize efficiency API: Data stored in a database that can be accessed via code . Random: A library in python to assist in pseudo-randomness . Method/Function/Procedure - A set of code that can be run as a package, that takes in parameters and returns a return value . Example: add(1, 2), which adds two numbers | Catch all terms for a set of code | . Parameter - Input values for procedures . Procedure: is a named group of programming instructions that serves a purpose . Parameter: are input values of a procedure ^ There are two types of procedures, one that returns a value or some type of data and on that just executes a block of statements (void) . Modularity - the practice of breaking a complex program into smaller, independent parts or modules that can be used and reused in different parts of the program . Binary Search: An algorithm to search methodically for an item in a sorted list . Algorithms: Steps in order repeated or run through to accomplish a task .",
           "url": "https://nvarap.github.io/blog/vocabunit2/",
@@ -571,7 +582,7 @@
   
 
   
-      ,"page21": {
+      ,"page22": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://nvarap.github.io/blog/robots.txt",
