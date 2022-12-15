@@ -2,7 +2,7 @@
 toc: true
 layout: post
 description: Hacks Grade Reviews
-categories: [Hacks]
+categories: [Hacks, Algorithm]
 tags: [Week 14]
 title: Grade Reviews Week 14
 ---

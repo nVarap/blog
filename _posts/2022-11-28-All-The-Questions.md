@@ -2,7 +2,7 @@
 toc: true
 layout: post
 description: Hacks For Sections 1-2
-categories: [Hacks]
+categories: [Hacks, Algorithm]
 tags: [Week 14]
 title: Section 1-2 hacks 
 ---
