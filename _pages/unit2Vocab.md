@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Vocab 
+title: Vocab Unit 3
 toc: true
 permalink: /vocabunit2/
 tags: [Week 15]
@@ -75,3 +75,14 @@ Modularity - the practice of breaking a complex program into smaller, independen
 Binary Search: An algorithm to search methodically for an item in a sorted list
 
 Algorithms: Steps in order repeated or run through to accomplish a task
+
+Problem: description of a task that may or may not be able to be solved through the use of an algorithm
+Decision problem: A problem with a binary answer
+Algorithm: A series of ways to solve a problem. Process or a set of rules
+  - 1, 2, 3, and 4 step
+  - 1: Linear
+  - 2: Exponential
+  - 3: Square
+  - 4: Factorial
+Superpolynomial: Offers an incredibly small amount of data incredibly large amounts of time.
+
