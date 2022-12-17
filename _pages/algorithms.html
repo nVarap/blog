@@ -1,16 +1,16 @@
 ---
 layout: page
-title: Electrical
-permalink: /electrical/
+title: Unit 3 Hacks List
+permalink: /lsting/
 ---
 
 <p> Team Optix 3749 Electrical Blog Posts </p>
 
-{% if site.categories.electrical.size > 0 %}
+{% if site.categories.Algorithm.size > 0 %}
 
   {% for post in site.posts %}
 
-    {% if post.categories contains "Algorithm" and post.hide != true %}
+    {% if post.categories contains "Algorithm" %}
 
       <li>
         <a href="{{ post.url }}">{{ post.title }}</a>
@@ -22,13 +22,6 @@ permalink: /electrical/
 
 {% else %}
 
-  <blockquote> Nothing here RIP </blockquote>
+  <blockquote> Uh oh stinky </blockquote>
 
 {% endif %}
-
-<h4>Team Members:</h4>
-<table style="text-align: center;">
-  <tr id="table">
-
-  </tr>
-</table>
