@@ -7,7 +7,7 @@ tags: [Week 15]
 categories: [hacks]
 ---
 
-nit 2… Binary/Data Terms
+<h1>Unit 3 Vocab</h1>
 
 Bits, Bytes, Hexadecimal / Nibbles : Various ways of representing data.
 Binary Numbers: Unsigned Integer, Signed Integer, Floating Point - Floating points are decimals, unsigned integers are integers without a sing (abs value), and signed integers have signs
