@@ -16,4 +16,4 @@ At my school, our FRC team is **[Team Optix 3749](https://www.team3749.org/home)
 - One Engineer's Inspiration Award
 
 ## Me in FRC:
-I am a member of our electrical department, making the board and teaching new people the ropes. Check out our [design blog](https://blog.team3749.org) during build season for our design logs!
+I am co-director of our electrical department, making the board and teaching new people the ropes. Check out our [design blog](https://blog.team3749.org) during build season for our design logs!
