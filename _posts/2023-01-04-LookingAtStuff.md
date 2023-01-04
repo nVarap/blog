@@ -8,7 +8,7 @@ title: College Board Review
 ---
 
 ## Video/Review 1
-| Section | Grade (1 || 0) |
+| Section | Grade (1 or 0) |
 | ------- | -------------- |
 | Program Purpose and Function | 1. They include the program function, the input and the output. Their video demonstrates this effectively. Their written response describes the overall purpose |
 | Data Abstraction | 1. Names the variable of a list/collection data type. States what is inside said data type. List has more than 1 element. Describes what the elements in the list represent. |
@@ -20,7 +20,7 @@ Reflection: At first I was unaware of the necessary definition of "operation" an
 
 ## Video/Review 2
 
-| Section | Grade (1 || 0) |
+| Section | Grade (1 or 0) |
 | ------- | -------------- |
 | Program Purpose and Function | 1. Identifies the criteria the game is based upon, what the program's inputs are (specifically) and specifically delineates what the program outputs and its functionality |
 | Data Abstraction | 1. Multiple lists are demonstrated to exist and their various contents are explained and the data types analyzed. This meets all the requirements to this point. |
