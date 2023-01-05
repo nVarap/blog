@@ -8,6 +8,7 @@ title: College Board Review
 ---
 
 ## Video/Review 1
+
 | Section | Grade (1 or 0) |
 | ------- | -------------- |
 | Program Purpose and Function | 1. They include the program function, the input and the output. Their video demonstrates this effectively. Their written response describes the overall purpose |
@@ -15,6 +16,7 @@ title: College Board Review
 | Managing Complexity | 0. This doesn't exactly manage complexity, as the gathering of different names doesn't manage the different complex parts of the code. | 
 | Procedural Abstraction | 1. The student correctly defines a student-developed function not placed in any language specifically. Shows complete function definition and calling the function in a multiplicity of areas. |
 | Algorithm Implementation | 1. The Student correctly demonstrates the usage of sequencing, selection and iteration throughout their program by running through multiple different function calls adn how each is selected. |
+
 
 Reflection: At first I was unaware of the necessary definition of "operation" and what College Board meant by "purpose". Seeing that the purpose earned a 0 was insightful to how I will hopefully eventually write my own performance task. 
 
