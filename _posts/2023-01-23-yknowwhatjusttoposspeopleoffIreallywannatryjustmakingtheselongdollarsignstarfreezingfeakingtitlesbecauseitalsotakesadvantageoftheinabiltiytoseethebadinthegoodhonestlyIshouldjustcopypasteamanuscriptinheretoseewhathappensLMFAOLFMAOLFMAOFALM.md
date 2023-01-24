@@ -1,0 +1,20 @@
+---
+toc: true
+layout: post
+description: Answering 5.1 Questions 
+categories: [Work]
+tags: [Week 20]
+title: Question/Answers/Reflections for 5.1 Questions.
+---
+
+1. Come up with three of your own Beneficial and corresponding Harmful Effects of Computing
+    - One beneficial effect of computing is that it is a very easy way to expand your horizons quickly. When you have something you want to do, not only does computing help you complete that issue, it also forces you to complete the prerequisites. And the ease of use that computing brings allows for this special sense of completion, eventually allowing you to learn far more than one could think that they could. For example, I am a game-dev and I've had to learn lots of math that's above my current skill level to assist in complex physics measurements. The passion to create in a world of computing leads you to have to understand. Another example would be Dani, a popular youtuber who is also a game dev, having to learn the ins and outs of a terrifying badly document web API in order to complete game. This ability to expand quickly leads to assist ourselves.
+    - One correspondingly harmful effect is workaholism. Being steadfast or motivated is great, but it becomes an issue when you're effectively trying to do the same thing over and over again. An example of this from my life was when I was first getting into python libraries in a bad coursera course surrounding PILLOW, Tesseract, and Kraken. I kept trying to do one thing after another, guessing and checking to see what would work mainly because the course itself would not help me with my issues. This mentality of constantly doing stuff and not getting an answer can lead to the eventual destruction of one's interest, and I can relate because after that course, I took almost a 6 month break from coding. Workaholism and burn-out can really rack on someone, especially when constantly doing something trying to get one line of code to work
+
+2. Talk about dopamine issues above. Real? Parent conspiracy? Anything that is impacting your personal study and success in High School?
+    - There is merit to the dopaminergic issues that are stated in the blog. It is not right to simply shove away the plausibility, but there is a difference between "video games/computers negatively impact your sleep" versus "video games turn everybody into worse people in general". This type of statement is very similar to the absolutism that we condemn as a society. I feel that as a constant consumer of computers, that we should pay attention to how it effects our brain and our mental health, and how its consumption effects our self-perception of both ourselves and our accomplishments. Making sure we remember that this is not how humans are supposed to function normally will help us make strides towards our understanding of our relationships w/ computers, because at the end of the day that is simply what this is. 
+    - Personally, I feel that it does impact my personal studies, not for any reason apart from sleep. Since most of our work (including this class) involves computers, it is very easy to remain up and awake for a long period of time, resuming in less sleep. Dopamine is also the motor neurotransmitter, and as a result I have felt a tad more hyperactive after long stretches of using a computer or playing video games. We have to control ourselves to assist with our development as a **society**
+
+# Reflection
+
+This blog helped me think about the cost/benefit analysis. During discussion I had a lot of fun listening to the weird and funny ideas that many people posed, and the impromptu nature was enjoyable. I feel I need to now control how I work and what I work on and when, to better my mental and physical health.
