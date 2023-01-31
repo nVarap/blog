@@ -4,7 +4,7 @@ layout: post
 description: amongus
 categories: [Work]
 tags: [Week 21]
-title: Crowdsourcing Answers
+title: 5.4 Crowdsourcing Answers
 ---
 
 # Answers to Questions
@@ -21,3 +21,5 @@ Using Del Norte for a similar "survival guide" would be very useful, this way in
 Another idea we could implement using Del Norte Students would be raising community awareness. A page where we could have various people enter various issues they see within the community, and then allowing a platform for those people to arrange for such communal activities to occur would be a great help to the community and better us as a whole. Basically, the community can build a platform for themselves through something like. <br>
 
 Through ideas such as this, wwe can utilize not only the expertise, but also the experiences of Del Norte students to ensure that we can better our community.
+
+# Final Reflection (TBD)
