@@ -17,4 +17,4 @@ title: Question/Answers/Reflections for 5.1 Questions.
 
 # Reflection
 
-This blog helped me think about the cost/benefit analysis. During discussion I had a lot of fun listening to the weird and funny ideas that many people posed, and the impromptu nature was enjoyable. I feel I need to now control how I work and what I work on and when, to better my mental and physical health.
+This blog helped me think about the cost/benefit analysis. During discussion I had a lot of fun listening to the weird and funny ideas that many people posed, and the impromptu nature was enjoyable. I feel I need to now control how I work and what I work on and when, to better my mental and physical health.k
