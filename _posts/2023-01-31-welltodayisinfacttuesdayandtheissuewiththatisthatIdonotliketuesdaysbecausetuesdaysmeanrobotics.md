@@ -22,4 +22,5 @@ Another idea we could implement using Del Norte Students would be raising commun
 
 Through ideas such as this, wwe can utilize not only the expertise, but also the experiences of Del Norte students to ensure that we can better our community.
 
-# Final Reflection (TBD)
+# Final Reflection <br>
+In this discussion, I found new ideas about understanding how crowdsourcing work and learning from multiple perspectives about multiple ideas. Personally, I feel that if we had one, larger circle that was (for lack of a better word) crowdsourced, I'd feel that we'd have contributed much more and with much more zeal.
