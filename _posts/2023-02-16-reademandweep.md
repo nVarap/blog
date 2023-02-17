@@ -30,3 +30,11 @@ This trimester, Night at the Museum was really fun! I had fun looking at differe
 5. Formula One Database
 - Krish made a formula one database that could set events and record events into a database. It was very cool to look at and I liked the frontend.
 ![]({{site.baseurl}}/images/krish.jpg "A goose of mine")
+
+# Reflection
+I met a ton of my friends and even new people when I looked at various projects. These projects were super cool even though many of them (including our own) were not finished. I'd have really liked if tri 2 could have moved around some breaks to accommodate completed projects, because that would make N@TM so much more entertaining. Pertaining to other classes, I was surprised and disappointed not to see any business materials from Mr.Buxton, as he and his classes are some of my favorite on campus. I overall believe that the day would have been better if we had a bit more done, but overall, it was a fine day. 7/10. 
+ps: Jazz band was great!
+
+![]({{site.baseurl}}/images/chair.jpg "A goose of mine")
+![]({{site.baseurl}}/images/acto.jpg "A goose of mine")
+![]({{site.baseurl}}/images/ryan.jpg "found ryan")
