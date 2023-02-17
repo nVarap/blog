@@ -14,12 +14,12 @@ This trimester, Night at the Museum was really fun! I had fun looking at differe
 
 1. Arcade
 - Chinmay and Emaad had an arcade that had multiple different games, such as a country guesser and a hangman game. This arcade had numerous different features and I believed they stored various information in a backend
-![]({{site.baseurl}}/images/emaad.png "emu")
-![]({{site.baseurl}}/images/chinmay.png "A goose of mine")
+![]({{site.baseurl}}/images/emaad.jpg "emu")
+![]({{site.baseurl}}/images/chinmay.jpg "A goose of mine")
 
 2. Recipe Machine
 - Colin, Keira, and Shreyas all had a food-esque website which could display various recipes and the locations of various different ethnic cuisines in the area. I found their project to be cool due to the scaling, and I noticed how their project could allow users to implement their own recipes, which used some crowdsourcing tactics
-![]({{site.baseurl}}/images/colin.png "A goose of mine")
+![]({{site.baseurl}}/images/colin.jpg "A goose of mine")
 
 3. Furry Friend Finder
 - Hae Ryn and her group created a way to track dogs, adopt, recommend, and journal about a dog you may have. I am a dog person (however I can't have one cause a family member of mine is allergic), so I did like the various features. Their frontend and backend connection was seamless and I really liked how each feature built off one another.
@@ -29,4 +29,4 @@ This trimester, Night at the Museum was really fun! I had fun looking at differe
 
 5. Formula One Database
 - Krish made a formula one database that could set events and record events into a database. It was very cool to look at and I liked the frontend.
-![]({{site.baseurl}}/images/krish.png "A goose of mine")
+![]({{site.baseurl}}/images/krish.jpg "A goose of mine")
