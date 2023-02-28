@@ -1,0 +1,124 @@
+<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">CPT Writeup for &quot;Don&#39;t Leave Me&quot;</h1><p class="page-description">The CPT Writeup for our Website, and video</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2023-02-27T00:00:00-06:00" itemprop="datePublished">
+        Feb 27, 2023
+      </time>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      2 min read
+    
+</span></p>
+
+    
+      <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
+      
+        <a class="category-tags-link" href="/blog/categories/#Work">Work</a>
+        
+      
+      </p>
+    
+
+    </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <ul id="toc" class="section-nav">
+</ul><p>3a. 
+<br>
+    3a.i
+    <br>
+    - This program was made to provide people with possible romantic or platonic relationships with other people when they would like to, allowing them to match up with those who would have similar likes.
+    <br>
+    3a.ii
+    <br>
+    - In the video it shows the ability to match with multiple users depending on certain attributes, and shows the utilization of creation, reading, updating, and deleting users.
+    <br>
+    - The video shows the user creating and account, setting up their account, and matching with users who have similar likes. The user inputs information and the program outputs potential matches depending on their account creation
+    <br>
+3b.
+<br>
+    3b.i
+    <br>
+    - There would a be a list <code class="language-plaintext highlighter-rouge">num_people</code>, or a similar list, that would store the complete list of certain matches. These people would then be used in the match screen.
+    <br>
+    3b.ii
+    <br>
+    - Name: “num_people”
+    <br>
+    3b.iii
+    <br>
+    - The data in this list would be a number of <code class="language-plaintext highlighter-rouge">user</code> objects whose attributes are similar to that of the current user. This groups all possible matches at once, rather than getting each individually and making sure to exclude those who have already been selected. This optimizes program time and ensures extra code needn’t be written.
+    <br>
+    3b.iv
+    <br>
+    - this is vital to my code as it stores a list of people instead of individually having call a procedure multiple times, and writing code to exclude already chosen matches.
+    <br>
+    3b.v
+    <br>
+    - If the program were to run without it would make it very inefficient through the managing of possibly 100 matches between people at high user traffic. As a result, this would make multiple variables, all of which need a separate memory, and cause poor optimization of the code.
+    <br>
+3c. 
+<br>
+    3c.i
+    <br>
+    - Function: <code class="language-plaintext highlighter-rouge">readUserName</code></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    readAge: async () =&gt; {
+    setTimeout(() =&gt; {
+      console.log("why")
+    }, 2000);
+    if(auth.currentUser){console.log("hello")}
+    else{console.log("nothing works")}
+    let _uid = auth.currentUser?.uid
+    console.log("uid: " + _uid);
+    let ret = ""
+    try {
+    await get(ref(db, '/users/' + _uid+'/vitals')).then(snapshot =&gt; ret = snapshot.val().age);
+    console.log("ret after change = " + ret);
+    }
+    catch(error){
+      console.log(error);
+    }
+    return ret
+  }
+</code></pre></div></div>
+<p>`
+    <br>
+        - This function would take the users ID and then fin the corresponding space in the database, returning their various values.
+    <br>
+    3c.ii
+    <br></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   const user = userStore(auth);
+    let age = readHandlers.readAge()
+    let pronouns = readHandlers.readPronouns();
+    let like = readHandlers.readHobby();
+</code></pre></div></div>
+<p>`
+    <br>
+    3c.iii<br>
+    - This function does a majority of the work as it matches up people and is the entire backend for this part of the project.
+    <br>
+    3c.iv<br>
+    - The procedure gathers the entire user base takes the information of the user in order to put those into headers with this data. 
+    <br>
+3d.<br>
+    3d.i<br>
+    - First call: Occurs with a person who has created an account with one UID
+    <br>
+    - Second call: Occurs with a person who has created an account with a different UID<br>
+    <br>
+    3d.ii
+    <br>
+    - condition tested by the first call: Tests with the likes “basketball” 
+    <br>
+    - condition tested by the second call: Tests with the likes “dancing”
+    <br>
+    3d.iii
+    - The result of the first call is a profile where it’s like is listed as basketball.<br>
+    - The result of the first call is a profile where it’s like is listed as dancing.<br></p>
+
+
+  </div><a class="u-url" href="/blog/work/2023/02/27/jeezus.html" hidden></a>
+</article>
