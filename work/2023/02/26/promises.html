@@ -1,0 +1,187 @@
+<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Promises -- Learning About Them!</h1><p class="page-description">A Big Board About Promises</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2023-02-26T00:00:00-06:00" itemprop="datePublished">
+        Feb 26, 2023
+      </time>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      5 min read
+    
+</span></p>
+
+    
+      <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
+      
+        <a class="category-tags-link" href="/blog/categories/#Work">Work</a>
+        
+      
+      </p>
+    
+
+    </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <ul id="toc" class="section-nav">
+<li class="toc-entry toc-h1"><a href="#what-is-a-promise">What is A Promise?</a></li>
+<li class="toc-entry toc-h1"><a href="#why-promises">Why Promises?</a></li>
+<li class="toc-entry toc-h1"><a href="#resolving-promises">Resolving Promises</a></li>
+<li class="toc-entry toc-h1"><a href="#asynchronous-functions">Asynchronous Functions</a>
+<ul>
+<li class="toc-entry toc-h2"><a href="#await">Await</a></li>
+<li class="toc-entry toc-h2"><a href="#then-and-catch">.then() and .catch()</a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#then">.then()</a></li>
+<li class="toc-entry toc-h3"><a href="#catch">.catch()</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-entry toc-h1"><a href="#resolving-promises-and-finagling">Resolving Promises, and Finagling</a></li>
+<li class="toc-entry toc-h1"><a href="#reflection">Reflection</a></li>
+</ul><h1 id="what-is-a-promise">
+<a class="anchor" href="#what-is-a-promise" aria-hidden="true"><span class="octicon octicon-link"></span></a>What is A Promise?</h1>
+<ul>
+  <li>A promise is a Javascript and Typescript data type which represents data in <em>travel</em>
+</li>
+  <li>Promises are a literal <mark>promise</mark> to your computer, telling it that it will give it some information later. Since this data in indeterminate, this is represented as a promise
+    <ul>
+      <li>yet another demonstration of abstraction on the coding level.</li>
+    </ul>
+  </li>
+  <li>Promises can only work in <code class="language-plaintext highlighter-rouge">async</code> functions</li>
+</ul>
+
+<h1 id="why-promises">
+<a class="anchor" href="#why-promises" aria-hidden="true"><span class="octicon octicon-link"></span></a>Why Promises?</h1>
+<ul>
+  <li>I have no idea! Python and Java do this much better, with resolving promises baked in. Javascript is more web-oriented, which could explain why, but aside from that, I have no idea!</li>
+</ul>
+
+<h1 id="resolving-promises">
+<a class="anchor" href="#resolving-promises" aria-hidden="true"><span class="octicon octicon-link"></span></a>Resolving Promises</h1>
+<ul>
+  <li>Promises travel in two states: Pending or Resolved</li>
+  <li>A promise that is <strong>pending</strong> has not been resolved, and thereby has not received and given back the data. Think of it like a friend who takes a pencil but has yet to be given it back.</li>
+  <li>However, much unlike our friend with our pencil, a promise can be <strong>Resolved</strong>, resulting in the data being returned and being available for use.</li>
+  <li>However, because JS is JS, this promise is wrapped in a Promise supertype, such as <code class="language-plaintext highlighter-rouge">Promise&lt;string&gt;</code>.</li>
+  <li>You will need to unwrap this, either using a framework (such as svelte or liquid), or otherwise unwrap it yourself. I describe <strong>finagling</strong> below.</li>
+</ul>
+
+<h1 id="asynchronous-functions">
+<a class="anchor" href="#asynchronous-functions" aria-hidden="true"><span class="octicon octicon-link"></span></a>Asynchronous Functions</h1>
+<ul>
+  <li>Asynchronous functions (henceforth Async Functions) are exactly that, functions that occur asynchronously.</li>
+  <li>Imagine these functions as stuff like something in the microwave. For breakfast, you may want a bowl of cereal with warm milk. So, you get the milk and put it in the microwave. However, you’re not just going to wait for the milk to warm, then go and get the cereal. While the milk is warming, you go and get the cereal so that by the time the milk is ready, everything is prepared to be used.</li>
+  <li>This is basically a promise in an async function, a piece of information you know you are going to get and runs in the background.
+    <h2 id="await">
+<a class="anchor" href="#await" aria-hidden="true"><span class="octicon octicon-link"></span></a>Await</h2>
+  </li>
+  <li>There are many keywords, but <code class="language-plaintext highlighter-rouge">await</code> is probably the single most important one</li>
+  <li>await allows your code to wait for a promise to be resolved, while still allowing for code to run in the background</li>
+</ul>
+
+<p><strong>For Example</strong></p>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">let</span> <span class="nx">f</span> <span class="o">=</span> <span class="k">async</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="k">await</span> <span class="nx">SomePromise</span><span class="p">().</span><span class="nx">then</span><span class="p">()</span><span class="c1">//then do something</span>
+    <span class="c1">// do something further with the promise</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<ul>
+  <li>Thus, the await key is imperative to ascertaining promises.</li>
+</ul>
+
+<h2 id="then-and-catch">
+<a class="anchor" href="#then-and-catch" aria-hidden="true"><span class="octicon octicon-link"></span></a>.then() and .catch()</h2>
+<ul>
+  <li>
+<code class="language-plaintext highlighter-rouge">.then</code> and <code class="language-plaintext highlighter-rouge">.catch</code> are functions that work on promises when they return (typically from an await function). These allow you to manipulate these promises.
+    <h3 id="then">
+<a class="anchor" href="#then" aria-hidden="true"><span class="octicon octicon-link"></span></a><code class="language-plaintext highlighter-rouge">.then()</code>
+</h3>
+  </li>
+  <li>
+<code class="language-plaintext highlighter-rouge">.then()</code> allows you to operate on what is returned. It is often formatted as: <code class="language-plaintext highlighter-rouge">.then(ret =&gt; console.log(ret))</code>, a simple function that allows you to log what your promise does. However, you can also do other things, such as set it equal to a variable, manipulate an array/list returned by a promise, and more!
+    <h3 id="catch">
+<a class="anchor" href="#catch" aria-hidden="true"><span class="octicon octicon-link"></span></a><code class="language-plaintext highlighter-rouge">.catch()</code>
+</h3>
+  </li>
+  <li>
+<code class="language-plaintext highlighter-rouge">.catch()</code> can catch an error that occurs when the promise is sent. This may be a bad API key, faulty data, or an error with retrieving. However do note that this doesn’t prevent a <code class="language-plaintext highlighter-rouge">null</code> or <code class="language-plaintext highlighter-rouge">undefined</code> state for your promise, so you will have to code defensively.</li>
+  <li>often formatted as <code class="language-plaintext highlighter-rouge">.catch(error){console.log(error)}</code>, to simply log the error that occurs</li>
+</ul>
+
+<p><strong>For Example</strong></p>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">let</span> <span class="nx">f</span> <span class="o">=</span> <span class="k">async</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="k">await</span> <span class="nx">SomePromise</span><span class="p">().</span><span class="nx">then</span><span class="p">(</span> <span class="nx">ret</span> <span class="o">=&gt;</span> 
+        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">ret</span><span class="p">);</span> <span class="c1">// get "ret", the return value...</span>
+        <span class="c1">// log ret!</span>
+    <span class="p">).</span><span class="k">catch</span><span class="p">(</span><span class="nx">error</span><span class="p">){</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">error</span><span class="p">);</span> <span class="c1">// in the case of an error...</span>
+        <span class="c1">// log it!</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h1 id="resolving-promises-and-finagling">
+<a class="anchor" href="#resolving-promises-and-finagling" aria-hidden="true"><span class="octicon octicon-link"></span></a>Resolving Promises, and <strong>Finagling</strong>
+</h1>
+<ul>
+  <li>The issue with promises is that they aren’t fun to work with. While what was just explained seems cookie cutter, you have to note that this scratches the surface.</li>
+  <li>You cannot move data returned by a promise outside of a <code class="language-plaintext highlighter-rouge">.then</code>, making it really hard to export data</li>
+  <li>This results in something I like to call: <strong>finagling</strong>.</li>
+  <li>You will have to finagle a way to get the data from your promise outside. I often do this by assigning a junk variable to that return value, and returning that.</li>
+</ul>
+
+<p><strong>An Example of this, from our code!</strong></p>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">readUserName</span><span class="p">:</span> <span class="k">async</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="nx">setTimeout</span><span class="p">(()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+      <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">why</span><span class="dl">"</span><span class="p">)</span>
+    <span class="p">},</span> <span class="mi">2000</span><span class="p">);</span>
+    <span class="kd">let</span> <span class="nx">_uid</span> <span class="o">=</span> <span class="nx">auth</span><span class="p">.</span><span class="nx">currentUser</span><span class="p">?.</span><span class="nx">uid</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">uid: </span><span class="dl">"</span> <span class="o">+</span> <span class="nx">_uid</span><span class="p">);</span>
+    <span class="kd">let</span> <span class="nx">ret</span> <span class="o">=</span> <span class="dl">""</span><span class="p">;</span> <span class="c1">// set the "junk" var</span>
+    <span class="k">try</span> <span class="p">{</span> <span class="c1">// below is the actual promise; getting the data</span>
+    <span class="k">await</span> <span class="kd">get</span><span class="p">(</span><span class="nx">ref</span><span class="p">(</span><span class="nx">db</span><span class="p">,</span> <span class="dl">'</span><span class="s1">/users/</span><span class="dl">'</span> <span class="o">+</span> <span class="nx">_uid</span><span class="p">)).</span><span class="nx">then</span><span class="p">(</span><span class="nx">snapshot</span> <span class="o">=&gt;</span> <span class="nx">ret</span> <span class="o">=</span> <span class="nx">snapshot</span><span class="p">.</span><span class="nx">val</span><span class="p">().</span><span class="nx">username</span><span class="p">);</span> <span class="c1">// assigning the variable</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">ret after change = </span><span class="dl">"</span> <span class="o">+</span> <span class="nx">ret</span><span class="p">);</span> <span class="c1">// logging the change, ensure it worked</span>
+    <span class="p">}</span>
+    <span class="k">catch</span><span class="p">(</span><span class="nx">error</span><span class="p">){</span>
+      <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">error</span><span class="p">);</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="nx">ret</span><span class="p">;</span> <span class="c1">// returning the "junk" var</span>
+  <span class="p">}</span>
+</code></pre></div></div>
+
+<ul>
+  <li>Another way involves just returning the promise. One way I tried to get promises to work (and eventually did) was by returning the promise and using our framework (svelte, very good would recommend) to unwrap the promise.</li>
+</ul>
+
+<p><strong>Example</strong></p>
+<pre><code class="language-HTML">&lt;div&gt;
+            &lt;h1&gt;
+                {#await age}
+	            &lt;p&gt;...waiting&lt;/p&gt;
+                {:then string}
+                &lt;!--Svelte liquid utilized here --&gt;
+                    {#if $user} 
+                    &lt;ProfileInput placeholder="Age" value={string} state={switchVal} /&gt;
+                    {:else}
+                        &lt;p&gt;sorry&lt;/p&gt;
+                     {/if}   
+                {:catch error} &lt;!--As you can see, await, then, and catch are all here--&gt;
+	            &lt;p style="color: red"&gt;{error.message}&lt;/p&gt;
+                {/await}
+            &lt;/h1&gt;
+        &lt;/div&gt;
+</code></pre>
+
+<p>This would take a promise, and unwrap that promise, displaying the data and other stuff depending on the state of the user.</p>
+
+<h1 id="reflection">
+<a class="anchor" href="#reflection" aria-hidden="true"><span class="octicon octicon-link"></span></a>Reflection</h1>
+<p>Overall, promises have had a negative impact on me, my mental health, and my opinion of coding. They are dumb, lack proper documentation, and are not as easily baked as far more based languages such as python and java. The requests library simply outshines this in every way. But that aside, it still can be very intuitive once you get it to work out, and I hope this article helps anybody understand promises just a bit better. If not, just check on stack overflow or the mozilla docs.</p>
+
+  </div><a class="u-url" href="/blog/work/2023/02/26/promises.html" hidden></a>
+</article>
