@@ -21,6 +21,8 @@ I am a part of the Model United Nations Club, Dungeons and Dragons club, and Rob
 ![]({{site.baseurl}}/images/nootnoot.jpg "A goose of mine")
 ![]({{site.baseurl}}/images/FOOTPOWDER2.png "A goose of mine")
 
+
 [^1]: Advanced Placement: Computer Science
 [^2]: Trading Card Games
 [^3]: Table Top RPG
+
