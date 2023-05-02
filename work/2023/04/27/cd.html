@@ -97,13 +97,31 @@ window.onload = wrap_img;
   <div class="post-content e-content" itemprop="articleBody">
     <ul id="toc" class="section-nav">
 <li class="toc-entry toc-h1"><a href="#classwork">Classwork</a></li>
-<li class="toc-entry toc-h1"><a href="#classwork-1">Classwork</a></li>
 <li class="toc-entry toc-h1"><a href="#hacks">Hacks</a></li>
+<li class="toc-entry toc-h1"><a href="#game">Game</a></li>
 </ul><body>
 <h1 id="classwork">
 <a class="anchor" href="#classwork" aria-hidden="true"><span class="octicon octicon-link"></span></a>Classwork</h1>
-<h1 id="classwork-1">
-<a class="anchor" href="#classwork-1" aria-hidden="true"><span class="octicon octicon-link"></span></a>Classwork</h1>
+
+
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../../../assets/css/fastpages-styles.css">
+    <link rel="stylesheet" href="../../../../assets/css/dark-mode1.css" id="theme-link">
+
+
+    <button id="theme-toggle">Toggle Theme</button>
+    <script>
+        const toggleButton = document.querySelector('#theme-toggle');
+        const themeLink = document.querySelector('#theme-link');
+        toggleButton.addEventListener('click', () => {
+            if (themeLink.getAttribute('href') === '../../../../assets/css/fastpages-styles.css') {
+                themeLink.setAttribute('href', '../../../../assets/css/dark-mode1.css');
+            } else {
+                themeLink.setAttribute('href', '../../../../assets/css/fastpages-styles.css');
+            }
+        });
+    </script>
+
 
 <p><strong>What are the 5 basic UI elements</strong></p>
 <ol>
@@ -128,26 +146,6 @@ It works by checking a number guessed in order to see if it is higher or lower, 
 <h1 id="hacks">
 <a class="anchor" href="#hacks" aria-hidden="true"><span class="octicon octicon-link"></span></a>Hacks</h1>
 <p><img src="/blog/images/newelement.png" alt="" title="Working"></p>
-
-
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="../../../../assets/css/fastpages-styles.css">
-    <link rel="stylesheet" href="../../../../assets/css/dark-mode1.css" id="theme-link">
-
-
-    <button id="theme-toggle">Toggle Theme</button>
-    <script>
-        const toggleButton = document.querySelector('#theme-toggle');
-        const themeLink = document.querySelector('#theme-link');
-        toggleButton.addEventListener('click', () => {
-            if (themeLink.getAttribute('href') === '../../../../assets/css/fastpages-styles.css') {
-                themeLink.setAttribute('href', '../../../../assets/css/dark-mode1.css');
-            } else {
-                themeLink.setAttribute('href', '../../../../assets/css/fastpages-styles.css');
-            }
-        });
-    </script>
-
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;html&gt;
 &lt;head&gt;
@@ -185,6 +183,19 @@ It works by checking a number guessed in order to see if it is higher or lower, 
 &lt;/body&gt;
 &lt;/html&gt;
 </code></pre></div></div>
+
+<h1 id="game">
+<a class="anchor" href="#game" aria-hidden="true"><span class="octicon octicon-link"></span></a>Game</h1>
+
+<p>Steps:</p>
+
+<ol>
+  <li>Clone this repo <code class="language-plaintext highlighter-rouge">https://github.com/nVarap/darkhallways.git</code>
+</li>
+  <li>Make sure you have the “live server” extension in vscode</li>
+  <li>Open the repository, right click the index.html file, and click “open with live server”</li>
+  <li>that should make it work. Contact me if it does not.</li>
+</ol>
 </body>
   </div><a class="u-url" href="/blog/work/2023/04/27/cd.html" hidden></a>
 </article>
