@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      2 min read
+      3 min read
     
 </span></p>
 
@@ -315,6 +315,8 @@ List after sorting [1, 1, 2, 2, 3, 5, 5, 5, 5, 6, 6, 8, 8, 8, 9, 9, 10, 10, 10, 
 <span class="n">keys</span><span class="o">.</span><span class="n">sort</span><span class="p">()</span>
 <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">keys</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">key</span><span class="si">}</span><span class="s2"> appeared </span><span class="si">{</span><span class="p">[</span><span class="n">per</span><span class="p">[</span><span class="n">key</span><span class="p">]]</span><span class="si">}</span><span class="s2">/</span><span class="si">{</span><span class="n">times</span><span class="si">}</span><span class="s2"> or about </span><span class="si">{</span><span class="n">per</span><span class="p">[</span><span class="n">key</span><span class="p">]</span><span class="o">/</span><span class="n">times</span><span class="o">*</span><span class="mi">100</span><span class="si">}</span><span class="s2">%&quot;</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Expected average for a </span><span class="si">{</span><span class="n">dice</span><span class="si">}</span><span class="s2"> sided die: </span><span class="si">{</span><span class="mi">1</span><span class="o">/</span><span class="n">dice</span><span class="o">*</span><span class="mi">100</span><span class="si">}</span><span class="s2">%&quot;</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -327,26 +329,27 @@ List after sorting [1, 1, 2, 2, 3, 5, 5, 5, 5, 6, 6, 8, 8, 8, 9, 9, 10, 10, 10, 
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>1 appeared [55]/1000 or about 0%
-2 appeared [55]/1000 or about 0%
-3 appeared [49]/1000 or about 0%
-4 appeared [51]/1000 or about 0%
-5 appeared [46]/1000 or about 0%
-6 appeared [39]/1000 or about 0%
-7 appeared [51]/1000 or about 0%
-8 appeared [54]/1000 or about 0%
-9 appeared [52]/1000 or about 0%
-10 appeared [51]/1000 or about 0%
-11 appeared [42]/1000 or about 0%
-12 appeared [50]/1000 or about 0%
-13 appeared [43]/1000 or about 0%
-14 appeared [50]/1000 or about 0%
-15 appeared [55]/1000 or about 0%
-16 appeared [41]/1000 or about 0%
-17 appeared [60]/1000 or about 0%
-18 appeared [42]/1000 or about 0%
-19 appeared [65]/1000 or about 0%
-20 appeared [49]/1000 or about 0%
+<pre>1 appeared [490]/10000 or about 4.9%
+2 appeared [535]/10000 or about 5.35%
+3 appeared [480]/10000 or about 4.8%
+4 appeared [472]/10000 or about 4.72%
+5 appeared [492]/10000 or about 4.92%
+6 appeared [497]/10000 or about 4.97%
+7 appeared [485]/10000 or about 4.8500000000000005%
+8 appeared [523]/10000 or about 5.2299999999999995%
+9 appeared [493]/10000 or about 4.93%
+10 appeared [529]/10000 or about 5.29%
+11 appeared [537]/10000 or about 5.37%
+12 appeared [497]/10000 or about 4.97%
+13 appeared [491]/10000 or about 4.91%
+14 appeared [528]/10000 or about 5.28%
+15 appeared [500]/10000 or about 5.0%
+16 appeared [500]/10000 or about 5.0%
+17 appeared [487]/10000 or about 4.87%
+18 appeared [516]/10000 or about 5.16%
+19 appeared [473]/10000 or about 4.73%
+20 appeared [475]/10000 or about 4.75%
+Expected average for a 20 sided die: 5.0%
 </pre>
 </div>
 </div>
