@@ -1,0 +1,62 @@
+---
+layout: base
+permalink: /notecards/
+search_exclude: true
+hide: true
+---
+
+<html>
+    <head>
+        <title>Creating Custom Elements</title>
+        <script src="/blog/_pages/js/notecard.js"></script>
+        <script src="/blog/_pages/js/notecardSet.js"></script>
+    </head>
+    <body>
+        <script>
+            let cards = [{"front" : "super", "back" : 'b'},
+            {"front" : "b", "back" : 'c'}, 
+            {"front" : "d", "back" : 'e'}]
+            let currCard = 0;
+            
+            console.log(localStorage.getItem("currSet"));
+
+            function next(){
+                let wrap = document.getElementById("wrapper");
+                try {
+                document.getElementById("notecard").remove()
+                const newNote = document.createElement("note-card");
+                newNote.setAttribute('front', cards[currCard]["front"]);
+                newNote.id = "notecard"
+                newNote.setAttribute('back', cards[currCard]["back"]);
+                wrap.appendChild(newNote);
+                currCard ++;
+                }
+                catch(error){
+                const newNote = document.createElement("note-card");
+                newNote.setAttribute('front', "No More Cards Left");
+                newNote.id = "notecard"
+                newNote.setAttribute('back', "No More Cards Left");
+                wrap.appendChild(newNote);
+                }
+            }
+
+            window.onload = (event) => {
+                if(localStorage.getItem("currSet")){
+                    document.getElementById("title").innerHTML = localStorage.getItem("currSet");
+                }
+                else{
+                    document.getElementById("title").innerHTML = localStorage.getItem("currSet");
+                }
+                next()
+            };
+        </script>
+        <h1 id="title"></h1>
+        <span style="position: absolute; left: 37%; top: 20%;">
+            <span id="wrapper">
+                <note-card id="notecard" front="hello" back="world"></note-card>
+            </span>
+            <button onclick="next()" >Click Me!</button>    
+        </span>
+       
+    </body>
+</html>

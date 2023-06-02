@@ -1,0 +1,46 @@
+---
+layout: base
+permalink: /noteSet/
+title: Notecards
+search_exclude: true
+hide: true
+---
+
+<html>
+
+<head>
+    <title>Creating Custom Elements</title>
+    <script src="/blog/_pages/js/notecard.js"></script>
+    <script src="/blog/_pages/js/notecardSet.js"></script>
+</head>
+
+<body>
+    <script>
+        let cardTitles = ["Set 1", "set 2", "set 3"]
+        window.onload = (event) => {
+            let holder = document.getElementById("ButtonHolder")
+
+            for (let i = 0; i < cardTitles.length; i++) {
+                let btn = document.createElement("button");
+                btn.innerHTML = cardTitles[i];
+                btn.addEventListener("click", () => {
+                    console.log(btn.innerHTML);
+                    localStorage.setItem("currSet", btn.innerHTML);
+                    setTimeout(() => {
+                        location.href = "{{% site.baseurl %}}/blog/notecards"
+                    }, 350);
+                })
+                holder.appendChild(btn);
+            }
+        };
+
+        console.log(cardTitles);
+    </script>
+    <div id="ButtonHolder">
+
+
+    </div>
+
+</body>
+
+</html>
