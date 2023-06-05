@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Javascript Checkout | Varap blog</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="Javascript Checkout" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="My javascript checkout about my click game - dark ahllways" />
+<meta property="og:description" content="My javascript checkout about my click game - dark ahllways" />
+<link rel="canonical" href="https://nvarap.github.io/blog/2023/06/02/javascript-checkout.html" />
+<meta property="og:url" content="https://nvarap.github.io/blog/2023/06/02/javascript-checkout.html" />
+<meta property="og:site_name" content="Varap blog" />
+<meta property="og:image" content="https://nvarap.github.io/blog/images/javascript.png" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2023-06-02T00:00:00-05:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="https://nvarap.github.io/blog/images/javascript.png" />
+<meta property="twitter:title" content="Javascript Checkout" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-06-02T00:00:00-05:00","datePublished":"2023-06-02T00:00:00-05:00","description":"My javascript checkout about my click game - dark ahllways","headline":"Javascript Checkout","image":"https://nvarap.github.io/blog/images/javascript.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://nvarap.github.io/blog/2023/06/02/javascript-checkout.html"},"url":"https://nvarap.github.io/blog/2023/06/02/javascript-checkout.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/blog/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://nvarap.github.io/blog/feed.xml" title="Varap blog" /><link rel="shortcut icon" type="image/x-icon" href="/blog/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title") && (el.className != "emoji")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    });
+</script>
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/blog/">Varap blog</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/blog/about/">About Me</a><a class="page-link" href="/blog/noteSet/">Notecards</a><a class="page-link" href="/blog/search/">Search</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Javascript Checkout</h1><p class="page-description">My javascript checkout about my click game - dark ahllways</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2023-06-02T00:00:00-05:00" itemprop="datePublished">
+        Jun 2, 2023
+      </time>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      9 min read
+    
+</span></p>
+
+    
+
+    
+      
+        <div class="pb-5 d-flex flex-justify-center">
+          <div class="px-2">
+
+    <a href="https://github.com/nVarap/blog/tree/master/_notebooks/2023-06-02-javascript-checkout.ipynb" role="button" target="_blank">
+<img class="notebook-badge-image" src="/blog/assets/badges/github.svg" alt="View On GitHub">
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://mybinder.org/v2/gh/nVarap/blog/master?filepath=_notebooks%2F2023-06-02-javascript-checkout.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/blog/assets/badges/binder.svg" alt="Open In Binder"/>
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://colab.research.google.com/github/nVarap/blog/blob/master/_notebooks/2023-06-02-javascript-checkout.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/blog/assets/badges/colab.svg" alt="Open In Colab"/>
+    </a>
+</div>
+          <div class="px-2">
+  <a href="https://deepnote.com/launch?url=https%3A%2F%2Fgithub.com%2FnVarap%2Fblog%2Fblob%2Fmaster%2F_notebooks%2F2023-06-02-javascript-checkout.ipynb" target="_blank">
+      <img class="notebook-badge-image" src="/blog/assets/badges/deepnote.svg" alt="Launch in Deepnote"/>
+  </a>
+</div>
+
+        </div>
+      </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <ul id="toc" class="section-nav">
+<li class="toc-entry toc-h1"><a href="#What-is-my-JS-Checkout-About?">What is my JS Checkout About? </a></li>
+<li class="toc-entry toc-h1"><a href="#Breakdown-of-this-Notebook">Breakdown of this Notebook </a></li>
+<li class="toc-entry toc-h1"><a href="#CSS-and-Styling">CSS and Styling </a></li>
+<li class="toc-entry toc-h1"><a href="#Input/Output-and-Logic-and-use-of-localStorage">Input/Output and Logic and use of localStorage </a></li>
+<li class="toc-entry toc-h1"><a href="#Leaderboard">Leaderboard </a>
+<ul>
+<li class="toc-entry toc-h2"><a href="#backend">backend </a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h1"><a href="#Frontend">Frontend </a></li>
+</ul><!--
+#################################################
+### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
+#################################################
+# file to edit: _notebooks/2023-06-02-javascript-checkout.ipynb
+-->
+
+<div class="container" id="notebook-container">
+        
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="What-is-my-JS-Checkout-About?">
+<a class="anchor" href="#What-is-my-JS-Checkout-About?" aria-hidden="true"><span class="octicon octicon-link"></span></a>What is my JS Checkout About?<a class="anchor-link" href="#What-is-my-JS-Checkout-About?"> </a>
+</h1>
+<p>As a game dev, my JS checkout is a game, which I call dark hallways. After Mr. Mort's statement on slack, I first, as a joke, and then actually thought about the duality of objects, such as hallways. How they can be ween in both an symbol of horror and a symbol of light. I decided to buy into this.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Breakdown-of-this-Notebook">
+<a class="anchor" href="#Breakdown-of-this-Notebook" aria-hidden="true"><span class="octicon octicon-link"></span></a>Breakdown of this Notebook<a class="anchor-link" href="#Breakdown-of-this-Notebook"> </a>
+</h1>
+<ul>
+<li>Start out with the HTML styling (split screen, buttons, etc.)</li>
+<li>Talk about the logic (how button presses and functions are set, how they are managed)</li>
+<li>Talk about use of javascript events and local storage for leaderboard purposes</li>
+<li>Show leaderboard</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="CSS-and-Styling">
+<a class="anchor" href="#CSS-and-Styling" aria-hidden="true"><span class="octicon octicon-link"></span></a>CSS and Styling<a class="anchor-link" href="#CSS-and-Styling"> </a>
+</h1>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%%html</span>
+
+<span class="c">&lt;!-- escape.scss (menu, leaderboard, etc.)  --&gt;</span>
+<span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span>
+<span class="o">//</span> <span class="nt">This</span> <span class="nt">defines</span> <span class="nt">a</span> <span class="nt">3x3</span> <span class="nt">grid</span> 
+<span class="o">$</span><span class="nt">grid-template-columns</span><span class="o">:</span> <span class="nt">repeat</span><span class="o">(</span><span class="nt">3</span><span class="o">,</span> <span class="nt">1fr</span><span class="o">);</span>
+<span class="o">$</span><span class="nt">grid-template-rows</span><span class="o">:</span> <span class="nt">repeat</span><span class="o">(</span><span class="nt">3</span><span class="o">,</span> <span class="nt">1fr</span><span class="o">);</span>
+
+<span class="p">.</span><span class="nc">container</span> <span class="p">{</span>
+  <span class="k">display</span><span class="p">:</span><span class="k">grid</span><span class="p">;</span>
+  <span class="k">grid-template-rows</span><span class="p">:</span><span class="kc">auto</span> <span class="mi">1</span><span class="n">fr</span> <span class="kc">auto</span><span class="p">;</span>
+  <span class="k">grid-template-columns</span><span class="p">:</span><span class="mi">100</span><span class="kt">%</span><span class="p">;</span>
+
+  <span class="c">/* fallback height */</span>
+  <span class="k">min-height</span><span class="p">:</span><span class="mi">100</span><span class="kt">vh</span><span class="p">;</span>
+  <span class="c">/* new small viewport height for modern browsers */</span>
+  <span class="k">min-height</span><span class="p">:</span><span class="mi">100</span><span class="n">svh</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="p">.</span><span class="nc">menu</span><span class="p">{</span>
+  <span class="k">background-color</span><span class="p">:</span> <span class="kc">white</span><span class="p">;</span>
+  <span class="k">text-align</span><span class="p">:</span> <span class="kc">center</span><span class="p">;</span>
+  <span class="k">top</span><span class="p">:</span> <span class="mi">100</span><span class="kt">%</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="p">.</span><span class="nc">image</span> <span class="p">{</span>
+  <span class="k">display</span><span class="p">:</span> <span class="kc">block</span><span class="p">;</span>
+  <span class="k">margin-left</span><span class="p">:</span> <span class="kc">auto</span><span class="p">;</span>
+  <span class="k">margin-right</span><span class="p">:</span> <span class="kc">auto</span><span class="p">;</span>
+  <span class="k">width</span><span class="p">:</span> <span class="mi">50</span><span class="kt">%</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="p">.</span><span class="nc">button</span><span class="p">{</span>
+  <span class="k">border-width</span><span class="p">:</span> <span class="mi">3</span><span class="kt">px</span><span class="p">;</span>
+  <span class="k">font-family</span><span class="p">:</span><span class="s1">'Times New Roman'</span><span class="p">,</span> <span class="n">Times</span><span class="p">,</span> <span class="kc">serif</span><span class="p">;</span>
+  <span class="k">width</span><span class="p">:</span> <span class="mi">100</span><span class="kt">px</span><span class="p">;</span>
+  <span class="k">height</span><span class="p">:</span> <span class="mi">30</span><span class="kt">px</span><span class="p">;</span>
+
+<span class="p">}</span>
+
+<span class="p">#</span><span class="nn">footer</span><span class="p">{</span>
+  <span class="k">text-align</span><span class="p">:</span> <span class="kc">center</span><span class="p">;</span>
+  <span class="k">color</span><span class="p">:</span> <span class="kc">purple</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="o">//</span> <span class="o">...</span> <span class="nt">define</span> <span class="nt">other</span> <span class="nt">grid</span> <span class="nt">item</span> <span class="nt">classes</span> <span class="nt">as</span> <span class="nt">needed</span>
+
+
+<span class="c">/* Split the screen in half */</span>
+<span class="p">.</span><span class="nc">splitty</span> <span class="p">{</span>
+  <span class="k">height</span><span class="p">:</span> <span class="mi">100</span><span class="kt">%</span><span class="p">;</span>
+  <span class="k">width</span><span class="p">:</span> <span class="mi">50</span><span class="kt">%</span><span class="p">;</span>
+  <span class="k">position</span><span class="p">:</span> <span class="kc">fixed</span><span class="p">;</span>
+  <span class="k">z-index</span><span class="p">:</span> <span class="mi">1</span><span class="p">;</span>
+  <span class="k">top</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="k">overflow-x</span><span class="p">:</span> <span class="kc">hidden</span><span class="p">;</span>
+  <span class="k">padding-top</span><span class="p">:</span> <span class="mi">20</span><span class="kt">px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="p">.</span><span class="nc">left</span> <span class="p">{</span>
+  <span class="k">left</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="k">background-color</span><span class="p">:</span> <span class="mh">#111</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="p">.</span><span class="nc">right</span> <span class="p">{</span>
+  <span class="k">right</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="k">background-color</span><span class="p">:</span> <span class="kc">red</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea ">
+
+<style>
+// This defines a 3x3 grid 
+$grid-template-columns: repeat(3, 1fr);
+$grid-template-rows: repeat(3, 1fr);
+
+.container {
+  display:grid;
+  grid-template-rows:auto 1fr auto;
+  grid-template-columns:100%;
+
+  /* fallback height */
+  min-height:100vh;
+  /* new small viewport height for modern browsers */
+  min-height:100svh;
+}
+
+.menu{
+  background-color: white;
+  text-align: center;
+  top: 100%;
+}
+
+.image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.button{
+  border-width: 3px;
+  font-family:'Times New Roman', Times, serif;
+  width: 100px;
+  height: 30px;
+
+}
+
+#footer{
+  text-align: center;
+  color: purple;
+}
+
+// ... define other grid item classes as needed
+
+
+/* Split the screen in half */
+.splitty {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.left {
+  left: 0;
+  background-color: #111;
+}
+
+.right {
+  right: 0;
+  background-color: red;
+}
+</style>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%%html</span>
+
+
+<span class="c">&lt;!-- center.scss (game)  --&gt;</span>
+<span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span>
+<span class="c">/* Split the screen in half */</span>
+<span class="p">.</span><span class="nc">split</span> <span class="p">{</span>
+    <span class="k">height</span><span class="p">:</span> <span class="mi">100</span><span class="kt">%</span><span class="p">;</span>
+    <span class="k">position</span><span class="p">:</span> <span class="kc">fixed</span><span class="p">;</span>
+    <span class="k">z-index</span><span class="p">:</span> <span class="mi">1</span><span class="p">;</span>
+    <span class="k">top</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="k">overflow-x</span><span class="p">:</span> <span class="kc">hidden</span><span class="p">;</span>
+    <span class="k">padding-top</span><span class="p">:</span> <span class="mi">20</span><span class="kt">px</span><span class="p">;</span>
+  <span class="p">}</span>
+  
+  <span class="c">/* Control the left side */</span>
+  <span class="p">.</span><span class="nc">left</span> <span class="p">{</span>
+    <span class="k">left</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="k">width</span><span class="p">:</span> <span class="mi">60</span><span class="kt">%</span><span class="p">;</span>
+    <span class="k">background-color</span><span class="p">:</span> <span class="kc">black</span><span class="p">;</span>
+  <span class="p">}</span>
+  
+  <span class="c">/* Control the right side */</span>
+  <span class="p">.</span><span class="nc">right</span> <span class="p">{</span>
+    <span class="k">right</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="k">width</span><span class="p">:</span> <span class="mi">40</span><span class="kt">%</span><span class="p">;</span>
+    <span class="k">background-color</span><span class="p">:</span> <span class="nb">rgba</span><span class="p">(</span><span class="mi">243</span><span class="p">,</span> <span class="mi">230</span><span class="p">,</span> <span class="mi">230</span><span class="p">,</span> <span class="mf">0.176</span><span class="p">);</span>
+  <span class="p">}</span>
+  
+  <span class="c">/* If you want the content centered horizontally and vertically */</span>
+  <span class="p">.</span><span class="nc">centered</span> <span class="p">{</span>
+    <span class="k">position</span><span class="p">:</span> <span class="kc">absolute</span><span class="p">;</span>
+    <span class="k">top</span><span class="p">:</span> <span class="mi">50</span><span class="kt">%</span><span class="p">;</span>
+    <span class="k">left</span><span class="p">:</span> <span class="mi">50</span><span class="kt">%</span><span class="p">;</span>
+    <span class="k">transform</span><span class="p">:</span> <span class="nb">translate</span><span class="p">(</span><span class="mi">-50</span><span class="kt">%</span><span class="p">,</span> <span class="mi">-50</span><span class="kt">%</span><span class="p">);</span>
+    <span class="k">text-align</span><span class="p">:</span> <span class="kc">center</span><span class="p">;</span>
+  <span class="p">}</span>
+  
+  <span class="c">/* Style the image inside the centered container, if needed */</span>
+  <span class="p">.</span><span class="nc">centered</span> <span class="nt">img</span> <span class="p">{</span>
+    <span class="k">width</span><span class="p">:</span> <span class="mi">450</span><span class="kt">px</span><span class="p">;</span>
+    <span class="k">height</span><span class="p">:</span> <span class="mi">550</span><span class="kt">px</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="p">.</span><span class="nc">menu</span> <span class="p">{</span>
+    <span class="k">position</span><span class="p">:</span> <span class="kc">fixed</span><span class="p">;</span>
+    <span class="k">bottom</span><span class="p">:</span> <span class="mi">-300</span><span class="kt">px</span><span class="p">;</span>
+    <span class="k">right</span><span class="p">:</span> <span class="mi">-280</span><span class="kt">px</span><span class="p">;</span>
+    <span class="k">width</span><span class="p">:</span> <span class="mi">500</span><span class="kt">px</span><span class="p">;</span> 
+    <span class="k">align-items</span><span class="p">:</span> <span class="kc">center</span><span class="p">;</span>
+    <span class="p">}.</span><span class="nc">button</span> <span class="p">{</span>
+    <span class="k">background-color</span><span class="p">:</span> <span class="nb">rgba</span><span class="p">(</span><span class="mi">255</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mf">0.441</span><span class="p">);</span>
+    <span class="k">width</span><span class="p">:</span> <span class="mi">100</span><span class="kt">px</span><span class="p">;</span>
+    <span class="k">height</span><span class="p">:</span> <span class="mi">75</span><span class="kt">px</span><span class="p">;</span>
+    <span class="k">font-size</span><span class="p">:</span> <span class="kc">large</span><span class="p">;</span>
+    <span class="k">font-weight</span><span class="p">:</span> <span class="kc">bold</span><span class="p">;</span>
+    <span class="k">font-family</span><span class="p">:</span> <span class="s1">'Times New Roman'</span><span class="p">,</span> <span class="n">Times</span><span class="p">,</span> <span class="kc">serif</span><span class="p">;</span>
+    <span class="k">color</span><span class="p">:</span> <span class="kc">white</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="p">.</span><span class="nc">grid-container</span> <span class="p">{</span>
+        <span class="k">display</span><span class="p">:</span> <span class="k">grid</span><span class="p">;</span>
+        <span class="k">position</span><span class="p">:</span> <span class="kc">fixed</span><span class="p">;</span>
+        <span class="k">grid-template-columns</span><span class="p">:</span> <span class="kc">auto</span> <span class="kc">auto</span> <span class="kc">auto</span><span class="p">;</span>
+        <span class="k">background-color</span><span class="p">:</span> <span class="mh">#2195f3</span><span class="mi">6</span><span class="n">a</span><span class="p">;</span>
+        <span class="k">padding</span><span class="p">:</span> <span class="mi">10</span><span class="kt">px</span><span class="p">;</span>
+        <span class="k">bottom</span><span class="p">:</span> <span class="mi">25</span><span class="kt">px</span><span class="p">;</span>
+        <span class="k">right</span><span class="p">:</span> <span class="mi">-80</span><span class="kt">px</span><span class="p">;</span>
+      <span class="p">}</span>
+      
+      <span class="p">.</span><span class="nc">grid-item</span> <span class="p">{</span>
+        <span class="k">background-color</span><span class="p">:</span> <span class="nb">rgba</span><span class="p">(</span><span class="mi">255</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mf">0.8</span><span class="p">);</span>
+        <span class="k">border</span><span class="p">:</span> <span class="mi">1</span><span class="kt">px</span> <span class="kc">solid</span> <span class="nb">rgba</span><span class="p">(</span><span class="mi">255</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mf">0.8</span><span class="p">);</span>
+        <span class="k">padding</span><span class="p">:</span> <span class="mi">20</span><span class="kt">px</span><span class="p">;</span>
+        <span class="k">font-size</span><span class="p">:</span> <span class="mi">30</span><span class="kt">px</span><span class="p">;</span>
+        <span class="k">flex</span><span class="p">:</span> <span class="mi">25</span><span class="kt">%</span><span class="p">;</span>
+        <span class="k">text-align</span><span class="p">:</span> <span class="kc">center</span><span class="p">;</span>
+      <span class="p">}</span>
+<span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Input/Output-and-Logic-and-use-of-localStorage">
+<a class="anchor" href="#Input/Output-and-Logic-and-use-of-localStorage" aria-hidden="true"><span class="octicon octicon-link"></span></a>Input/Output and Logic and use of localStorage<a class="anchor-link" href="#Input/Output-and-Logic-and-use-of-localStorage"> </a>
+</h1>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%%html</span>
+
+<span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+
+    <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span> Dark Hallways <span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+
+        <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">"utf-8"</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">"stylesheet"</span> <span class="na">href</span><span class="o">=</span><span class="s">"center.scss"</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+
+    <span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
+        <span class="cm">/*</span>
+<span class="cm">        Player Variables</span>
+<span class="cm">        */</span>
+       <span class="kd">let</span> <span class="nx">armor</span> <span class="o">=</span> <span class="mf">0</span><span class="p">;</span>
+       <span class="kd">let</span> <span class="nx">damage</span> <span class="o">=</span> <span class="mf">0</span><span class="p">;</span>
+
+
+
+        <span class="kd">var</span> <span class="nx">local</span> <span class="o">=</span> <span class="s2">"0"</span><span class="p">;</span>
+
+        <span class="cm">/*</span>
+<span class="cm">        Logic for movement depending on locality (shorthand for where the player is)</span>
+<span class="cm">        */</span>
+        <span class="kd">var</span> <span class="nx">all</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s2">"0"</span><span class="o">:</span> <span class="p">{</span>
+                <span class="s2">"script"</span><span class="o">:</span> <span class="s2">"You approach a dark hallway. &lt;br&gt; There appears to be something on the ground. &lt;br&gt; Pick it up?"</span><span class="p">,</span>
+                <span class="s2">"image"</span><span class="o">:</span> <span class="s2">"hallway1.jpeg"</span><span class="p">,</span>
+                <span class="s2">"choices"</span><span class="o">:</span> <span class="p">[</span><span class="s2">"Yes"</span><span class="p">,</span> <span class="s2">"No"</span><span class="p">],</span>
+                <span class="s2">"results"</span> <span class="o">:</span> <span class="p">{</span><span class="s2">"Yes"</span> <span class="o">:</span> <span class="nx">addToInv</span><span class="p">,</span> <span class="s2">"No"</span><span class="o">:</span><span class="nx">moveTo</span><span class="p">,</span> <span class="s2">"Yesfunc"</span> <span class="o">:</span> <span class="p">[</span><span class="s2">"pistol"</span><span class="p">,</span> <span class="s2">"1"</span><span class="p">],</span> <span class="s2">"Nofunc"</span> <span class="o">:</span> <span class="s2">"1"</span><span class="p">}</span>
+            <span class="p">},</span>
+            <span class="s2">"1"</span><span class="o">:</span> <span class="p">{</span>
+                <span class="s2">"script"</span><span class="o">:</span> <span class="s2">"There appears to be something in the distance. &lt;br&gt; The hallway spans further. &lt;br&gt; Whatever is there appears to be approaching."</span><span class="p">,</span>
+                <span class="s2">"image"</span><span class="o">:</span> <span class="s2">"hallway2.jpeg"</span><span class="p">,</span>
+                <span class="s2">"choices"</span><span class="o">:</span> <span class="p">[</span><span class="s2">"Approach"</span><span class="p">,</span> <span class="s2">"Hide"</span><span class="p">],</span>
+                <span class="s2">"results"</span> <span class="o">:</span> <span class="p">{</span><span class="s2">"Approach"</span> <span class="o">:</span> <span class="nx">moveTo</span><span class="p">,</span> <span class="s2">"Hide"</span><span class="o">:</span><span class="nx">moveTo</span><span class="p">,</span> <span class="s2">"Approachfunc"</span> <span class="o">:</span> <span class="s2">"3"</span><span class="p">,</span> <span class="s2">"Hidefunc"</span> <span class="o">:</span> <span class="s2">"2"</span><span class="p">}</span>
+            <span class="p">},</span>
+            <span class="s2">"2"</span><span class="o">:</span> <span class="p">{</span>
+                <span class="s2">"script"</span><span class="o">:</span> <span class="s2">"You sit behind a couch, waiting for whatever is there to disappear &lt;br&gt; It is possible to sneak &lt;br&gt; Do we sneak or stay?"</span><span class="p">,</span>
+                <span class="s2">"image"</span><span class="o">:</span> <span class="s2">"hallway2.jpeg"</span><span class="p">,</span>
+                <span class="s2">"choices"</span><span class="o">:</span> <span class="p">[</span><span class="s2">"Sneak"</span><span class="p">,</span> <span class="s2">"Stay"</span><span class="p">],</span>
+                <span class="s2">"results"</span> <span class="o">:</span> <span class="p">{</span><span class="s2">"Sneak"</span> <span class="o">:</span> <span class="nx">moveTo</span><span class="p">,</span> <span class="s2">"Stay"</span><span class="o">:</span><span class="nx">moveTo</span><span class="p">,</span> <span class="s2">"Sneakfunc"</span> <span class="o">:</span> <span class="s2">"6"</span><span class="p">,</span> <span class="s2">"Stayfunc"</span> <span class="o">:</span> <span class="s2">"2"</span><span class="p">}</span>
+            <span class="p">},</span>
+            <span class="s2">"3"</span><span class="o">:</span> <span class="p">{</span>
+                <span class="s2">"script"</span><span class="o">:</span> <span class="s2">"You approach the thing... &lt;br&gt; And it attacks! &lt;br&gt; Do we fight or run?"</span><span class="p">,</span>
+                <span class="s2">"image"</span><span class="o">:</span> <span class="s2">"hallway3.png"</span><span class="p">,</span>
+                <span class="s2">"choices"</span><span class="o">:</span> <span class="p">[</span><span class="s2">"Fight"</span><span class="p">,</span> <span class="s2">"Run"</span><span class="p">],</span>
+                <span class="s2">"results"</span> <span class="o">:</span> <span class="p">{</span><span class="s2">"Fight"</span> <span class="o">:</span> <span class="nx">specialMove</span><span class="p">,</span> <span class="s2">"Run"</span><span class="o">:</span><span class="nx">addToInv</span><span class="p">,</span> <span class="s2">"Fightfunc"</span> <span class="o">:</span> <span class="p">[</span><span class="mf">4</span><span class="p">,</span> <span class="mf">5</span><span class="p">,</span> <span class="s1">'damage'</span><span class="p">,</span> <span class="mf">0</span><span class="p">],</span> <span class="s2">"Runfunc"</span> <span class="o">:</span> <span class="p">[</span><span class="s2">"Tendril"</span><span class="p">,</span> <span class="mf">1</span><span class="p">]}</span>
+            <span class="p">},</span>
+            <span class="s2">"4"</span><span class="o">:</span> <span class="p">{</span>
+                <span class="s2">"script"</span><span class="o">:</span> <span class="s2">"You fight furiously... &lt;br&gt; But you are too weak &lt;br&gt; You fall to the maw of the monster"</span><span class="p">,</span>
+                <span class="s2">"image"</span><span class="o">:</span> <span class="s2">"hallway3.png"</span><span class="p">,</span>
+                <span class="s2">"choices"</span><span class="o">:</span> <span class="p">[</span><span class="s2">"End"</span><span class="p">,</span> <span class="s2">"Game"</span><span class="p">],</span>
+                <span class="s2">"results"</span> <span class="o">:</span> <span class="p">{</span><span class="s2">"End"</span> <span class="o">:</span> <span class="nx">leave</span><span class="p">,</span> <span class="s2">"Game"</span><span class="o">:</span><span class="nx">leave</span><span class="p">,</span> <span class="s2">"Endfunc"</span> <span class="o">:</span> <span class="s2">"monster"</span><span class="p">,</span> <span class="s2">"Gamefunc"</span> <span class="o">:</span> <span class="s2">"monster"</span><span class="p">}</span>
+            <span class="p">},</span>
+            <span class="s2">"5"</span><span class="o">:</span> <span class="p">{</span>
+                <span class="s2">"script"</span><span class="o">:</span> <span class="s2">"You fight furiously ... &lt;br&gt; and you destroy the monster! &lt;br&gt; You see a door beyond. Will you walk through?"</span><span class="p">,</span>
+                <span class="s2">"image"</span><span class="o">:</span> <span class="s2">"hallway3.png"</span><span class="p">,</span>
+                <span class="s2">"choices"</span><span class="o">:</span> <span class="p">[</span><span class="s2">"Go Through"</span><span class="p">,</span> <span class="s2">"Stay"</span><span class="p">],</span>
+                <span class="s2">"results"</span> <span class="o">:</span> <span class="p">{</span><span class="s2">"Go Through"</span> <span class="o">:</span> <span class="nx">moveTo</span><span class="p">,</span> <span class="s2">"Stay"</span><span class="o">:</span><span class="nx">moveTo</span><span class="p">,</span> <span class="s2">"Go Throughfunc"</span> <span class="o">:</span> <span class="s2">"9"</span><span class="p">,</span> <span class="s2">"Stayfunc"</span> <span class="o">:</span> <span class="s2">"8"</span><span class="p">}</span>
+            <span class="p">},</span>
+            <span class="s2">"6"</span><span class="o">:</span> <span class="p">{</span>
+                <span class="s2">"script"</span><span class="o">:</span> <span class="s2">"You sneak by the monster &lt;br&gt; and behind it you see a door. Do we stay or do we go approach the door?"</span><span class="p">,</span>
+                <span class="s2">"image"</span><span class="o">:</span> <span class="s2">"hallway3.png"</span><span class="p">,</span>
+                <span class="s2">"choices"</span><span class="o">:</span> <span class="p">[</span><span class="s2">"Go!"</span><span class="p">,</span> <span class="s2">"Stay"</span><span class="p">],</span>
+                <span class="s2">"results"</span> <span class="o">:</span> <span class="p">{</span><span class="s2">"Go!"</span> <span class="o">:</span> <span class="nx">moveTo</span><span class="p">,</span> <span class="s2">"Stay"</span><span class="o">:</span><span class="nx">moveTo</span><span class="p">,</span> <span class="s2">"Go!func"</span> <span class="o">:</span> <span class="s2">"3"</span><span class="p">,</span> <span class="s2">"Stayfunc"</span> <span class="o">:</span> <span class="s2">"7"</span><span class="p">}</span>
+            <span class="p">},</span>
+            <span class="s2">"7"</span><span class="o">:</span> <span class="p">{</span>
+                <span class="s2">"script"</span><span class="o">:</span> <span class="s2">"You stay inside &lt;br&gt; but you are lost within the chaos of the labyrinth &lt;br&gt; You fall in the winding labyrinth"</span><span class="p">,</span>
+                <span class="s2">"image"</span><span class="o">:</span> <span class="s2">"hallway4.jpeg"</span><span class="p">,</span>
+                <span class="s2">"choices"</span><span class="o">:</span> <span class="p">[</span><span class="s2">"End"</span><span class="p">,</span> <span class="s2">"Game"</span><span class="p">],</span>
+                <span class="s2">"results"</span> <span class="o">:</span> <span class="p">{</span><span class="s2">"End"</span> <span class="o">:</span> <span class="nx">leave</span><span class="p">,</span> <span class="s2">"Game"</span><span class="o">:</span><span class="nx">leave</span><span class="p">,</span> <span class="s2">"Endfunc"</span> <span class="o">:</span> <span class="s2">"stay"</span><span class="p">,</span> <span class="s2">"Gamefunc"</span> <span class="o">:</span> <span class="s2">"stay"</span><span class="p">}</span>
+            <span class="p">},</span>
+            <span class="s2">"8"</span><span class="o">:</span> <span class="p">{</span>
+                <span class="s2">"script"</span><span class="o">:</span> <span class="s2">"Your raucous fight opens a door in the damp floor &lt;br&gt; unable to keep up your balance, you fall into the ground &lt;br&gt; and fall into the infinite chasm"</span><span class="p">,</span>
+                <span class="s2">"image"</span><span class="o">:</span> <span class="s2">"hallway5.jpg"</span><span class="p">,</span>
+                <span class="s2">"choices"</span><span class="o">:</span> <span class="p">[</span><span class="s2">"End"</span><span class="p">,</span> <span class="s2">"Game"</span><span class="p">],</span>
+                <span class="s2">"results"</span> <span class="o">:</span> <span class="p">{</span><span class="s2">"End"</span> <span class="o">:</span> <span class="nx">leave</span><span class="p">,</span> <span class="s2">"Game"</span><span class="o">:</span><span class="nx">leave</span><span class="p">,</span> <span class="s2">"Endfunc"</span> <span class="o">:</span> <span class="s2">"hole"</span><span class="p">,</span> <span class="s2">"Gamefunc"</span> <span class="o">:</span> <span class="s2">"hole"</span><span class="p">}</span>
+            <span class="p">},</span>
+            <span class="s2">"9"</span><span class="o">:</span> <span class="p">{</span>
+                <span class="s2">"script"</span><span class="o">:</span> <span class="s2">"You escape through the door into the light. &lt;br&gt; The air feels good, and the darkness fades &lt;br&gt; You escape!"</span><span class="p">,</span>
+                <span class="s2">"image"</span><span class="o">:</span> <span class="s2">"hallway6.jpg"</span><span class="p">,</span>
+                <span class="s2">"choices"</span><span class="o">:</span> <span class="p">[</span><span class="s2">"End"</span><span class="p">,</span> <span class="s2">"Game"</span><span class="p">],</span>
+                <span class="s2">"results"</span> <span class="o">:</span> <span class="p">{</span><span class="s2">"End"</span> <span class="o">:</span> <span class="nx">victory</span><span class="p">,</span> <span class="s2">"Game"</span><span class="o">:</span><span class="nx">victory</span><span class="p">,</span> <span class="s2">"Endfunc"</span> <span class="o">:</span> <span class="s2">"fighting"</span><span class="p">,</span> <span class="s2">"Gamefunc"</span> <span class="o">:</span> <span class="s2">"fighting"</span><span class="p">}</span>
+            <span class="p">}</span>
+            
+
+        <span class="p">};</span>
+
+        <span class="c1">//TODO: Finish the sneak and the stay/go through (completion page)</span>
+        <span class="c1">// Then finish up backend and leaderboard</span>
+        <span class="c1">// Completed: sneak, ending of staying</span>
+        
+        <span class="kd">var</span> <span class="nx">playerStats</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s2">"armor"</span> <span class="o">:</span> <span class="mf">0</span><span class="p">,</span>
+            <span class="s2">"damage"</span> <span class="o">:</span> <span class="mf">0</span><span class="p">,</span>
+            <span class="s2">"health"</span> <span class="o">:</span> <span class="mf">0</span><span class="p">,</span>
+            <span class="s2">"equipped"</span> <span class="o">:</span> <span class="p">{</span>
+                <span class="s2">"damage"</span><span class="o">:</span> <span class="s2">""</span><span class="p">,</span>
+                <span class="s2">"armor"</span> <span class="o">:</span> <span class="s2">""</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+        <span class="kd">var</span> <span class="nx">inventory</span> <span class="o">=</span> <span class="p">{</span>
+            
+        <span class="p">}</span>
+
+        <span class="kd">var</span> <span class="nx">assets</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s2">"pistol"</span> <span class="o">:</span> <span class="p">[</span><span class="s2">"damage"</span><span class="p">,</span> <span class="mf">1</span><span class="p">],</span>
+            <span class="s2">"vest"</span> <span class="o">:</span> <span class="p">[</span><span class="s2">"armor"</span><span class="p">,</span> <span class="mf">2</span><span class="p">],</span>
+            <span class="s2">"tendril"</span> <span class="o">:</span> <span class="p">[</span><span class="s2">"damage"</span><span class="p">,</span> <span class="mf">2</span><span class="p">]</span>
+        <span class="p">}</span>
+
+        <span class="kd">function</span> <span class="nx">formatStuff</span><span class="p">(</span><span class="nx">location</span><span class="p">)</span> <span class="p">{</span>
+            <span class="nx">local</span> <span class="o">=</span> <span class="nx">location</span><span class="p">;</span>
+            <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"Locality: "</span> <span class="o">+</span> <span class="nx">local</span><span class="p">);</span>
+            <span class="kd">let</span> <span class="nx">point</span> <span class="o">=</span> <span class="nx">all</span><span class="p">[</span><span class="nx">location</span><span class="p">];</span>
+            <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">"hallwayIMG"</span><span class="p">).</span><span class="nx">src</span> <span class="o">=</span> <span class="s2">"images/"</span> <span class="o">+</span> <span class="nx">point</span><span class="p">[</span><span class="s2">"image"</span><span class="p">];</span>
+            <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">"C1"</span><span class="p">).</span><span class="nx">innerHTML</span> <span class="o">=</span> <span class="nx">point</span><span class="p">[</span><span class="s2">"choices"</span><span class="p">][</span><span class="mf">0</span><span class="p">];</span>
+            <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">"C2"</span><span class="p">).</span><span class="nx">innerHTML</span> <span class="o">=</span> <span class="nx">point</span><span class="p">[</span><span class="s2">"choices"</span><span class="p">][</span><span class="mf">1</span><span class="p">];</span>
+            <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">"script"</span><span class="p">).</span><span class="nx">innerHTML</span> <span class="o">=</span> <span class="nx">point</span><span class="p">[</span><span class="s2">"script"</span><span class="p">];</span>
+        <span class="p">}</span>
+
+        <span class="kd">function</span> <span class="nx">equip</span><span class="p">(</span><span class="nx">item</span><span class="p">){</span>
+            <span class="nx">inventory</span><span class="p">[</span><span class="nx">item</span><span class="p">]</span> <span class="o">=</span> <span class="o">!</span><span class="nx">inventory</span><span class="p">[</span><span class="nx">item</span><span class="p">];</span>
+            <span class="k">if</span> <span class="p">(</span><span class="nx">inventory</span><span class="p">[</span><span class="nx">item</span><span class="p">]){</span>
+                <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">"err"</span><span class="p">).</span><span class="nx">innerHTML</span> <span class="o">=</span> <span class="nx">item</span> <span class="o">+</span> <span class="s2">" equipped!"</span>
+                <span class="nx">setTimeout</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">"err"</span><span class="p">).</span><span class="nx">innerHTML</span> <span class="o">=</span> <span class="s2">""</span><span class="p">},</span><span class="mf">1000</span><span class="p">);</span>
+                <span class="nx">playerStats</span><span class="p">[</span><span class="nx">assets</span><span class="p">[</span><span class="nx">item</span><span class="p">][</span><span class="mf">0</span><span class="p">]]</span> <span class="o">+=</span> <span class="nx">assets</span><span class="p">[</span><span class="nx">item</span><span class="p">][</span><span class="mf">1</span><span class="p">];</span>
+                <span class="nx">playerStats</span><span class="p">[</span><span class="s2">"equipped"</span><span class="p">][</span><span class="nx">assets</span><span class="p">[</span><span class="nx">item</span><span class="p">][</span><span class="mf">0</span><span class="p">]]</span> <span class="o">=</span> <span class="nx">item</span><span class="p">;</span>
+            <span class="p">}</span>
+            <span class="k">else</span> <span class="p">{</span>
+                <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">"err"</span><span class="p">).</span><span class="nx">innerHTML</span> <span class="o">=</span> <span class="nx">item</span> <span class="o">+</span> <span class="s2">" unequipped."</span>
+                <span class="nx">setTimeout</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">"err"</span><span class="p">).</span><span class="nx">innerHTML</span> <span class="o">=</span> <span class="s2">""</span><span class="p">},</span><span class="mf">1000</span><span class="p">);</span>
+                <span class="nx">playerStats</span><span class="p">[</span><span class="nx">assets</span><span class="p">[</span><span class="nx">item</span><span class="p">][</span><span class="mf">0</span><span class="p">]]</span> <span class="o">-=</span> <span class="nx">assets</span><span class="p">[</span><span class="nx">item</span><span class="p">][</span><span class="mf">1</span><span class="p">];</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+
+        <span class="kd">function</span> <span class="nx">addToInv</span><span class="p">(</span><span class="nx">stuff</span><span class="p">)</span> <span class="p">{</span>
+            <span class="kd">let</span> <span class="nx">name</span> <span class="o">=</span> <span class="nx">stuff</span><span class="p">[</span><span class="mf">0</span><span class="p">];</span>
+            <span class="kd">let</span> <span class="nx">location</span> <span class="o">=</span> <span class="nx">stuff</span><span class="p">[</span><span class="mf">1</span><span class="p">];</span>
+            <span class="kd">let</span> <span class="nx">elems</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementsByName</span><span class="p">(</span><span class="s2">"slot"</span><span class="p">);</span>
+            <span class="kd">let</span> <span class="nx">ocured</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
+            <span class="k">for</span><span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="mf">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">elems</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">){</span>
+                <span class="nx">slot</span> <span class="o">=</span> <span class="nx">elems</span><span class="p">[</span><span class="nx">i</span><span class="p">];</span>
+                <span class="k">if</span><span class="p">(</span><span class="nx">slot</span><span class="p">.</span><span class="nx">innerHTML</span> <span class="o">===</span> <span class="s2">""</span><span class="p">){</span>
+                    <span class="kd">var</span> <span class="nx">b</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s2">"button"</span><span class="p">);</span>
+                    <span class="nx">b</span><span class="p">.</span><span class="nx">innerHTML</span> <span class="o">=</span> <span class="nx">name</span>
+                    <span class="nx">b</span><span class="p">.</span><span class="nx">id</span> <span class="o">=</span> <span class="nx">name</span>
+                    <span class="nx">b</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s2">"click"</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">event</span><span class="p">){</span>
+                        <span class="nx">equip</span><span class="p">(</span><span class="nx">name</span><span class="p">)</span>
+                    <span class="p">})</span>
+
+                    <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="nx">slot</span><span class="p">.</span><span class="nx">id</span><span class="p">).</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">b</span><span class="p">);</span>
+                    <span class="nx">ocured</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+                    <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">"err"</span><span class="p">).</span><span class="nx">innerHTML</span> <span class="o">=</span> <span class="s2">"You picked up a "</span> <span class="o">+</span> <span class="nx">name</span>
+                    <span class="nx">setTimeout</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">"err"</span><span class="p">).</span><span class="nx">innerHTML</span> <span class="o">=</span> <span class="s2">""</span><span class="p">},</span><span class="mf">1000</span><span class="p">);</span>
+                    <span class="k">break</span>
+                <span class="p">}</span>
+            <span class="p">}</span>
+            <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nx">ocured</span><span class="p">){</span>
+                <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">"err"</span><span class="p">).</span><span class="nx">innerHTML</span> <span class="o">=</span> <span class="s2">"Inventory Full!"</span>
+                <span class="nx">setTimeout</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">"err"</span><span class="p">).</span><span class="nx">innerHTML</span> <span class="o">=</span> <span class="s2">""</span><span class="p">},</span><span class="mf">1000</span><span class="p">);</span>
+                
+            <span class="p">}</span>
+           <span class="nx">moveTo</span><span class="p">(</span><span class="nx">location</span><span class="p">);</span>
+        <span class="p">}</span>
+
+        <span class="kd">function</span> <span class="nx">moveTo</span><span class="p">(</span><span class="nx">location</span><span class="p">){</span>
+            <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"Location Passed in "</span> <span class="o">+</span> <span class="nx">location</span><span class="p">)</span>
+            <span class="nx">formatStuff</span><span class="p">(</span><span class="nx">location</span><span class="p">);</span>
+        <span class="p">}</span>
+
+        <span class="kd">function</span> <span class="nx">specialMove</span><span class="p">(</span><span class="nx">information</span><span class="p">){</span><span class="c1">//)loc1, loc2, condition, parameter){</span>
+            <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">information</span><span class="p">)</span>
+            <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">playerStats</span><span class="p">[</span><span class="nx">information</span><span class="p">[</span><span class="mf">2</span><span class="p">]]</span> <span class="o">&gt;</span> <span class="nx">information</span><span class="p">[</span><span class="mf">3</span><span class="p">])</span>
+            <span class="k">if</span><span class="p">(</span><span class="nx">playerStats</span><span class="p">[</span><span class="nx">information</span><span class="p">[</span><span class="mf">2</span><span class="p">]]</span> <span class="o">&gt;</span> <span class="nx">information</span><span class="p">[</span><span class="mf">3</span><span class="p">]){</span>
+                <span class="nx">moveTo</span><span class="p">(</span><span class="nx">information</span><span class="p">[</span><span class="mf">1</span><span class="p">])</span>
+            <span class="p">}</span>
+            <span class="k">else</span> <span class="p">{</span>
+                <span class="nx">moveTo</span><span class="p">(</span><span class="nx">information</span><span class="p">[</span><span class="mf">0</span><span class="p">])</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+
+        <span class="kd">function</span> <span class="nx">manageFunctions</span><span class="p">(</span><span class="nx">value</span><span class="p">){</span>
+            <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">local</span><span class="p">)</span>
+            <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"Stuff: "</span> <span class="o">+</span>  <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">'C2'</span><span class="p">).</span><span class="nx">innerHTML</span><span class="p">);</span>
+            <span class="kd">let</span> <span class="nx">func</span> <span class="o">=</span> <span class="nx">all</span><span class="p">[</span><span class="nx">local</span><span class="p">][</span><span class="s2">"results"</span><span class="p">];</span>
+            <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"value: "</span> <span class="o">+</span> <span class="nx">value</span><span class="p">);</span>
+            <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">all</span><span class="p">[</span><span class="nx">local</span><span class="p">][</span><span class="s2">"results"</span><span class="p">])</span>
+            <span class="nx">func</span><span class="p">[</span><span class="nx">value</span><span class="p">](</span><span class="nx">func</span><span class="p">[</span><span class="nx">value</span><span class="o">+</span><span class="s2">"func"</span><span class="p">]);</span>
+        <span class="p">}</span>
+
+        <span class="kd">function</span> <span class="nx">leave</span><span class="p">(</span><span class="nx">cause</span><span class="p">){</span>
+            <span class="nx">localStorage</span><span class="p">.</span><span class="nx">setItem</span><span class="p">(</span><span class="s2">"causeOfDeath"</span><span class="p">,</span> <span class="nx">cause</span><span class="p">);</span>
+            <span class="nx">setTimeout</span><span class="p">(()</span> <span class="p">=&gt;</span> <span class="p">{</span>
+                <span class="nb">window</span><span class="p">.</span><span class="nx">location</span> <span class="o">=</span> <span class="s1">'https://nvarap.github.io/gameover.html'</span>
+            <span class="p">},</span> <span class="mf">500</span><span class="p">);</span>
+           
+        <span class="p">}</span>
+
+        <span class="kd">function</span> <span class="nx">victory</span><span class="p">(</span><span class="nx">win</span><span class="p">){</span>
+            <span class="nx">localStorage</span><span class="p">.</span><span class="nx">setItem</span><span class="p">(</span><span class="s2">"causeOfVictory"</span><span class="p">,</span> <span class="nx">win</span><span class="p">);</span>
+            <span class="nx">setTimeout</span><span class="p">(()</span> <span class="p">=&gt;</span> <span class="p">{</span>
+                <span class="nb">window</span><span class="p">.</span><span class="nx">location</span> <span class="o">=</span> <span class="s1">'https://nvarap.github.io/victory.html'</span>
+            <span class="p">},</span> <span class="mf">500</span><span class="p">);</span>
+        <span class="p">}</span>
+
+        <span class="nb">window</span><span class="p">.</span><span class="nx">onload</span> <span class="o">=</span> <span class="p">(</span><span class="nx">event</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+            <span class="nx">formatStuff</span><span class="p">(</span><span class="nx">local</span><span class="p">);</span>
+        <span class="p">};</span>
+
+
+    <span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+
+    <span class="p">&lt;</span><span class="nt">body</span> <span class="na">style</span><span class="o">=</span><span class="s">"position: relative; background-color: black;"</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"split left"</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"centered"</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">"images/hallway1.jpeg"</span> <span class="na">alt</span><span class="o">=</span><span class="s">"Hallway1"</span> <span class="na">id</span><span class="o">=</span><span class="s">"hallwayIMG"</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">div</span> <span class="na">style</span><span class="o">=</span><span class="s">"color: white;"</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">p</span> <span class="na">id</span><span class="o">=</span><span class="s">"script"</span><span class="p">&gt;</span> <span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+                <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+            <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"split right"</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"centered"</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">h1</span> <span class="na">style</span><span class="o">=</span><span class="s">"position: fixed; bottom: 270px; right: -80px; color: white;"</span><span class="p">&gt;</span> Inventory <span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"grid-container"</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">"slot1"</span> <span class="na">name</span><span class="o">=</span><span class="s">"slot"</span> <span class="na">class</span><span class="o">=</span><span class="s">"grid-item"</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">"slot2"</span> <span class="na">name</span><span class="o">=</span><span class="s">"slot"</span> <span class="na">class</span><span class="o">=</span><span class="s">"grid-item"</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">"slot3"</span> <span class="na">name</span><span class="o">=</span><span class="s">"slot"</span> <span class="na">class</span><span class="o">=</span><span class="s">"grid-item"</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">"slot4"</span> <span class="na">name</span><span class="o">=</span><span class="s">"slot"</span> <span class="na">class</span><span class="o">=</span><span class="s">"grid-item"</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">"slot5"</span><span class="na">name</span><span class="o">=</span><span class="s">"slot"</span> <span class="na">class</span><span class="o">=</span><span class="s">"grid-item"</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">"slot6"</span> <span class="na">name</span><span class="o">=</span><span class="s">"slot"</span> <span class="na">class</span><span class="o">=</span><span class="s">"grid-item"</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">"slot7"</span> <span class="na">name</span><span class="o">=</span><span class="s">"slot"</span> <span class="na">class</span><span class="o">=</span><span class="s">"grid-item"</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">"slot8"</span> <span class="na">name</span><span class="o">=</span><span class="s">"slot"</span> <span class="na">class</span><span class="o">=</span><span class="s">"grid-item"</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">"slot9"</span> <span class="na">name</span><span class="o">=</span><span class="s">"slot"</span> <span class="na">class</span><span class="o">=</span><span class="s">"grid-item"</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">"slot10"</span> <span class="na">name</span><span class="o">=</span><span class="s">"slot"</span> <span class="na">class</span><span class="o">=</span><span class="s">"grid-item"</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">"slot11"</span> <span class="na">name</span><span class="o">=</span><span class="s">"slot"</span> <span class="na">class</span><span class="o">=</span><span class="s">"grid-item"</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">"slot12"</span> <span class="na">name</span><span class="o">=</span><span class="s">"slot"</span> <span class="na">class</span><span class="o">=</span><span class="s">"grid-item"</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">"slot13"</span> <span class="na">name</span><span class="o">=</span><span class="s">"slot"</span> <span class="na">class</span><span class="o">=</span><span class="s">"grid-item"</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">"slot14"</span> <span class="na">name</span><span class="o">=</span><span class="s">"slot"</span> <span class="na">class</span><span class="o">=</span><span class="s">"grid-item"</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">"slot15"</span> <span class="na">name</span><span class="o">=</span><span class="s">"slot"</span> <span class="na">class</span><span class="o">=</span><span class="s">"grid-item"</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                    
+
+                <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">p</span> <span class="na">id</span><span class="o">=</span><span class="s">"err"</span> <span class="na">style</span><span class="o">=</span><span class="s">"position: fixed; top: 10px; right: -35px; color: white;"</span><span class="p">&gt;&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"menu"</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">button</span> <span class="na">onclick</span><span class="o">=</span><span class="s">"manageFunctions(document.getElementById('C1').innerHTML)"</span> <span class="na">id</span><span class="o">=</span><span class="s">"C1"</span> <span class="na">data-inline</span><span class="o">=</span><span class="s">"true"</span> <span class="na">class</span><span class="o">=</span><span class="s">"button"</span> <span class="na">style</span><span class="o">=</span><span class="s">"margin: 0px"</span><span class="p">&gt;</span> <span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">button</span> <span class="na">onclick</span><span class="o">=</span><span class="s">"manageFunctions(document.getElementById('C2').innerHTML)"</span> <span class="na">id</span><span class="o">=</span><span class="s">"C2"</span> <span class="na">data-inline</span><span class="o">=</span><span class="s">"true"</span> <span class="na">class</span><span class="o">=</span><span class="s">"button"</span> <span class="na">style</span><span class="o">=</span><span class="s">"margin: 50px"</span><span class="p">&gt;</span> <span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+                <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+            <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+
+    <span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Leaderboard">
+<a class="anchor" href="#Leaderboard" aria-hidden="true"><span class="octicon octicon-link"></span></a>Leaderboard<a class="anchor-link" href="#Leaderboard"> </a>
+</h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="backend">
+<a class="anchor" href="#backend" aria-hidden="true"><span class="octicon octicon-link"></span></a>backend<a class="anchor-link" href="#backend"> </a>
+</h2>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">flask</span> <span class="kn">import</span> <span class="n">Blueprint</span><span class="p">,</span> <span class="n">request</span><span class="p">,</span> <span class="n">jsonify</span>  <span class="c1"># jsonify creates an endpoint response object</span>
+<span class="kn">from</span> <span class="nn">flask_restful</span> <span class="kn">import</span> <span class="n">Api</span><span class="p">,</span> <span class="n">Resource</span> <span class="c1"># used for REST API building</span>
+
+<span class="n">app_api</span> <span class="o">=</span> <span class="n">Blueprint</span><span class="p">(</span><span class="s1">'api'</span><span class="p">,</span> <span class="vm">__name__</span><span class="p">,</span>
+                   <span class="n">url_prefix</span><span class="o">=</span><span class="s1">'/api/points'</span><span class="p">)</span>
+
+<span class="c1"># API generator https://flask-restful.readthedocs.io/en/latest/api.html#id1</span>
+<span class="n">api</span> <span class="o">=</span> <span class="n">Api</span><span class="p">(</span><span class="n">app_api</span><span class="p">)</span>
+
+
+<span class="k">class</span> <span class="nc">UsrAPI</span><span class="p">:</span>
+    <span class="n">local_dic</span> <span class="o">=</span> <span class="p">[]</span> <span class="c1"># Stores all the users and IDs</span>
+
+    <span class="k">def</span> <span class="nf">newScore</span><span class="p">(</span><span class="n">front</span><span class="p">,</span> <span class="n">back</span><span class="p">,</span> <span class="n">diction</span><span class="p">):</span>
+        <span class="n">user_id</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">diction</span><span class="p">))</span>
+        <span class="n">diction</span><span class="o">.</span><span class="n">append</span><span class="p">({</span><span class="s1">'name'</span><span class="p">:</span><span class="n">front</span><span class="p">,</span> <span class="s2">"points"</span><span class="p">:</span><span class="n">back</span><span class="p">})</span>
+
+    <span class="k">class</span> <span class="nc">_Create</span><span class="p">(</span><span class="n">Resource</span><span class="p">):</span>
+        <span class="k">def</span> <span class="nf">post</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span> <span class="c1"># simply creates the endpoint, dne otherwise</span>
+            <span class="n">body</span> <span class="o">=</span> <span class="n">request</span><span class="o">.</span><span class="n">get_json</span><span class="p">()</span>
+            <span class="n">UsrAPI</span><span class="o">.</span><span class="n">newScore</span><span class="p">(</span><span class="n">body</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">"name"</span><span class="p">),</span> <span class="n">body</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">"score"</span><span class="p">),</span> <span class="n">UsrAPI</span><span class="o">.</span><span class="n">local_dic</span><span class="p">)</span>
+            <span class="k">return</span> <span class="p">{</span><span class="s2">"message"</span> <span class="p">:</span> <span class="s2">"new person added"</span><span class="p">}</span>
+        
+
+    <span class="k">class</span> <span class="nc">_Read</span><span class="p">(</span><span class="n">Resource</span><span class="p">):</span>
+        <span class="k">def</span> <span class="nf">get</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+            <span class="k">return</span> <span class="n">jsonify</span><span class="p">(</span><span class="nb">sorted</span><span class="p">(</span><span class="n">UsrAPI</span><span class="o">.</span><span class="n">local_dic</span><span class="p">,</span><span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="p">[</span><span class="s2">"points"</span><span class="p">],</span> <span class="n">reverse</span><span class="o">=</span><span class="kc">True</span><span class="p">))</span> 
+            <span class="c1"># init wikipedia by default</span>
+
+    
+    <span class="c1"># getJoke(id)</span>
+   <span class="c1"># class _ReadWithName(Resource): # read when url have name query satisfied</span>
+    <span class="c1">#    def get(self, name):</span>
+     <span class="c1">#       return jsonify()# otherwise check with name</span>
+
+    <span class="c1"># getRandomJoke()</span>
+    <span class="c1">#class _ReadRandom(Resource):</span>
+     <span class="c1">#   def get(self):</span>
+      <span class="c1">#      return jsonify() # this exists for some reason</span>
+    
+
+    <span class="c1"># building RESTapi resources/interfaces, these routes are added to Web Server</span>
+    <span class="n">api</span><span class="o">.</span><span class="n">add_resource</span><span class="p">(</span><span class="n">_Create</span><span class="p">,</span> <span class="s1">'/create'</span><span class="p">)</span>
+    <span class="n">api</span><span class="o">.</span><span class="n">add_resource</span><span class="p">(</span><span class="n">_Read</span><span class="p">,</span> <span class="s1">'/'</span><span class="p">)</span>
+   
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Frontend">
+<a class="anchor" href="#Frontend" aria-hidden="true"><span class="octicon octicon-link"></span></a>Frontend<a class="anchor-link" href="#Frontend"> </a>
+</h1>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%%js</span>
+   <span class="c1">// fetching</span>
+
+      <span class="nx">fetch</span><span class="p">(</span><span class="s1">'http://127.0.0.1:8086/api/points/'</span><span class="p">)</span>
+         <span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">response</span> <span class="p">=&gt;</span> <span class="p">{</span>
+            <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nx">response</span><span class="p">.</span><span class="nx">ok</span><span class="p">)</span> <span class="p">{</span>
+               <span class="k">throw</span> <span class="k">new</span> <span class="nb">Error</span><span class="p">(</span><span class="s1">'Network response was not ok'</span><span class="p">);</span>
+            <span class="p">}</span>
+            <span class="k">return</span> <span class="nx">response</span><span class="p">.</span><span class="nx">json</span><span class="p">();</span>
+         <span class="p">})</span>
+         <span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">data</span> <span class="p">=&gt;</span> <span class="p">{</span>
+            <span class="kd">let</span> <span class="nx">leaderboard</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">"leaderboard"</span><span class="p">);</span>
+            <span class="c1">// Process the response data</span>
+            <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">data</span><span class="p">);</span>
+            <span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="mf">1</span><span class="p">;</span>
+            <span class="nx">data</span><span class="p">.</span><span class="nx">forEach</span><span class="p">(</span><span class="nx">element</span> <span class="p">=&gt;</span> <span class="p">{</span>
+               <span class="kd">let</span> <span class="nx">d</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s2">"div"</span><span class="p">);</span>
+               <span class="nx">d</span><span class="p">.</span><span class="nx">style</span> <span class="o">=</span> <span class="s2">"color: white; width: 500px"</span><span class="p">;</span>
+               <span class="nx">d</span><span class="p">.</span><span class="nx">innerHTML</span> <span class="o">=</span> <span class="nx">i</span> <span class="o">+</span> <span class="s2">". | "</span> <span class="o">+</span> <span class="nx">element</span><span class="p">[</span><span class="s2">"name"</span><span class="p">]</span> <span class="o">+</span> <span class="s2">" | "</span> <span class="o">+</span> <span class="nx">element</span><span class="p">[</span><span class="s2">"points"</span><span class="p">];</span>
+               <span class="nx">leaderboard</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">d</span><span class="p">);</span>
+               <span class="nx">i</span> <span class="o">++</span><span class="p">;</span>
+            <span class="p">});</span>
+         <span class="p">})</span>
+         <span class="p">.</span><span class="k">catch</span><span class="p">(</span><span class="nx">error</span> <span class="p">=&gt;</span> <span class="p">{</span>
+            <span class="c1">// Handle any errors that occurred during the request</span>
+            <span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="s1">'Error:'</span><span class="p">,</span> <span class="nx">error</span><span class="p">);</span>
+         <span class="p">});</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%%js</span>
+
+<span class="c1">// posting</span>
+
+  <span class="kd">var</span> <span class="nx">but</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">"add"</span><span class="p">);</span>
+        <span class="nx">but</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s2">"click"</span><span class="p">,</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="p">{</span>
+            <span class="nx">fetch</span><span class="p">(</span><span class="s1">'http://127.0.0.1:8086/api/points/create'</span><span class="p">,</span> <span class="p">{</span>
+                <span class="nx">method</span><span class="o">:</span> <span class="s1">'POST'</span><span class="p">,</span>
+                <span class="nx">mode</span><span class="o">:</span> <span class="s2">"cors"</span><span class="p">,</span>
+                <span class="nx">headers</span><span class="o">:</span> <span class="p">{</span>
+                    <span class="s1">'Content-Type'</span><span class="o">:</span> <span class="s1">'application/json'</span>
+                <span class="p">},</span>
+                <span class="nx">body</span><span class="o">:</span> <span class="nx">JSON</span><span class="p">.</span><span class="nx">stringify</span><span class="p">({</span> <span class="s2">"name"</span> <span class="o">:</span> <span class="nx">localStorage</span><span class="p">.</span><span class="nx">getItem</span><span class="p">(</span><span class="s2">"name"</span><span class="p">),</span> <span class="s2">"score"</span><span class="o">:</span><span class="nb">Math</span><span class="p">.</span><span class="nx">floor</span><span class="p">(</span><span class="mf">100</span><span class="o">-</span><span class="nb">Math</span><span class="p">.</span><span class="nx">random</span><span class="p">()</span><span class="o">*</span><span class="mf">100</span><span class="p">)})</span>
+            <span class="p">})</span>
+                <span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">response</span> <span class="p">=&gt;</span> <span class="p">{</span>
+                    <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nx">response</span><span class="p">.</span><span class="nx">ok</span><span class="p">)</span> <span class="p">{</span>
+                        <span class="k">throw</span> <span class="k">new</span> <span class="nb">Error</span><span class="p">(</span><span class="s1">'Network response was not ok'</span><span class="p">);</span>
+                    <span class="p">}</span>
+                    <span class="k">return</span> <span class="nx">response</span><span class="p">.</span><span class="nx">json</span><span class="p">();</span>
+                <span class="p">})</span>
+                <span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">data</span> <span class="p">=&gt;</span> <span class="p">{</span>
+                    <span class="c1">// Process the response data</span>
+                    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">data</span><span class="p">);</span>
+                    <span class="nx">localStorage</span><span class="p">.</span><span class="nx">clear</span><span class="p">()</span>
+                    <span class="nx">setTimeout</span><span class="p">(()</span> <span class="p">=&gt;</span> <span class="p">{</span>
+                        <span class="nb">window</span><span class="p">.</span><span class="nx">location</span> <span class="o">=</span> <span class="s1">'https://nvarap.github.io/index.html'</span>
+                    <span class="p">},</span> <span class="mf">500</span><span class="p">);</span>
+                <span class="p">})</span>
+                <span class="p">.</span><span class="k">catch</span><span class="p">(</span><span class="nx">error</span> <span class="p">=&gt;</span> <span class="p">{</span>
+                    <span class="c1">// Handle any errors that occurred during the request</span>
+                    <span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="s1">'Error:'</span><span class="p">,</span> <span class="nx">error</span><span class="p">);</span>
+                <span class="p">});</span>
+
+        <span class="p">})</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+</div>
+
+
+
+  </div><a class="u-url" href="/blog/2023/06/02/javascript-checkout.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/blog/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="https://nvarap.github.io/blog/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/blog/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p>A blog for a CSP Student</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"></ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
